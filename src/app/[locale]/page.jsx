@@ -1,6 +1,5 @@
 'use client';
 import Feature from '@/components/pages/home/Feature';
-import Hero from '@/components/pages/home/hero';
 import Landing from '@/components/pages/home/Landing';
 import Testimonials from '@/components/pages/home/Testimonials';
 import Services from '@/components/pages/home/Services';
