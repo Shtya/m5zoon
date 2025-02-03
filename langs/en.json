@@ -1,0 +1,163 @@
+{
+    "login": "Login",
+    "contact_us": "Contact Us",
+    "our_locations": "Our Locations",
+    "our_services": "Our Services",
+    "home": "Home",
+    "welcome_message": "Welcome to ",
+    "welcome_message_brand_name": "Makhzoun!",
+
+    "description": "Your work is easier and your success is faster with a perfect platform that makes us your ideal partner in ",
+    "description_word": "the world  ",
+    "electronics": "of e-commerce.",
+
+    "solutions": "We offer you innovative solutions and continuous support to ensure that your online store transforms into a successful stage through a comprehensive platform that provides everything you need, from products, shipping, and storage to customer service.",
+
+    "register_now": "Register Now",
+    "about_us": "About Us",
+    "call_center": "Call Center",
+    "import_sourcing": "Import & Sourcing",
+    "dropshipping": "Dropshipping",
+    "fulfillment": "Fulfillment",
+
+    "email": "info@m5zoon.com",
+    "headquarters": "Headquarters",
+    "location": "Dubai - United Arab Emirates",
+
+    "suppliers_count": "Number of Suppliers",
+    "shipping_operations": "Shipping Operations",
+    "success_partners": "Success Partners",
+    "products_count": "Number of Products",
+
+    "store_needs": "What your online store needs",
+    "fulfillment_services": "Fulfillment Services",
+    "shipping_cod": "Shipping and Cash on Delivery (COD) Collection",
+
+    "smart_inventory_management": "Smart and Easy Inventory Management",
+    "inventory_tracking": "Track your stock in real-time effortlessly. Our team ensures efficient stock sorting and provides innovative solutions to make your store more efficient.",
+
+    "selected_products": "Products of Your Choice at Your Fingertips",
+    "product_selection": "Choose the product that suits you, and at M5zoon, we guarantee quality inspection and availability of the required quantity with ease and speed, along with secure storage and professional packaging services.",
+
+    "profit_collection_transfer": "Collecting Funds and Transferring Profits the Right Way",
+    "profit_transfer": "Transferring profits is simpler and faster than you think. We provide flexible and secure solutions for COD collection and profit transfers, whether to a bank account or an e-wallet.",
+
+    "trusted_suppliers_marketers": "Suppliers and marketers trust us –",
+    "join_us_today": "Be one of them today with M5zoon",
+
+    "always_ready": "Always be ready with limitless profit collection and transfers",
+    "from_warehouse_to_door": "From the warehouse to the customer's door",
+    "fast_delivery": "We ensure fast order delivery to guarantee customer satisfaction and loyalty, reducing return rates and increasing successful deliveries.",
+
+    "quality_products_services": "Quality Products and Services",
+    "quality_priority": "We prioritize quality, providing you with high-value products and exceptional services that ensure an outstanding experience and sustainable success.",
+
+    "customer_support": "Exceptional Customer Support for Every Inquiry",
+    "dedicated_support_team": "A dedicated support team tracks orders in real-time, providing quick responses to customer inquiries and resolving issues professionally, enhancing trust with outstanding customer service.",
+
+    "our_premium_services": "Our premium services are now available on one platform to support your business growth and achieve success ",
+    "less_effort": "with minimal effort.",
+    "payment_collection_transfer": "Payment Collection & Transfers",
+    "storage_packaging_fulfillment": "Storage, Packaging & Fulfillment",
+    "product_funding_ads": "Product Funding & Advertising",
+    "direct_customer_communication": "Direct Customer Communication",
+    "product_sourcing_shipping": "Product Sourcing, Import & Shipping",
+    "order_tracking_confirmation": "Order Tracking & Confirmation",
+
+    "customer_reviews": "Our Customers' Reviews After Using",
+    "M5zoon": "M5zoon",
+    "customers": [
+        {
+            "name": "Ibtisam Nasser",
+            "title": "E-commerce Store Owner in Saudi Arabia",
+            "review": "My experience with 'M5zoon' was excellent! The interface is user-friendly, and customer support is quick. It helped me efficiently organize inventory and improve business operations. I highly recommend it."
+        },
+        {
+            "name": "Talal Youssef",
+            "title": "E-commerce Store Owner in Saudi Arabia",
+            "review": "'M5zoon' made inventory management easier for me. The interface is clear, and tech support is fast. A great experience, I highly recommend it."
+        },
+        {
+            "name": "Aisha Mohammed",
+            "title": "E-commerce Store Owner in Saudi Arabia",
+            "review": "'M5zoon' has greatly simplified my inventory management. The interface is simple, and tech support is quick. A fantastic experience that I recommend for any business."
+        },
+        {
+            "name": "Nasser Faisal",
+            "title": "E-commerce Store Owner in Saudi Arabia",
+            "review": "My experience with 'M5zoon' was wonderful. The interface is easy to use, and tech support is fast. It helped me improve inventory organization and efficiency. I highly recommend it."
+        },
+        {
+            "name": "Fahad Al-Qahtani",
+            "title": "E-commerce Store Owner in Saudi Arabia",
+            "review": "My experience with 'M5zoon' was excellent! The interface is user-friendly, and customer support is fast. It helped me efficiently organize inventory and improve business efficiency. Highly recommended!"
+        },
+        {
+            "name": "Hala Abdullah",
+            "title": "E-commerce Store Owner in Saudi Arabia",
+            "review": "'M5zoon' was a great experience for me. The interface is simple and easy, and it helped me improve my inventory management. Support was fast and effective. I recommend it."
+        },
+        {
+            "name": "Saud Abdullah",
+            "title": "E-commerce Store Owner in Saudi Arabia",
+            "review": "'M5zoon' is excellent and easy to use. It helped me efficiently manage my inventory, and customer support was fast. A fantastic experience, highly recommended."
+        }
+    ],
+
+    "titlefaqs": "Frequently Asked ",
+    "important": "Questions",
+
+    "faqs": [
+        {
+            "question": "Do I need capital to start my business?",
+            "answer": "No, you can start without capital using the dropshipping model or Makhzoun’s product financing services, helping you grow without a large initial investment."
+        },
+        {
+            "question": "How can I receive my profits with Makhzoun?",
+            "answer": "Your profits are easily transferred via your bank account or e-wallet. We also provide Cash on Delivery (COD) collection options for greater flexibility."
+        },
+        {
+            "question": "Can I sell products if I am outside the Gulf countries?",
+            "answer": "Yes, you can sell products from anywhere in the world. Makhzoun supports international shipping and distribution, making it easier to reach your target markets."
+        },
+        {
+            "question": "Is there a minimum withdrawal limit for profits?",
+            "answer": "There is no strict minimum, but some conditions may depend on the transfer method, bank, or e-wallet used. For more details, you can contact support."
+        },
+        {
+            "question": "Which countries does Makhzoun support?",
+            "answer": "Makhzoun supports most Gulf countries, including Saudi Arabia, UAE, Kuwait, Bahrain, Qatar, and Oman, and we are expanding internationally to support new markets soon."
+        },
+        {
+            "question": "Is there a minimum withdrawal limit for profits?",
+            "answer": "There is no strict minimum, but some conditions may depend on the transfer method, bank, or e-wallet used. For more details, you can contact support."
+        },
+        {
+            "question": "Which countries does Makhzoun support?",
+            "answer": "Makhzoun supports most Gulf countries, including Saudi Arabia, UAE, Kuwait, Bahrain, Qatar, and Oman, and we are expanding internationally to support new markets soon."
+        }
+    ],
+    "partners_message": "Makhzoun’s Success ",
+    "sucees": "Partners",
+    "footer": {
+        "title": "Contact Us",
+        "description": "We provide you with complete e-commerce solutions in the Gulf market at competitive prices, without the need for storage or logistical complexities. We take care of everything, from warehousing to shipping, so you can focus on increasing your sales. Join us today and make your store's success easier than ever.",
+        "headquarters": "Headquarters",
+        "contact_uae": "Contact in UAE",
+        "contact_ksa": "Contact in KSA",
+        "location": "Dubai - United Arab Emirates",
+        "email": "info@m5zoon.com",
+        "copyright": "All rights reserved to Makhzoun © 2025"
+    },
+
+    "services": {
+        "title": "We offer affiliate marketing strategies to increase your sales",
+        "growth_message": "For rapid growth",
+        "profit_collection": "Profit Collection",
+        "product_packaging": "Product Packaging",
+        "account_management": "Account Management",
+        "customer_service": "Customer Service",
+        "customs_clearance": "Customs Clearance",
+        "shipping_delivery": "Shipping & Delivery"
+    }
+}

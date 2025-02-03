@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Cairo:200,300,regular,500,600,700,800,900);
+
+@font-face {
+  font-family: 'Norsal';
+  src: url('/fonts/alfont_com_NorsalGX.ttf') format('truetype');
+  font-weight: 100 900; /* Supports variable font weights */
+  font-style: normal;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+[dir="ltr"] *  {
+  font-family: 'Inter', sans-serif;
+}
+
+
+[dir="rtl"] * {
+  font-family: 'Norsal', sans-serif;
+}
+
+
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 20px;
+  margin: auto;
+  @media (max-width : 1024px) {
+    padding: 0 10px ;
+  }
+}
+
+body {
+  background-color: #fbfcff;
+  overflow-x: hidden;  
+}
+
+
+
+.swiper-button-prev{
+  top: unset;
+  bottom: 30px !important ;
+  left: 50%;
+}
+
+
+.swiper-button-next:after, .swiper-button-prev:after , .swiper-pagination {
+  display: none;
+}
+
+
+
+
