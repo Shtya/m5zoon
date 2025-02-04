@@ -29,10 +29,10 @@ export default function Footer() {
     }
 
     return (
-        <footer className=' container max-md:px-[50px] relative min-h-[500px]  flex flex-col justify-center items-center  '>
+        <footer className=' container max-md:px-[50px] max-sm:px-[20px] relative min-h-[500px]  flex flex-col justify-center items-center  '>
             <div className={`max-md:translate-y-[80px] bg-fixed bg-cover bg-center bg-[url('/imgs/frame-right.png')] max-md:w-full max-md:!rounded-none w-[544px] h-full absolute ltr:right-0 rtl:left-0  top-0 rtl:rounded-tr-[60px] ltr:rounded-tl-[60px] `}></div>
 
-            <div className='  relative  p-[50px] min-h-[300px] w-full bg-[#fafbff] max-md:!p-[30px] max-md:!mx-[0px] rtl:pl-[100px] ltr:pr-[100px] rtl:ml-[100px] rtl:rounded-[50px_0_0_50px] max-md:!rounded-[0_0_50px_50px] '>
+            <div className='  relative  p-[50px] min-h-[300px] w-full bg-[#fafbff]  max-md:!p-[30px] max-md:!mx-[0px] rtl:pl-[100px] ltr:pr-[100px] rtl:ml-[100px] ltr:rounded-[0_50px_50px_0] rtl:rounded-[50px_0_0_50px] max-md:!rounded-[0_0_50px_50px] '>
                 
                 <div className='flex max-md:flex-col justify-between gap-[30px] ' >
                     <div className='flex flex-col gap-[10px] ' > 
@@ -54,7 +54,7 @@ export default function Footer() {
                             <Image className='' src={e.icon} alt='' width={40} height={40} />
                             <div className='flex flex-col ' >
                                 <p className='text-secondery t20 font-normal' > {e.title} </p>
-                                <p onClick={()=>handleMail(e.key , e.desc)} className={`text-[#09396f] t18 font-extralight ${e.key == "email" && "underline cursor-pointer"} `} > {e.desc} </p>
+                                <p onClick={()=>handleMail(e.key , e.desc)} className={`text-[#09396f] t18 font-extralight ${e.key == "email" && "underline  cursor-pointer"} `} > {e.desc} </p>
                             </div>
                         </div> )
                     }

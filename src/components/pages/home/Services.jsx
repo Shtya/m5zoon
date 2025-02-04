@@ -25,7 +25,7 @@ export default function Services() {
         <div className='container py-[30px] my-[40px] '>
             <Title cn='text-center' title={  t('our_premium_services')} title2={  t('less_effort')} />
 
-            <div className='grid grid-cols-2 max-md:gap-[20px]  gap-[30px] max-w-[1000px] w-full mx-auto mt-[60px]  '>
+            <div className='grid grid-cols-2 max-md:gap-[20px] max-sm:gap-[10px] gap-[30px] max-w-[1000px] w-full mx-auto mt-[60px]  '>
                 {servciesData?.map((e, i) => (
                     <div
                         key={i}
@@ -35,7 +35,7 @@ export default function Services() {
 					before:absolute before:bottom-0 before:left-0 before:h-0 hover:before:h-[51%] before:duration-300 before:w-full before:bg-secondery before:z-[0]
 					`}>
                         <span className=' z-[10]  duration-300 '> {e.icon} </span>
-                        <h4 className=' z-[10] duration-300 max-md:text-[15px] t25 capitalize font-semibold '> {e.label} </h4>
+                        <h4 className=' z-[10] duration-300 max-md:t14  t25  capitalize font-semibold '> {e.label} </h4>
                     </div>
                 ))}
             </div>

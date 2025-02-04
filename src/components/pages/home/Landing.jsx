@@ -26,7 +26,7 @@ export default function Landing({cn}) {
 				<div className={`bg-fixed max-md:scale-y-[-1] max-md:!rounded-none max-md:translate-y-[-600px] bg-cover bg-center bg-[url('/imgs/frame-left.png')] max-md:w-full  w-[544px] h-full absolute rtl:right-0 ltr:left-0  top-0 ltr:rounded-br-[60px] rtl:rounded-bl-[60px] `}></div>
 
 				<div className='pt-[80px] max-sm:px-[10px] max-md:px-[40px] xl:ltr:ml-[100px] xl:rtl:mr-[100px] relative z-[100]  ' >
-					<div className='bg-white rounded-[50px]  grid max-md:grid-cols-1 grid-cols-2 max-lg:gap-[10px] gap-[30px]   '>
+					<div className=' bg-white rounded-[50px]  grid max-md:grid-cols-1 grid-cols-2 max-lg:gap-[10px] gap-[30px]   '>
 
 						<div className=' rtl:pr-[100px] max-lg:!pr-[50px] max-sm:!p-[40px_20px_20px] p-[50px]  flex flex-col items-end gap-7'>
 							<div className='w-full flex flex-col'>
@@ -34,7 +34,7 @@ export default function Landing({cn}) {
 									<span className='text-secondery '> {t("welcome_message")} </span>
 									<span className='text-primary'> {t("welcome_message_brand_name")} 👋 </span>
 								</h2>
-								<p className=" inline-block text-[27px] font-semibold max-md:text-center ">
+								<p className=" inline-block t25 font-semibold max-md:text-center ">
 									<span className='text-secondery '> {t("description")} </span>
 									<span className='text-[#ff9f00]'> {t("description_word")} </span>
 									<span className='text-secondery '> {t("electronics")} </span>
@@ -43,15 +43,15 @@ export default function Landing({cn}) {
 
 							<p className=" text-[#a0a6c0] t17 max-md:text-center  "> {t("solutions")} </p>
 
-							<div className='flex gap-4 w-full max-md:justify-center '>
-								<Button cn={" hover:bg-opacity-80 bg-secondery"} name={t("about_us")} icon={<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">  <path d="M6.03317 1.66669H4.44984C2.62484 1.66669 1.6665 2.62502 1.6665 4.44169V6.02502C1.6665 7.84169 2.62484 8.80002 4.4415 8.80002H6.02484C7.8415 8.80002 8.79984 7.84169 8.79984 6.02502V4.44169C8.80817 2.62502 7.84984 1.66669 6.03317 1.66669Z" fill="white"/>  <path d="M15.5585 1.66669H13.9752C12.1585 1.66669 11.2002 2.62502 11.2002 4.44169V6.02502C11.2002 7.84169 12.1585 8.80002 13.9752 8.80002H15.5585C17.3752 8.80002 18.3335 7.84169 18.3335 6.02502V4.44169C18.3335 2.62502 17.3752 1.66669 15.5585 1.66669Z" fill="white"/>  <path d="M15.5585 11.1917H13.9752C12.1585 11.1917 11.2002 12.15 11.2002 13.9667V15.55C11.2002 17.3667 12.1585 18.325 13.9752 18.325H15.5585C17.3752 18.325 18.3335 17.3667 18.3335 15.55V13.9667C18.3335 12.15 17.3752 11.1917 15.5585 11.1917Z" fill="white"/>  <path d="M6.03317 11.1917H4.44984C2.62484 11.1917 1.6665 12.15 1.6665 13.9667V15.55C1.6665 17.375 2.62484 18.3333 4.4415 18.3333H6.02484C7.8415 18.3333 8.79984 17.375 8.79984 15.5583V13.975C8.80817 12.15 7.84984 11.1917 6.03317 11.1917Z" fill="white"/></svg>} />
-								<Button cn={"bg-primary"} name={t("register_now")} icon={<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none"><path d="M6.50016 1.83331L7.16683 4.24998M4.75016 6.66665L2.3335 5.99998M12.1668 3.41665L10.5002 4.99998M5.50016 9.99998L3.91683 11.6666M8.00016 7.49998L12.1668 17.5L13.6668 13.1666L18.0002 11.6666L8.00016 7.49998Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>} />
+							<div className='flex gap-[10px] w-full max-md:justify-center '>
+								<Button cn={" hover:bg-opacity-80 bg-secondery"} name={t("about_us")} icon={<svg className='max-sm:w-[14px] ' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">  <path d="M6.03317 1.66669H4.44984C2.62484 1.66669 1.6665 2.62502 1.6665 4.44169V6.02502C1.6665 7.84169 2.62484 8.80002 4.4415 8.80002H6.02484C7.8415 8.80002 8.79984 7.84169 8.79984 6.02502V4.44169C8.80817 2.62502 7.84984 1.66669 6.03317 1.66669Z" fill="white"/>  <path d="M15.5585 1.66669H13.9752C12.1585 1.66669 11.2002 2.62502 11.2002 4.44169V6.02502C11.2002 7.84169 12.1585 8.80002 13.9752 8.80002H15.5585C17.3752 8.80002 18.3335 7.84169 18.3335 6.02502V4.44169C18.3335 2.62502 17.3752 1.66669 15.5585 1.66669Z" fill="white"/>  <path d="M15.5585 11.1917H13.9752C12.1585 11.1917 11.2002 12.15 11.2002 13.9667V15.55C11.2002 17.3667 12.1585 18.325 13.9752 18.325H15.5585C17.3752 18.325 18.3335 17.3667 18.3335 15.55V13.9667C18.3335 12.15 17.3752 11.1917 15.5585 11.1917Z" fill="white"/>  <path d="M6.03317 11.1917H4.44984C2.62484 11.1917 1.6665 12.15 1.6665 13.9667V15.55C1.6665 17.375 2.62484 18.3333 4.4415 18.3333H6.02484C7.8415 18.3333 8.79984 17.375 8.79984 15.5583V13.975C8.80817 12.15 7.84984 11.1917 6.03317 11.1917Z" fill="white"/></svg>} />
+								<Button cn={"bg-primary"} name={t("register_now")} icon={<svg className='max-sm:w-[14px] ' xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none"><path d="M6.50016 1.83331L7.16683 4.24998M4.75016 6.66665L2.3335 5.99998M12.1668 3.41665L10.5002 4.99998M5.50016 9.99998L3.91683 11.6666M8.00016 7.49998L12.1668 17.5L13.6668 13.1666L18.0002 11.6666L8.00016 7.49998Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>} />
 							</div>
 						</div>
 
 						<div className='box relative flex  w-full '> 
 							<svg className='absolute w-full h-full  ' xmlns='http://www.w3.org/2000/svg' width='805' height='557' viewBox='0 0 805 557' fill='none'>     <g filter='url(#filter0_f_303_5190)'>         <path d='M480.832 -124.956C648.546 68.9208 645.677 346.182 474.425 494.325C303.172 642.467 28.386 605.393 -139.328 411.516C-307.041 217.64 -304.173 -59.6216 -132.92 -207.764C38.3323 -355.907 313.118 -318.832 480.832 -124.956Z' fill='url(#paint0_linear_303_5190)' fillOpacity='0.24' />         <path d='M480.832 -124.956C648.546 68.9208 645.677 346.182 474.425 494.325C303.172 642.467 28.386 605.393 -139.328 411.516C-307.041 217.64 -304.173 -59.6216 -132.92 -207.764C38.3323 -355.907 313.118 -318.832 480.832 -124.956Z' fill='url(#paint1_linear_303_5190)' fillOpacity='0.24' />     </g>     <defs>         <filter id='filter0_f_303_5190' x='-463.26' y='-498.538' width='1268.02' height='1283.64' filterUnits='userSpaceOnUse' colorInterpolationFilters='sRGB'>             <feFlood floodOpacity='0' result='BackgroundImageFix' />             <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape' />             <feGaussianBlur stdDeviation='100' result='effect1_foregroundBlur_303_5190' />         </filter>         <linearGradient id='paint0_linear_303_5190' x1='736.878' y1='-47.4894' x2='455.855' y2='-304.16' gradientUnits='userSpaceOnUse'>             <stop stopColor='#B4C4EB' />             <stop offset='1' stopColor='white' />         </linearGradient>         <linearGradient id='paint1_linear_303_5190' x1='736.878' y1='-47.4894' x2='455.855' y2='-304.16' gradientUnits='userSpaceOnUse'>             <stop stopColor='#B4C4EB' />             <stop offset='1' stopColor='white' />         </linearGradient>     </defs> </svg>
-							<Image className=' ltr:scale-x-[-1] max-md:mx-auto relatives rtl:mr-auto ltr:ml-auto  z-[10] ' alt='' src={'/imgs/person-hero.png'} width={380} height={440} />
+							<Image className=' max-sm:w-[160px] ltr:scale-x-[-1] max-md:mx-auto relatives rtl:mr-auto ltr:ml-auto  z-[10] ' alt='' src={'/imgs/person-hero.png'} width={380} height={440} />
 						</div>
 					</div>
 				</div>
@@ -75,12 +75,12 @@ export default function Landing({cn}) {
 
 
 
-					<div className="flex justify-end max-lg:justify-center max-md:grid max-md:grid-cols-2 gap-[20px] flex-wrap  w-full ">
+					<div className="flex justify-end max-lg:justify-center max-md:grid max-md:grid-cols-2 max-sm:gap-[7px] gap-[20px] flex-wrap  w-full ">
 						{
 							features.map((feature , i) =>(
-								<div key={i} className="circle  group relative cursor-pointer  border-[#eee] hover:border-[1px] border-dashed hover:border-primary duration-300 hover:shadow-none rounded-[8px] flex flex-col max-md:flex-row max-md:gap-[20px] gap-[10px] justify-center items-center flex-none max-w-[180px] max-md:max-w-full min-h-[100px] md:min-h-[170px]  w-full  " style={{ background: "#FFF", boxShadow: "6px 4px 10px 0px rgba(205, 205, 205, 0.25)" }} >
+								<div key={i} className="circle  group relative cursor-pointer  border-[#eee] hover:border-[1px] border-dashed hover:border-primary duration-300 hover:shadow-none rounded-[8px] flex flex-col max-md:flex-row max-md:gap-[20px] gap-[10px] justify-center items-center max-sm:justify-start px-[10px] flex-none max-w-[180px] max-md:max-w-full  min-h-[60px] md:min-h-[170px]  w-full  " style={{ background: "#FFF", boxShadow: "6px 4px 10px 0px rgba(205, 205, 205, 0.25)" }} >
 									<span> {feature.icon} </span>
-									<h4 className=' group-hover:ltr:translate-x-[10px] group-hover:rtl:translate-x-[-10px] duration-300 text-secondery t20 font-[300] ' >{feature.name}</h4>
+									<h4 className=' group-hover:ltr:translate-x-[10px] group-hover:rtl:translate-x-[-10px] duration-300 text-secondery t20 max-sm:t16 font-[300] ' >{feature.name}</h4>
 									<svg className=' circle-0  duration-500 absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%]  ' width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#F9A51A" strokeDasharray="2 2"/><rect x="2.5" y="2.5" width="35" height="35" rx="17.5" fill="#F9A51A"/><g clipPath="url(#clip0_10_5594)"><path d="M27.0047 20.7014L24.7434 21.9721C24.1158 22.3281 23.6934 22.9519 23.5958 23.6667L23.2555 26.2382C22.9604 28.4456 20.0109 28.9846 18.9656 27.0208L18.422 25.9925C18.3472 25.8532 18.3207 25.6903 18.3477 25.5315L19.926 16.4234C19.9934 16.0504 20.3373 15.7921 20.7105 15.8355L26.1313 16.4386C28.3429 16.6802 28.9411 19.6134 27.0047 20.7014Z" fill="white"/><path d="M18.9667 16.4017L17.9307 22.3666C17.8149 23.037 16.9115 23.1821 16.5941 22.5807L14.5453 18.7458C13.6751 17.1179 14.9834 15.1858 16.818 15.3895L18.3441 15.5614C18.7524 15.6125 19.038 15.9991 18.9667 16.4017Z" fill="white"/></g><defs><clipPath id="clip0_10_5594"><rect width="16" height="16" fill="white" transform="translate(8.89038 22.1386) rotate(-55.8962)"/></clipPath></defs></svg>
 								</div>
 							))
