@@ -39,7 +39,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e5e7eb;
+    background: #09396F;
     border-radius: 10px !important;
 }
 
@@ -53,6 +53,18 @@ html {
 }
 
 
+
+
+.login ::-webkit-scrollbar{
+    width: 8px !important;
+    height: 3px !important;
+    
+}
+
+.login ::-webkit-scrollbar-thumb {
+    background: #09396F;
+    border-radius: 10px !important;
+}
 
 
 .circle:hover .circle-0 { clip-path: circle(100% at 50% 50%) !important ;}

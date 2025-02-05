@@ -30,7 +30,7 @@ export default function Footer() {
 
     return (
         <div className='relative ' > 
-        <div className={`bg-fixed h-[500px] md:w-[50%] md:ltr:translate-x-[220px] md:rtl:translate-x-[-220px] bg-cover bg-center bg-[url('/imgs/frame-left.png')] absolute top-0 ltr:right-0 rtl:left-0 max-md:scale-y-[-1] max-md:!rounded-none max-md:translate-y-[160px]  max-md:w-full rtl:rounded-tr-[60px] ltr:rounded-tl-[60px] `} ></div>
+        <div className={`bg-fixed h-[500px] blur-[1px] md:w-[50%] md:ltr:translate-x-[220px] md:rtl:translate-x-[-220px] bg-cover bg-center bg-[url('/imgs/frame-left.png')] absolute top-0 ltr:right-0 rtl:left-0 max-md:scale-y-[-1] max-md:!rounded-none max-md:translate-y-[160px]  max-md:w-full rtl:rounded-tr-[60px] ltr:rounded-tl-[60px] `} ></div>
             {/* <div className={`max-md:translate-y-[80px] bg-fixed bg-cover bg-center bg-[url('/imgs/frame-right.png')] max-md:w-full max-md:!rounded-none w-[544px] h-full absolute ltr:right-0 rtl:left-0  top-0 rtl:rounded-tr-[60px] ltr:rounded-tl-[60px] `}></div> */}
         <footer className=' container max-md:px-[50px] max-sm:px-[20px] relative min-h-[500px]  flex flex-col justify-center items-center  '>
 

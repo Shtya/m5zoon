@@ -1,5 +1,5 @@
 'use client';
-import { X as Close } from 'lucide-react';
+import { X as Close, Handshake, Headset, House, MapPin, Package } from 'lucide-react';
 import { Link, usePathname } from '@/navigation';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -18,11 +18,11 @@ export default function Navbar() {
     const [isTransparent, setIsTransparent] = useState(true);
 
     const links = [
-        { name: t('home'), value: '/' },
-        { name: t('our_services'), value: '/our-services' },
-        { name: t('success_partners'), value: '/success-partners' },
-        { name: t('our_locations'), value: '/our-locations' },
-        { name: t('contact_us'), value: '/contact-us' },
+        { icon : <House /> , name: t('home'), value: '/' },
+        { icon : <Package /> , name: t('our_services'), value: '/our-services' },
+        { icon : <Handshake /> , name: t('success_partners'), value: '/success-partners' },
+        { icon : <MapPin /> , name: t('our_locations'), value: '/our-locations' },
+        { icon : <Headset /> , name: t('contact_us'), value: '/contact-us' },
     ];
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -81,7 +81,7 @@ export default function Navbar() {
 
     return (
         <div className='z-[1000] relative  '>
-            <nav className={`fixed top-0 left-[50%] translate-x-[-50%] w-full transition-all  duration-300 z-50  ${isTransparent ? 'bg-transparent' : `backdrop-blur-md bg-fixed bg-cover bg-center bg-[#111]/40 shadow-md`}`}>
+            <nav className={`fixed top-0 left-[50%] translate-x-[-50%] w-full transition-all  duration-300 z-50  ${isTransparent ? 'bg-transparent' : `backdrop-blur-md bg-fixed bg-cover bg-center bg-secondery shadow-md`}`}>
                 <div className=' container h-[80px] max-lg:px-[40px] flex justify-between items-center py-3  '>
                     <Link href='/' className='text-2xl font-bold'>
                         <Image className={` ${!isTransparent ? ' ml-0 mr-0 ' : 'xl:ltr:ml-[100px] xl:rtl:mr-[100px]'}  duration-300 max-md:w-[85px]  w-[145px]  object-contain`} width={145} height={45} alt='' src={ isAllowed ?( !isVisible ? "/imgs/logo.png" :  '/imgs/logo.png') : "/imgs/logo2.png" } />
@@ -103,23 +103,23 @@ export default function Navbar() {
                 </div>
             </nav>
 
+            <div className={`fixed top-0 left-0 w-full h-full z-50 bg-black bg-opacity-90 transition-all duration-300 custom-cursor  rtl:scale-x-[-1] backdrop-blur-[5px] ${isMenuOpen ? 'square-100' : 'square-0'}`} onClick={toggleMenu}></div>
 
-
-            <div className={`fixed top-0 left-0 w-full h-full z-50 bg-black bg-opacity-90 transition-all duration-300 cursor-pointer hover:!bg-opacity-[.89] rtl:scale-x-[-1] ${isMenuOpen ? 'square-100' : 'square-0'}`} onClick={toggleMenu}></div>
-
-            <div className={`${isMenuOpen ? 'ltr:left-0 rtl:right-0' : 'ltr:left-[-400px] rtl:right-[-400px]'} fixed top-0 z-[1000] w-full max-w-[350px] h-full p-5 bg-secondery shadow-lg bg-cover bg-center bg-[url('/imgs/frame-left.png')] transition-all duration-300 `}>
+            <div className={`${isMenuOpen ? 'ltr:left-0 rtl:right-0' : 'ltr:left-[-400px] rtl:right-[-400px]'} fixed top-0 z-[1000] w-full max-w-[350px] h-full p-5 shadow-lg bg-cover bg-center bg-secondery/70 backdrop-blur-[10px] transition-all duration-300 `}>
                 <div className='flex py-[20px] items-center justify-between'>
-                    <Link href='/' className='text-2xl font-bold'> <Image className='xl:ltr:ml-[100px] xl:rtl:mr-[100px] max-md:w-[105px] w-[185px] object-contain' width={145} height={45} alt='Logo' src={'/imgs/logo.png'} /> </Link>
-                    <Close className='text-white scale-[1.5] cursor-pointer hover:scale-[1.3] duration-300' onClick={toggleMenu} />
+                    <Link href='/' className='text-2xl font-bold'> <Image className='xl:ltr:ml-[100px] xl:rtl:mr-[100px] max-md:w-[80px] w-[115px] object-contain' width={145} height={45} alt='Logo' src={'/imgs/logo.png'} /> </Link>
+                    <Close className='text-white scale-[1.2] cursor-pointer hover:scale-[1.3] duration-300' onClick={toggleMenu} />
                 </div>
-                <hr className='w-[90%] mx-auto border-t-primary border-t-[1px] my-[20px] opacity-70' />
-                <ul className='flex  flex-col gap-5 pt-[20px]  '>
+                <hr className='w-[90%] mx-auto border-t-white border-t-[1px] my-[20px] opacity-30' />
+                <ul className='flex  flex-col gap-[10px] pt-[10px]  '>
                     {links.map(link => (
-                        <Link key={link.value} href={link.value} onClick={toggleMenu} className={`rtl:mr-[20px] ltr:ml-[20px] hover:text-primary duration-300 t25 capitalize !font-[500] ${pathname === link.value ? 'text-primary' : 'text-white'}`}>
+                        <Link key={link.value} href={link.value} onClick={toggleMenu} className={` px-[15px] py-[10px] rounded-[5px] flex items-center gap-[10px] rtl:mr-[20px] ltr:ml-[20px] hover:bg-primary duration-300 t20 capitalize !font-[500] text-white ${pathname === link.value ? 'bg-primary  ' : ''}`}>
+                            {link.icon}
                             {link.name}
                         </Link>
                     ))}
-                    <Button icon={<ArrowRight  />} cn={'mt-[50px] absolute bottom-[20px] !shadow-none hover:!bg-opacity-80 hover:!bg-primary !w-[310px]'} name={t('login')} href='/login' />
+                    <Translate cnParent={"rtl:flex-row-reverse !gap-[10px] !justify-end px-[30px] "} cn={"text-white stroke-white   "} />
+                    <Button icon={<ArrowRight  />} cn={'mt-[50px] absolute bottom-[20px] left-[20px] !shadow-none hover:!bg-opacity-80 hover:!bg-primary '} name={t('login')} href='/login' />
                 </ul>
             </div>
 

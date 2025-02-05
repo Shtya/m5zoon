@@ -22,10 +22,10 @@ export default function Landing({cn}) {
 	{/* <div className={`bg-fixed max-md:scale-y-[-1] max-md:!rounded-none max-md:translate-y-[-600px] bg-cover bg-center bg-[url('/imgs/frame-left.png')] max-md:w-full  w-[500px] h-full absolute rtl:right-0 ltr:left-0  top-0 ltr:rounded-br-[60px] rtl:rounded-bl-[60px] `}></div> */}
 
   return (
-	<div className={` p-0 m-0 md:!min-h-fit ff md:h-screen `}>
+	<div className={` p-0 m-0 md:!min-h-fit relative md:h-screen `}>
 		
-		<div className=' pt-[120px]   container md:min-h-fit ff md:h-screen  relative flex-col flex justify-evenly  '>
 		<div  className={`bg-fixed min-h-full ff md:h-screen md:w-[50%] md:rtl:translate-x-[220px] md:ltr:translate-x-[-220px] bg-cover bg-center bg-[url('/imgs/frame-left.png')] absolute top-0 rtl:right-0 ltr:left-0 max-md:scale-y-[-1] max-md:!rounded-none max-md:!translate-y-[-50%]  max-md:w-full ltr:rounded-br-[60px] rtl:rounded-bl-[60px] `} ></div>
+		<div className=' pt-[120px]   container md:min-h-fit ff md:h-screen  relative flex-col flex justify-evenly  '>
 		
 			<div data-aos="fade-up" className=' rounded-[50px_50px_0_0] overflow-hidden  xl:ltr:ml-[100px] xl:rtl:mr-[100px] relative z-[100]   ' >
 				<div className=' overflow-hidden bg-white rounded-[50px] grid max-md:grid-cols-1 max-xl:grid-cols-[1fr,auto] grid-cols-2 max-lg:gap-[10px] gap-[30px]  items-center  '>

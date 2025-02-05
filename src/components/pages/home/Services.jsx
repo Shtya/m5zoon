@@ -37,8 +37,8 @@ export default function Services() {
                 {servciesData?.map((e, i) => (
                     <div
                         key={i}
-                        className={` hover:bg-secondery duration-300 group relative group min-h-[118px] max-md:min-h-[80px] cursor-pointer hover:text-white text-secondery2 max-sm:px-[10px] px-[30px] bg-white rounded-[10px] overflow-hidden shadow-[0px_10px_20px_0px_rgba(215,215,215,0.25)] max-md:gap-[10px] gap-[18px] items-center max-md:justify-start inline-flex `}>
-                        <span className=' z-[10]  duration-300 '> {e.icon} </span>
+                        className={` hover:bg-secondery  duration-300 group relative group min-h-[118px] max-md:min-h-[80px] cursor-pointer hover:text-white text-secondery2 max-sm:px-[10px] px-[30px] bg-white rounded-[10px] overflow-hidden shadow-[0px_10px_20px_0px_rgba(215,215,215,0.25)] max-md:gap-[10px] gap-[18px] items-center max-md:justify-start inline-flex `}>
+                        <span className=' group-hover:scale-[1.4] ltr:group-hover:mr-[10px] rtl:group-hover:ml-[20px] z-[10]  duration-300 '> {e.icon} </span>
                         <h4 className=' z-[10] duration-300 max-md:t14  t20 group-hover:text-white  text-[#09396f] capitalize font-normal '> {e.label} </h4>
                     </div>
                 ))}
