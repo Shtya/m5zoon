@@ -62,12 +62,15 @@ export default function page() {
     return (
         <div>
             <div className='max-md:!w-[100%]  max-md:mx-auto  max-md:!right-[unset] max-md:left-0 absolute h-[100vh]  duration-300 w-[50%] top-0 ltr:left-0  rtl:right-0 z-[1000]   '>
-				<div className='max-md:!max-w-full bg-opacity-[.95] backdrop-blur-2xl bg-white rtl:mr-auto ltr:ml-auto max-w-[700px] w-full relative max-lg:p-[20px]  p-[50px]  h-[100vh]  overflow-auto ' >
+				<div className='max-md:!max-w-full  bg-opacity-[.95] backdrop-blur-2xl bg-white rtl:mr-auto ltr:ml-auto max-w-[700px] w-full relative max-lg:p-[20px]  p-[50px]  h-[100vh]  overflow-auto ' >
 					
-					<div className=" mt-[-20px] max-lg:!mt-0 mb-[90px] flex justify-between items-center">
+					<div className=" mt-[-20px] max-lg:!mt-0 flex justify-between items-center">
 						<Translate />
 						<Link href={"/"} > <Image src={"/imgs/logo2.png"} alt="" width={120} height={40}  /> </Link>
 					</div>
+
+                    <div className='pt-[40px]  flex flex-col  justify-start h-full' >
+
 
 
 					<Title cn={' !text-right ltr:!text-left text-[#09396f] text-4xl font-medium'} title={t('welcome')} title2={t('m5zoon')} />
@@ -91,13 +94,13 @@ export default function page() {
 					<SelectBox  cnBtn={"!max-w-[110px]"} label={t("years_of_experience")} watch={watch} setValue={setValue} KEY='YearsOfExperience' cn='mt-[40px]' data={YearsOfExperience} /> 
 					<SelectBox   label={t("average_orders")} watch={watch} setValue={setValue} KEY='average_orders' cn='mt-[40px]' data={average_orders} /> 
 
-					<Checkbox KEY={"terms"} setValue={setValue} watch={watch}  label={termsLabel} />
+					<Checkbox KEY={"terms"} cn={"mt-[40px]"} setValue={setValue} watch={watch}  label={termsLabel} />
 
-					<Button name={t("create_account")} cn={"  !max-w-[670px] !w-full mx-auto !my-[50px] hover:bg-opacity-90  bg-secondery "} />
+					<Button name={t("create_account")} cn={"  !max-w-[670px] !w-full mx-auto !my-[40px] hover:bg-opacity-90  bg-secondery "} />
 
-					<p className='text-center text-[#09396f] text-2xl font-normal'>  {t("already_have_account")} <Link className='text-[#f9a51a]'  href={"/login"} > {t("login")} </Link>  </p>
+					<p className=' pb-[30px] text-center text-[#09396f] text-2xl font-normal'>  {t("already_have_account")} <Link className='text-[#f9a51a]'  href={"/login"} > {t("login")} </Link>  </p>
 				
-
+                    </div>
 				</div>
             </div>
 

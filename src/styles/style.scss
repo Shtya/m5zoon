@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Cairo:200,300,regular,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Almarai:300,regular,700,800);
+@import url(https://fonts.googleapis.com/css?family=Cantata+One:regular);
 
 
 @font-face {
@@ -14,6 +15,7 @@
 
 .almarai {
   font-family: "Almarai" !important;
+  
 }
 
 * {
@@ -24,7 +26,8 @@
 
 
 [dir="ltr"] *  {
-  font-family: 'Inter', sans-serif;
+  // font-family: 'Inter', sans-serif;
+  font-family: "Cantata One", serif !important ;
 }
 
 
