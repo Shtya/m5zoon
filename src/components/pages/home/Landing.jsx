@@ -69,7 +69,7 @@ export default function Landing({cn}) {
 								<span className='group' > {contact.icon} </span>
 								<div className="flex flex-col "> 
 									<h4 className='t20 font-[400] ' >{contact.title}</h4>
-									<h4 className={`t14 font-[200] ${contact.key == "email" && " underline "} `} >{contact.desc}</h4>
+									<h4 onClick={()=> contact.key == "email" && (window.location.href = `mailto:${contact.desc}`) } className={`t14 font-[200] ${contact.key == "email" && " underline cursor-pointer "} `} >{contact.desc}</h4>
 								</div>
 							</div>
 						))

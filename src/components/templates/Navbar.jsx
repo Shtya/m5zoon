@@ -1,5 +1,5 @@
 'use client';
-import { X as Close, Handshake, Headset, House, MapPin, Package } from 'lucide-react';
+import { X as Close, Handshake, Headset, House, Info, MapPin, Package } from 'lucide-react';
 import { Link, usePathname } from '@/navigation';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -19,9 +19,10 @@ export default function Navbar() {
 
     const links = [
         { icon : <House /> , name: t('home'), value: '/' },
-        { icon : <Package /> , name: t('our_services'), value: '/our-services' },
-        { icon : <Handshake /> , name: t('success_partners'), value: '/success-partners' },
-        { icon : <MapPin /> , name: t('our_locations'), value: '/our-locations' },
+        { icon : <Package /> , name: t('our_services'), value: '/#our-services' },
+        // { icon : <Handshake /> , name: t('success_partners'), value: '/#success-partners' },
+        { icon : <MapPin /> , name: t('our_locations'), value: '/#our-locations' },
+        { icon : <Info /> , name: t('about_us'), value: '/about-us' },
         { icon : <Headset /> , name: t('contact_us'), value: '/contact-us' },
     ];
 
@@ -35,9 +36,9 @@ export default function Navbar() {
         }
     };
 
+
     const handleScroll = () => {
         const currentScrollY = window.scrollY;
-
         if (currentScrollY > lastScrollY && currentScrollY > 50) {
             setIsVisible(false); // Hide navbar on scroll down
         } else {
@@ -68,9 +69,15 @@ export default function Navbar() {
         };
     }, []);
 
-
+    const [navIsWhite , setNavIsWhite] = useState(false)
     const [isAllowed, setisAllowed] = useState(true)
     useEffect(() => {
+        if(["/contact-us" , "/about-us" ].includes(pathname)){
+            setNavIsWhite(true)
+        }
+        else setNavIsWhite(false)
+
+
         if( ["/sign-up"].includes(pathname) ){
             setisAllowed(false)
         }
@@ -90,16 +97,16 @@ export default function Navbar() {
                     <ul className='hidden min-[1200px]:flex gap-[50px] items-center'>
                         <div className='flex gap-[28px] items-center '>
                             {links.map(link => (
-                                <Link key={link.value} href={link.value} className={` text-lg font-normal ${pathname === link.value ? 'text-primary' : `${isTransparent ? 'text-[#57677A] ' : 'text-white'}`}`}>
+                                <Link key={link.value} href={link.value} className={` text-lg font-normal relative after:absolute after:left-0 after:bottom-[-10px] after:duration-300 after:h-[2px] after:bg-primary after:w-[0px] ${pathname === link.value ? 'text-primary after:!w-full ' : `${ navIsWhite ? "text-white" : (isTransparent ? 'text-[#57677A] ' : 'text-white')}`}`}>
                                     {link.name}
                                 </Link>
                             ))}
-                            <Translate cn={`${isTransparent ? 'text-[#57677A] ' : 'text-white stroke-white '}`} />
+                            <Translate cn={`${ navIsWhite ? "text-white stroke-white" : isTransparent ? 'text-[#57677A] ' : 'text-white stroke-white ' }`} />
                         </div>
-                        <Button  shadow={isTransparent ? true : false } icon={<ArrowRight  />} name={t('login')} href='/login' />
+                        <Button cn={"hover:!bg-primary hover:bg-opacity-80  "}  shadow={false } icon={<ArrowRight  />} name={t('login')} href='/login' />
                     </ul>
 
-                    <X cnPath={`stroke-black group-hover:stroke-primary duration-300 max-md:stroke-white ${isTransparent ? "stroke-black" : "stroke-white" } `} cn={' group min-[1200px]:hidden w-[24px] h-[24px] flex items-center cursor-pointer'} onClick={toggleMenu} />
+                    <X cnPath={`stroke-black group-hover:stroke-primary duration-300 max-md:stroke-white ${ navIsWhite ? "!stroke-white" : "stroke-black" } ${isTransparent ? "stroke-black" : "stroke-white" } `} cn={' group min-[1200px]:hidden w-[24px] h-[24px] flex items-center cursor-pointer'} onClick={toggleMenu} />
                 </div>
             </nav>
 
@@ -118,7 +125,7 @@ export default function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <Translate cnParent={"rtl:flex-row-reverse !gap-[10px] !justify-end px-[30px] "} cn={"text-white stroke-white   "} />
+                    <Translate cnParent={"flex-row-reverse !gap-[10px] !justify-end px-[30px] "} cn={"text-white stroke-white   "} />
                     <Button icon={<ArrowRight  />} cn={'mt-[50px] absolute bottom-[20px] left-[20px] !shadow-none hover:!bg-opacity-80 hover:!bg-primary '} name={t('login')} href='/login' />
                 </ul>
             </div>

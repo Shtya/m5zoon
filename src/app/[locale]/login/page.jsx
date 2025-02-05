@@ -71,9 +71,9 @@ export default function page() {
                 </div>
             </div>
 
-            <div>
+            <div className='h-screen' >
                 <div className='bg-black/20 max-md:w-[100%]  max-md:!right-[unset] max-md:left-0 absolute h-full duration-300  w-[50%] ltr:right-0 rtl:right-[50%] top-0  z-[10] '> </div>
-                <Image className=' bg-[#083565] object-left-bottom object-contain max-md:w-[100%]  max-md:!right-[unset] max-md:left-0 absolute h-full duration-300  w-[50%] ltr:right-0 rtl:right-[50%] top-0  ' src={'/imgs/sign-up.png'} alt='' width={600} height={900} />
+                <Image className=' bg-[#083565] object-right-center object-cover max-md:w-[100%]  max-md:!right-[unset] max-md:left-0 absolute h-full duration-300  w-[50%] ltr:right-0 rtl:right-[50%] top-0  ' src={'/imgs/sign-up.png'} alt='' width={600} height={900} />
             </div>
         </div>
     );

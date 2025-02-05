@@ -27,7 +27,7 @@ export default function Services() {
         { label:  t('visa_for_ads')                    , icon: <SVG8 /> },
     ];
     return (
-        <div className='bg-[#fbfcff] ' >
+        <div className='bg-[#fbfcff] ' id='our-services' >
             <div className='container py-[30px] my-[40px] '>
             <Title cn='text-center' title={  t('our_premium_services')} title2={  t('less_effort')} />
 

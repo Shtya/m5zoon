@@ -205,6 +205,54 @@
         "login": "تسجيل الدخول",
         "join_us_now": "انضم إلينا الآن",
         "no_account": "ليس لديك حساب؟"
-    }
+    },
+
+    "contact-us" : {
+        "full_name": "اسمك بالكامل ",
+        "placeholder_text": "(يرايتخا)",
+        "input_field_description": "نص بديل لوصف حقل الإدخال",
+        "currency_symbol": "ر.س",
+        "email": "البريد الإلكتروني ",
+        "whatsapp_contact": "تواصل عبر الواتساب",
+        "contact_us": "تواصل معانا",
+        "visit_us_now": "زورونا الآن",
+        "phone_code": "كود البلد ",
+        "phone_number": "رقم الجوال ",
+        "message_content": "محتوى الرسالة",
+        "message_text": "نص الرسالة",
+        "our_location": "موقعنا",
+        "email_address": "البريد الإلكتروني",
+        "dubai_uae": "دبي - الإمارات المتحدة",
+        "company_email": "info@m5zoon.com",
+        "send_button": "إرسال",
+        "contact_us_button": "تواصل معانا",
+        "facebook_url": "https://facebook.com/",
+        "sample_phone_number": "+20175345757",
+        "sample_country_code": "+966"
+      },
+
+      
+        "about-us": {
+          "title": "تعرف علينا",
+          "numbers_and_statistics": "الأرقام و ",
+          "statics" : "الإحصائيات",
+          "about_platform": "عن منصة ",
+          "m5zoon" : "مخزون",
+          "success_message": "مخزون مكانك لتحقيق نجاحات في ",
+          "eccomerce" : "التجارة الالكترونية!",
+          "platform_description": "منصة متكاملة للتجارة الإلكترونية والدروب شيبنج، تهدف إلى تقديم حلول مبتكرة وسهلة للمتسوقين وأصحاب المشاريع في منطقة الشرق الأوسط. تأسست مخزون بهدف تسهيل عملية بيع المنتجات أونلاين من خلال توفير منتجات مميزة، وتوفير خدمات لوجستية متميزة، بالإضافة إلى دعم شامل لرواد الأعمال وأصحاب المتاجر الإلكترونية.",
+          "subscribe_now": "اشترك الآن",
+          "why_choose_us": "ليه تختار منصة ",
+          "m5zoon2" : "مخزون؟!",
+          "technical_support": "دعم فني على مدار الساعة",
+          "trust_and_security": "الثقة و الأمان",
+          "attention_to_detail": "الاهتمام بكل تفصيلة",
+          "technical_support_description": "دعم فني مبتكر، دائمًا إلى جانبك لضمان سير عملك بسلاسة وكفاءة، فنحن هنا لنجعل كل تحدي تقني فرصة للنجاح.",
+          "financial_security_description": "نقدّم لك تجربة مالية آمنة، حيث نضمن لك منتجات فائقة الجودة ومتابعة مستمرة لحساباتك، لضمان زيادة أرباحك.",
+          "comprehensive_services": "نقدم لك جميع الخدمات المتعلقة بالتجارة الإلكترونية، من إدارة المنتجات إلى متابعة العملاء لضمان نجاح تجارتك."
+        }
+      
+      
+      
       
 }

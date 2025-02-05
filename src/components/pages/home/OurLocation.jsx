@@ -15,7 +15,7 @@ export default function OurLocation() {
 
 
   return (
-	<div className='container py-[30px] my-[40px] ' >
+	<div className='container py-[30px] my-[40px] ' id='our-locations' >
 				<Title cn={'text-center'} title={t('partners_message')} title2={t('sucees')} />
 			
 				<div className='mt-[50px] px-[40px] flex flex-wrap justify-between items-center max-md:justify-center  gap-[10px] ' >

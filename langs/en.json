@@ -196,8 +196,6 @@
         "login": "Login",
         "already_have_account": "Already have an account?",
 
-
-
         "welcome_back": "Welcome ",
         "back": "back?!",
         "enter_your_details": "Enter your account details and continue your business now",
@@ -207,6 +205,49 @@
         "remember_me": "Remember me",
         "join_us_now": "Join us now",
         "no_account": "Don't have an account?"
-    }
+    },
 
+    "contact-us": {
+        "full_name": "Your Full Name",
+        "placeholder_text": "(Placeholder)",
+        "input_field_description": "Alternative text for input field",
+        "currency_symbol": "SAR",
+        "email": "Email",
+        "whatsapp_contact": "Contact via WhatsApp",
+        "contact_us": "Contact Us",
+        "visit_us_now": "Visit Us Now",
+        "phone_code": "Country Code",
+        "phone_number": "Mobile Number",
+        "message_content": "Message Content",
+        "message_text": "Message Text",
+        "our_location": "Our Location",
+        "email_address": "Email Address",
+        "dubai_uae": "Dubai - United Arab Emirates",
+        "company_email": "info@m5zoon.com",
+        "send_button": "Send",
+        "contact_us_button": "Get in Touch",
+        "facebook_url": "https://facebook.com/",
+        "sample_phone_number": "+20175345757",
+        "sample_country_code": "+966"
+    },
+
+    "about-us": {
+        "title": "Get to Know Us",
+        "numbers_and_statistics": "Numbers &",
+        "statics": "Statistics",
+        "about_platform": "About",
+        "m5zoon": "Makhzon Platform",
+        "success_message": "Makhzon is your place to achieve success in",
+        "eccomerce": "E-commerce!",
+        "platform_description": "A comprehensive e-commerce and dropshipping platform designed to provide innovative and easy solutions for shoppers and business owners in the Middle East. Makhzon was founded to simplify the process of selling products online by offering unique products, outstanding logistics services, and full support for entrepreneurs and online store owners.",
+        "subscribe_now": "Subscribe Now",
+        "why_choose_us": "Why Choose",
+        "m5zoon2": "Makhzon?!",
+        "technical_support": "24/7 Technical Support",
+        "trust_and_security": "Trust & Security",
+        "attention_to_detail": "Attention to Every Detail",
+        "technical_support_description": "Innovative technical support, always by your side to ensure your business runs smoothly and efficiently. We turn every technical challenge into an opportunity for success.",
+        "financial_security_description": "We offer you a secure financial experience, ensuring high-quality products and continuous account monitoring to maximize your profits.",
+        "comprehensive_services": "We provide all services related to e-commerce, from product management to customer follow-up, ensuring your business success."
+    }
 }

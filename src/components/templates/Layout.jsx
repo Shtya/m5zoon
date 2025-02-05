@@ -13,7 +13,7 @@ export default function Layout({children}) {
             offset: 0,
             duration: 1000,
             easing: 'ease-in-out',
-            once: false // true,
+            once: true // true,
         });
     }, []);
 
@@ -33,7 +33,7 @@ export default function Layout({children}) {
   return (
 	<div className=' main  relative' >
 		{isAllowed && <Navbar />}
-		<main className='min-h-screen' > {children} </main>
+		<main className='min-h-[50vh]' > {children} </main>
 		{isAllowed && <Footer />}
 	</div>
   )

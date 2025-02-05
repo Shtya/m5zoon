@@ -3,7 +3,7 @@ import React from 'react'
 import CountUp from 'react-countup';
 
 
-export default function Feature() {
+export default function Feature({title , cn}) {
 	const t = useTranslations()
 
 	const cards = [
@@ -37,18 +37,21 @@ export default function Feature() {
 	  
 
   return (
-	<div className=' max-md:hidden container grid grid-cols-4 max-xl:grid-cols-2 py-[40px] gap-[20px] my-[40px] ' >
-		
-		{cards.map((card, index) => (
-            <div key={index} className='min-h-[118px] cursor-default px-[30px] bg-white rounded-[10px] shadow-[0px_10px_20px_0px_rgba(215,215,215,0.25)] justify-between items-center inline-flex' > 
-				<div>
-					<h4  className='text-secondery2 t25 capitalize font-semibold rtl:text-right  ' style={{direction : "ltr"}} > + <CountUp  start={0}  end={Number(card.count)}  duration={2}  suffix="k"  enableScrollSpy scrollSpyOnce /></h4>
-					<span className='text-secondery2 rtl:t20 ltr:t16 capitalize font-normal almarai' > {card.label} </span>
+	<div className={cn} >
+		{title}
+		<div className={`${title ? "" : "max-md:hidden"} container grid grid-cols-4 max-xl:grid-cols-2 py-[40px] gap-[20px] my-[40px]`} >
+			
+			{cards.map((card, index) => (
+				<div key={index} className='min-h-[118px] cursor-default px-[30px] !bg-white rounded-[10px] justify-between items-center inline-flex' style={{boxShadow : "0px 10px 60px 0px #262D7614"}} > 
+					<div>
+						<h4  className='text-secondery2 t25 capitalize font-semibold rtl:text-right  ' style={{direction : "ltr"}} > + <CountUp  start={0}  end={Number(card.count)}  duration={2}  suffix="k"  enableScrollSpy scrollSpyOnce /></h4>
+						<span className='text-secondery2 rtl:t20 ltr:t16 capitalize font-normal almarai' > {card.label} </span>
+					</div>
+					<div> {card.icon} </div>
 				</div>
-				<div> {card.icon} </div>
-			</div>
-        ))}
+			))}
 
+		</div>
 	</div>
   )
 }

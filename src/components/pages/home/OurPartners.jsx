@@ -17,7 +17,7 @@ export default function OurPartners() {
 	]
 
     return (
-		<div className='bg-[#fbfcff] ' >
+		<div className='bg-[#fbfcff] ' id='success-partners' >
 
         <div className=' container py-[30px] my-[40px] ' >
             <Title cn={'text-center'} title={t('partners_message')} title2={t('sucees')} />
