@@ -26,15 +26,10 @@ export default function Navbar() {
     ];
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isAnimating, setIsAnimating] = useState(false);
 
     const toggleMenu = () => {
         if (isMenuOpen) {
-            setIsAnimating(true);
-            setTimeout(() => {
-                setIsMenuOpen(false);
-                setIsAnimating(false);
-            }, 300); // Match duration-300
+            setIsMenuOpen(false);
         } else {
             setIsMenuOpen(true);
         }
@@ -50,7 +45,7 @@ export default function Navbar() {
         }
 
         // Check if the user has scrolled past the hero section (e.g., 100px)
-        setIsTransparent(currentScrollY <= 100);
+        setIsTransparent(currentScrollY <= 10);
 
         setLastScrollY(currentScrollY);
     };
@@ -73,12 +68,23 @@ export default function Navbar() {
         };
     }, []);
 
+
+    const [isAllowed, setisAllowed] = useState(true)
+    useEffect(() => {
+        if( ["/sign-up"].includes(pathname) ){
+            setisAllowed(false)
+        }
+        else{
+            setisAllowed(true)
+        }
+    },[pathname])
+
     return (
         <div className='z-[1000] relative  '>
-            <nav className={`fixed  top-0 left-[50%] translate-x-[-50%] w-full transition-all  duration-300 z-50 ${isVisible ? 'translate-y-0' : '-translate-y-[160px]'} ${isTransparent ? 'bg-transparent' : `bg-fixed bg-cover bg-center bg-[url('/imgs/frame-left.png')] shadow-md`}`}>
+            <nav className={`fixed top-0 left-[50%] translate-x-[-50%] w-full transition-all  duration-300 z-50  ${isTransparent ? 'bg-transparent' : `backdrop-blur-md bg-fixed bg-cover bg-center bg-[#111]/40 shadow-md`}`}>
                 <div className=' container h-[80px] max-lg:px-[40px] flex justify-between items-center py-3  '>
                     <Link href='/' className='text-2xl font-bold'>
-                        <Image className={` ${!isTransparent ? ' ml-0 mr-0 ' : 'xl:ltr:ml-[100px] xl:rtl:mr-[100px]'}  duration-300 max-md:w-[85px]  w-[145px]  object-contain`} width={145} height={45} alt='' src={'/imgs/logo.png'} />
+                        <Image className={` ${!isTransparent ? ' ml-0 mr-0 ' : 'xl:ltr:ml-[100px] xl:rtl:mr-[100px]'}  duration-300 max-md:w-[85px]  w-[145px]  object-contain`} width={145} height={45} alt='' src={ isAllowed ?( !isVisible ? "/imgs/logo.png" :  '/imgs/logo.png') : "/imgs/logo2.png" } />
                     </Link>
 
                     <ul className='hidden min-[1200px]:flex gap-[50px] items-center'>
@@ -90,7 +96,7 @@ export default function Navbar() {
                             ))}
                             <Translate cn={`${isTransparent ? 'text-[#57677A] ' : 'text-white stroke-white '}`} />
                         </div>
-                        <Button  shadow={isTransparent ? true : false } icon={<ArrowRight />} name={t('login')} href='/login' />
+                        <Button  shadow={isTransparent ? true : false } icon={<ArrowRight  />} name={t('login')} href='/login' />
                     </ul>
 
                     <X cnPath={`stroke-black group-hover:stroke-primary duration-300 max-md:stroke-white ${isTransparent ? "stroke-black" : "stroke-white" } `} cn={' group min-[1200px]:hidden w-[24px] h-[24px] flex items-center cursor-pointer'} onClick={toggleMenu} />
@@ -113,7 +119,7 @@ export default function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <Button cn={'mt-[50px] absolute bottom-[20px] !shadow-none hover:!bg-opacity-80 hover:!bg-primary !w-[310px]'} name={t('login')} href='/login' />
+                    <Button icon={<ArrowRight  />} cn={'mt-[50px] absolute bottom-[20px] !shadow-none hover:!bg-opacity-80 hover:!bg-primary !w-[310px]'} name={t('login')} href='/login' />
                 </ul>
             </div>
 

@@ -47,16 +47,16 @@ export default function Testimonials({cn}) {
     ];
 
     return (
-        <div className={`container py-[30px] my-[40px] review ${cn} `}>
+        <div className={`container max-w-[1600px] py-[30px] my-[40px] review ${cn} `}>
             <Title cn={'text-center'} title={t('customer_reviews')} title2={t('M5zoon')} />
 
             <Swiper {...config} dir={'rtl'}>
                 {testimonials.slice(0, 4).map((t, i) => (
                     <SwiperSlide className='pt-[20px] pb-[10px] ' key={i} dir={locale == "en" ? "ltr" : 'rtl'} >
                         <div className='bg-white shadow-md rounded-md p-6 h-full flex flex-col'>
-                            <div className='flex  mb-[10px] items-center justify-between gap-[10px]'>
-                                <div className='flex  items-center gap-[10px] '>
-                                    <Image className=' w-[40px] h-[40px] rounded-[50%] overflow-hidden ' src={t.img} alt={t.name} width={40} height={40} />
+                            <div className='flex  mb-[10px] justify-between items-center gap-[10px]'>
+                                <div className='flex flex-none items-center gap-[10px] '>
+                                    <Image className=' flex-none !w-[40px] !h-[40px] rounded-[50%] overflow-hidden ' src={t.img} alt={t.name} width={40} height={40} />
                                     <div>
                                         <p className='mb-1 text-[#1e1f4b] t13 font-medium  '>{t.name}</p>
                                         <p className=' text-[#a0a7c0] t11 font-normal   '>{t.title}</p>

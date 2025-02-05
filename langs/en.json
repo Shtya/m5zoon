@@ -57,12 +57,14 @@
 
     "our_premium_services": "Our premium services are now available on one platform to support your business growth and achieve success ",
     "less_effort": "with minimal effort.",
-    "payment_collection_transfer": "Payment Collection & Transfers",
-    "storage_packaging_fulfillment": "Storage, Packaging & Fulfillment",
-    "product_funding_ads": "Product Funding & Advertising",
-    "direct_customer_communication": "Direct Customer Communication",
-    "product_sourcing_shipping": "Product Sourcing, Import & Shipping",
-    "order_tracking_confirmation": "Order Tracking & Confirmation",
+    "payment_collection": "Payment collection and transfer",
+    "storage_packaging": "Storage, packaging, and filling",
+    "product_and_advertising_finance": "Product and advertising financing",
+    "direct_customer_communication": "Direct communication with customers",
+    "customs_clearance": "Customs clearance",
+    "order_followup": "Order follow-up and confirmation",
+    "ads_and_product_finance": "Advertising and product financing",
+    "visa_for_ads": "Visa for paying your ads",
 
     "customer_reviews": "Our Customers' Reviews After Using",
     "M5zoon": "M5zoon",
@@ -159,5 +161,52 @@
         "customer_service": "Customer Service",
         "customs_clearance": "Customs Clearance",
         "shipping_delivery": "Shipping & Delivery"
+    },
+
+    "sign-up": {
+        "welcome": "Welcome to ",
+        "m5zoon": "M5zoon?!",
+        "enter_account_details": "Enter your account details and start managing your business now",
+        "fulfillment": "Fulfillment",
+        "supplier": "Supplier",
+        "marketer": "Marketer",
+        "last_name_required": "Last Name",
+        "first_name_required": "First Name",
+        "last_name": "Last Name",
+        "first_name": "First Name",
+        "phone_number_required": "Phone Number",
+        "email_required": "Email",
+        "enter_phone_number": "Enter phone number",
+        "enter_email": "Enter email",
+        "confirm_password_required": "Confirm Password",
+        "password_required": "Password",
+        "enter_password": "Enter password",
+        "do_you_have_ecommerce_experience": "Do you have experience in eCommerce?",
+        "no": "No",
+        "yes": "Yes",
+        "years_of_experience": "Years of experience",
+        "no_experience": "No experience",
+        "more_than_7_years": "More than 7 years",
+        "average_orders": "What is your average number of orders?",
+        "terms_agreement": "By signing up, you agree to",
+        "terms_and_conditions": "Terms & Conditions",
+        "and": "and",
+        "privacy_policy": "Privacy Policy",
+        "create_account": "Create Account",
+        "login": "Login",
+        "already_have_account": "Already have an account?!",
+
+
+
+        "welcome_back": "Welcome ",
+        "back": "back?!",
+        "enter_your_details": "Enter your account details and continue your business now",
+        "email": "Email",
+        "password": "Password",
+        "forgot_password": "Forgot your password?",
+        "remember_me": "Remember me",
+        "join_us_now": "Join us now",
+        "no_account": "Don't have an account?"
     }
+
 }

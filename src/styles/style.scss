@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Cairo:200,300,regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Almarai:300,regular,700,800);
+
 
 @font-face {
   font-family: 'Norsal';
@@ -9,6 +11,10 @@
 }
 
 
+
+.almarai {
+  font-family: "Almarai" !important;
+}
 
 * {
   box-sizing: border-box;
@@ -47,7 +53,7 @@ a {
 }
 
 body {
-  background-color: #fbfcff;
+  background-color: #fff;
   overflow-x: hidden;  
 }
 

@@ -7,8 +7,8 @@ export default function Landing({cn}) {
 	const t = useTranslations()
 
 	const contacts = [
-		{ key:"email" ,  title:t("contact_us") , desc : t("email") , icon:<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#F9A51A" strokeDasharray="2 2"/><rect x="5" y="5" width="40" height="40" rx="20" fill="#F9A51A"/><path d="M35 18.75V31.25C35 31.9594 34.4594 32.5 33.75 32.5H32.5V21.1556L25 26.5431L17.5 21.1556V32.5H16.25C15.5406 32.5 15 31.9594 15 31.25V18.75C15 18.395 15.1338 18.0825 15.3581 17.8612C15.4749 17.7442 15.6141 17.6519 15.7673 17.5899C15.9205 17.5278 16.0847 17.4972 16.25 17.5H16.6669L25 23.5419L33.3331 17.5H33.75C34.105 17.5 34.4175 17.6337 34.6419 17.8612C34.8662 18.0825 35 18.395 35 18.75Z" fill="white"/></svg> },
-		{ key:"location" , title:t("headquarters") , desc : t("location") , icon:<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="white" strokeDasharray="2 2"/><rect x="5" y="5" width="40" height="40" rx="20" fill="white"/><path d="M24.9999 26.1916C26.4358 26.1916 27.5999 25.0276 27.5999 23.5916C27.5999 22.1557 26.4358 20.9916 24.9999 20.9916C23.564 20.9916 22.3999 22.1557 22.3999 23.5916C22.3999 25.0276 23.564 26.1916 24.9999 26.1916Z" stroke="#F9A51A" strokeWidth="1.5"/><path d="M18.0167 22.075C19.6584 14.8584 30.3501 14.8667 31.9834 22.0834C32.9417 26.3167 30.3084 29.9 28.0001 32.1167C26.3251 33.7334 23.6751 33.7334 21.9917 32.1167C19.6918 29.9 17.0584 26.3084 18.0167 22.075Z" stroke="#F9A51A" strokeWidth="1.5"/></svg> },
+		{ key:"email"    ,  title:t("contact_us") , desc : t("email") , icon:<svg className='svg'  width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect className='group-hover:stroke-primary stoke-white' x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="white" strokeDasharray="2 2"/><rect className=' group-hover:fill-primary ' x="5" y="5" width="40" height="40" rx="20" fill="white"/><path className='group-hover:stroke-white group-hover:fill-white stroke-primary fill-primary ' d="M35 18.75V31.25C35 31.9594 34.4594 32.5 33.75 32.5H32.5V21.1556L25 26.5431L17.5 21.1556V32.5H16.25C15.5406 32.5 15 31.9594 15 31.25V18.75C15 18.395 15.1338 18.0825 15.3581 17.8612C15.4749 17.7442 15.6141 17.6519 15.7673 17.5899C15.9205 17.5278 16.0847 17.4972 16.25 17.5H16.6669L25 23.5419L33.3331 17.5H33.75C34.105 17.5 34.4175 17.6337 34.6419 17.8612C34.8662 18.0825 35 18.395 35 18.75Z" fill="white"/></svg> },
+		{ key:"location" , title:t("headquarters") , desc : t("location") , icon:<svg className='svg'  width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect className='group-hover:stroke-primary stoke-white' x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="white" strokeDasharray="2 2"/><rect className=' group-hover:fill-primary' x="5" y="5" width="40" height="40" rx="20" fill="white"/><path className=' stroke-primary fill-primary  group-hover:fill-white group-hover:stroke-white' d="M24.9999 26.1916C26.4358 26.1916 27.5999 25.0276 27.5999 23.5916C27.5999 22.1557 26.4358 20.9916 24.9999 20.9916C23.564 20.9916 22.3999 22.1557 22.3999 23.5916C22.3999 25.0276 23.564 26.1916 24.9999 26.1916Z" stroke="#F9A51A" strokeWidth="1.5"/><path className='group-hover:stroke-white' d="M18.0167 22.075C19.6584 14.8584 30.3501 14.8667 31.9834 22.0834C32.9417 26.3167 30.3084 29.9 28.0001 32.1167C26.3251 33.7334 23.6751 33.7334 21.9917 32.1167C19.6918 29.9 17.0584 26.3084 18.0167 22.075Z" stroke="#F9A51A" strokeWidth="1.5"/></svg> },
 	]
 	const features = [
 		{ name :  t("fulfillment") , icon : <svg  className='max-md:w-[40px]  ' width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="39.75" cy="22.25" r="20" fill="#F0F8FF"/><g clipPath="url(#clip0_640_273)"><path d="M32.83 8.04883C33.3946 8.47796 33.9517 8.91729 34.4999 9.36719C34.7496 9.56886 34.9993 9.77053 35.2566 9.97831C38.0448 12.4776 40.1426 16.508 40.4765 20.2656C40.522 21.5574 40.5199 22.8411 40.4765 24.1328C40.897 24.1038 41.3176 24.0748 41.7509 24.0449C43.318 24.0394 44.1833 24.5315 45.3983 25.5391C46.187 27.1164 45.8593 29.4042 45.873 31.1554C45.8788 31.7013 45.8884 32.2472 45.9018 32.7931C45.9211 33.5818 45.9288 34.37 45.9339 35.159C45.9419 35.4015 45.9499 35.644 45.9581 35.8938C45.9522 37.2467 45.7841 37.8012 44.9254 38.8685C43.4411 40.0344 42.3148 39.9878 40.4765 39.9531C40.4948 40.4936 40.4948 40.4936 40.5135 41.0449C40.5234 41.5233 40.533 42.0016 40.5424 42.48C40.5512 42.7168 40.5601 42.9536 40.5692 43.1975C40.5922 44.7746 40.4272 45.7566 39.4218 46.9844C37.9714 48.0725 36.9002 48.1642 35.1083 48.1421C34.8689 48.1406 34.6294 48.1391 34.3828 48.1375C33.6233 48.1317 32.8642 48.1184 32.1049 48.105C31.5878 48.0997 31.0708 48.0949 30.5537 48.0906C29.2909 48.079 28.0282 48.0608 26.7655 48.0391C26.6713 48.3146 26.577 48.5901 26.4799 48.874C26.0624 49.7969 26.0624 49.7969 25.0077 50.5C23.8155 50.692 22.6843 50.6921 21.4921 50.5C20.4992 49.73 19.9399 49.1535 19.3827 48.0391C19.3677 46.4876 19.4517 45.2396 20.4154 43.9961C21.5855 43.1451 22.4528 42.9802 23.9146 42.9909C25.2304 43.215 25.8592 43.9233 26.7655 44.875C26.7655 45.107 26.7655 45.3391 26.7655 45.5781C28.2612 45.5367 29.7568 45.493 31.2523 45.4472C31.7615 45.432 32.2706 45.4173 32.7798 45.4033C33.5102 45.3831 34.2406 45.3606 34.9709 45.3378C35.411 45.3249 35.851 45.312 36.3043 45.2988C37.2759 45.3398 37.2759 45.3398 37.664 44.875C37.7932 44.0565 37.9109 43.2361 38.0155 42.4141C37.595 42.4503 37.1744 42.4866 36.7411 42.5239C35.5518 42.5282 34.9202 42.3533 33.9945 41.6011C32.8861 40.4386 32.6997 39.6727 32.6854 38.1276C32.6821 37.8318 32.6787 37.5361 32.6752 37.2313C32.6737 36.9127 32.6722 36.5941 32.6707 36.2658C32.6687 35.9368 32.6667 35.6078 32.6646 35.2687C32.6613 34.5722 32.659 33.8757 32.6576 33.1791C32.6542 32.1166 32.6433 31.0544 32.6322 29.992C32.6299 29.3147 32.6281 28.6374 32.6267 27.9602C32.6224 27.6437 32.618 27.3272 32.6136 27.0012C32.6199 25.199 32.7674 23.9231 33.7968 22.375C34.9231 21.6241 35.2098 21.5906 36.4994 21.6279C36.7836 21.6343 37.0677 21.6406 37.3605 21.6472C37.5766 21.6553 37.7928 21.6635 38.0155 21.6719C37.4636 18.5828 36.6727 16.1516 34.8515 13.5859C34.4708 13.0312 34.4708 13.0312 34.0824 12.4653C31.0754 9.45835 27.5125 7.98453 23.2938 7.80714C19.1865 7.93998 15.7133 9.39099 12.703 12.1797C10.3353 14.8384 8.86801 18.1224 8.48428 21.6719C8.7963 21.6413 8.7963 21.6413 9.11462 21.6101C10.6999 21.5196 11.4039 21.4835 12.703 22.4849C13.5872 23.673 13.8011 24.5222 13.8144 25.9639C13.8177 26.2608 13.8211 26.5577 13.8246 26.8636C13.8261 27.1834 13.8276 27.5031 13.8291 27.8325C13.8311 28.1623 13.8331 28.4922 13.8352 28.8321C13.8385 29.5301 13.8408 30.2281 13.8422 30.9261C13.8456 31.9925 13.8565 33.0586 13.8676 34.1249C13.8699 34.8033 13.8717 35.4817 13.8731 36.1601C13.8774 36.4784 13.8818 36.7967 13.8862 37.1246C13.8788 39.2189 13.5588 40.4048 12.1317 41.9966C10.8201 42.6524 9.56558 42.6945 8.13272 42.4141C7.05606 41.5791 7.05606 41.5791 6.3749 40.6563C6.3749 40.4242 6.3749 40.1922 6.3749 39.9531C5.74407 39.9858 5.74407 39.9858 5.10049 40.0191C3.64778 40.0191 2.69127 39.6945 1.45303 38.8984C0.615661 37.6424 0.630722 36.7176 0.619441 35.2647C0.616267 35.0129 0.613093 34.761 0.609823 34.5015C0.604727 33.9691 0.601601 33.4365 0.600301 32.904C0.596122 32.092 0.578833 31.281 0.561077 30.4692C0.557749 29.951 0.555205 29.4328 0.553523 28.9146C0.546657 28.6732 0.53979 28.4318 0.532715 28.1831C0.545454 26.8194 0.71587 26.2833 1.59714 25.2182C3.15556 23.9623 4.06951 24.1013 6.02334 24.1328C6.01111 23.9026 5.99887 23.6724 5.98626 23.4352C5.85088 18.8708 7.02081 14.7654 9.98254 11.2308C15.9684 4.94419 25.3443 3.10735 32.83 8.04883ZM9.1874 23.7813C8.34771 24.621 8.39571 24.798 8.3933 25.9408C8.39108 26.2411 8.38886 26.5414 8.38658 26.8509C8.388 27.1757 8.38943 27.5005 8.39089 27.8352C8.39022 28.1681 8.38955 28.501 8.38886 28.8439C8.38838 29.5485 8.38968 30.253 8.39261 30.9576C8.39637 32.0386 8.39265 33.1194 8.38815 34.2004C8.38861 34.8839 8.38951 35.5673 8.39089 36.2507C8.38947 36.5756 8.38805 36.9004 8.38658 37.2351C8.3888 37.5354 8.39101 37.8358 8.3933 38.1452C8.39386 38.4101 8.39442 38.6749 8.39499 38.9478C8.42895 39.688 8.42895 39.688 9.1874 40.3047C10.35 40.2028 10.35 40.2028 11.2968 39.6016C11.333 39.1305 11.3455 38.6576 11.3478 38.1851C11.3501 37.8847 11.3523 37.5844 11.3546 37.2749C11.355 36.9483 11.3554 36.6216 11.3558 36.2851C11.357 35.9517 11.3582 35.6183 11.3594 35.2748C11.3612 34.5682 11.362 33.8616 11.3619 33.1549C11.3627 32.0708 11.3691 30.9868 11.3757 29.9027C11.3768 29.2177 11.3775 28.5326 11.3778 27.8476C11.3803 27.5216 11.3829 27.1957 11.3855 26.8599C11.3844 26.5584 11.3833 26.2569 11.3822 25.9463C11.3827 25.6804 11.3832 25.4145 11.3837 25.1405C11.353 24.3981 11.353 24.3981 10.5937 23.7813C10.1296 23.7813 9.66553 23.7813 9.1874 23.7813ZM35.9062 23.7813C35.0674 24.62 35.1134 24.7991 35.1065 25.9408C35.1031 26.2411 35.0998 26.5414 35.0963 26.8509C35.0966 27.1757 35.097 27.5005 35.0973 27.8352C35.0958 28.1681 35.0943 28.501 35.0927 28.8439C35.0907 29.5485 35.0905 30.253 35.092 30.9576C35.0932 32.0386 35.0849 33.1194 35.076 34.2004C35.0752 34.8839 35.075 35.5673 35.0753 36.2507C35.0721 36.5756 35.0688 36.9004 35.0655 37.2351C35.0677 37.5354 35.0699 37.8358 35.0721 38.1452C35.0719 38.4101 35.0717 38.6749 35.0715 38.9478C35.1522 39.747 35.1522 39.747 36.2577 40.3047C37.2381 40.1656 37.2381 40.1656 38.0155 39.6016C38.0517 39.1305 38.0642 38.6576 38.0666 38.1851C38.0688 37.8847 38.0711 37.5844 38.0734 37.2749C38.0738 36.9483 38.0742 36.6216 38.0746 36.2851C38.0757 35.9517 38.0769 35.6183 38.0781 35.2748C38.0799 34.5682 38.0807 33.8616 38.0807 33.1549C38.0814 32.0708 38.0878 30.9868 38.0945 29.9027C38.0955 29.2177 38.0962 28.5326 38.0965 27.8476C38.0991 27.5216 38.1016 27.1957 38.1042 26.8599C38.1031 26.5584 38.102 26.2569 38.1009 25.9463C38.1014 25.6804 38.1019 25.4145 38.1024 25.1405C38.0718 24.3981 38.0718 24.3981 37.3124 23.7813C36.8483 23.7813 36.3843 23.7813 35.9062 23.7813ZM3.5624 26.5938C2.60533 27.5508 2.76862 28.08 2.7659 29.4172C2.76499 29.8401 2.76408 30.2629 2.76315 30.6985C2.76587 31.1422 2.76859 31.5859 2.77139 32.043C2.76867 32.4866 2.76595 32.9303 2.76315 33.3874C2.76405 33.8103 2.76496 34.2331 2.7659 34.6687C2.76669 35.0582 2.76748 35.4477 2.7683 35.8491C2.76394 36.8427 2.76394 36.8427 3.5624 37.4922C4.37451 37.4922 5.18662 37.4922 6.02334 37.4922C6.02334 33.8957 6.02334 30.2992 6.02334 26.5938C5.21123 26.5938 4.39912 26.5938 3.5624 26.5938ZM40.4765 26.5938C40.4765 30.1902 40.4765 33.7867 40.4765 37.4922C41.2886 37.4922 42.1007 37.4922 42.9374 37.4922C43.8945 36.5351 43.7312 36.0059 43.7339 34.6687C43.7348 34.2459 43.7357 33.8231 43.7367 33.3874C43.7339 32.9438 43.7312 32.5001 43.7284 32.043C43.7311 31.5993 43.7339 31.1556 43.7367 30.6985C43.7353 30.0643 43.7353 30.0643 43.7339 29.4172C43.7327 28.833 43.7327 28.833 43.7315 28.2369C43.7359 27.2432 43.7359 27.2432 42.9374 26.5938C42.1253 26.5938 41.3132 26.5938 40.4765 26.5938ZM22.8983 45.2266C22.3763 45.5746 22.3763 45.5746 21.8437 45.9297C21.6972 46.8086 21.6972 46.8086 21.8437 47.6875C22.0757 47.9195 22.3077 48.1516 22.5468 48.3906C23.7093 48.2887 23.7093 48.2887 24.6562 47.6875C24.6704 47.1017 24.6712 46.5154 24.6562 45.9297C23.8375 45.5084 23.8375 45.5084 22.8983 45.2266Z" fill="#09396F"/><path d="M40.4766 39.9531C40.5052 40.7957 40.526 41.6372 40.5425 42.48C40.5513 42.7168 40.5601 42.9536 40.5693 43.1975C40.5923 44.7746 40.4272 45.7565 39.4219 46.9844C37.9715 48.0725 36.9003 48.1642 35.1084 48.1421C34.8689 48.1406 34.6295 48.1391 34.3829 48.1375C33.6234 48.1317 32.8643 48.1184 32.105 48.105C31.5879 48.0997 31.0709 48.0949 30.5538 48.0906C29.291 48.079 28.0283 48.0608 26.7656 48.0391C26.6714 48.3146 26.5771 48.5901 26.48 48.874C26.0625 49.7969 26.0625 49.7969 25.0078 50.5C23.8156 50.692 22.6844 50.6921 21.4922 50.5C20.4993 49.73 19.94 49.1535 19.3828 48.0391C19.3678 46.4876 19.4518 45.2396 20.4155 43.9961C21.5856 43.1451 22.4529 42.9802 23.9147 42.9908C25.2305 43.215 25.8592 43.9233 26.7656 44.875C26.7656 45.107 26.7656 45.3391 26.7656 45.5781C28.2613 45.5366 29.7569 45.493 31.2524 45.4472C31.7615 45.432 32.2707 45.4173 32.7799 45.4033C33.5103 45.383 34.2407 45.3606 34.971 45.3378C35.411 45.3249 35.8511 45.312 36.3044 45.2987C37.276 45.3398 37.276 45.3398 37.6641 44.875C37.7585 44.3782 37.8451 43.8798 37.9277 43.3809C38.1898 42.1263 38.8856 39.9531 40.4766 39.9531ZM22.8984 45.2266C22.3764 45.5746 22.3764 45.5746 21.8437 45.9297C21.6973 46.8086 21.6973 46.8086 21.8437 47.6875C22.0758 47.9195 22.3078 48.1516 22.5469 48.3906C23.7094 48.2887 23.7094 48.2887 24.6562 47.6875C24.6705 47.1017 24.6713 46.5154 24.6562 45.9297C23.8376 45.5084 23.8376 45.5084 22.8984 45.2266Z" fill="#F9A51A"/></g><defs><clipPath id="clip0_640_273"><rect width="45" height="45" fill="white" transform="translate(0.75 5.5)"/></clipPath></defs></svg> },
@@ -19,79 +19,83 @@ export default function Landing({cn}) {
 
 
 
+	{/* <div className={`bg-fixed max-md:scale-y-[-1] max-md:!rounded-none max-md:translate-y-[-600px] bg-cover bg-center bg-[url('/imgs/frame-left.png')] max-md:w-full  w-[500px] h-full absolute rtl:right-0 ltr:left-0  top-0 ltr:rounded-br-[60px] rtl:rounded-bl-[60px] `}></div> */}
 
   return (
-	<div className={`${cn}`}>
-			<div className=' container min-h-screen relative flex-col flex justify-center  '>
-				<div className={`bg-fixed max-md:scale-y-[-1] max-md:!rounded-none max-md:translate-y-[-600px] bg-cover bg-center bg-[url('/imgs/frame-left.png')] max-md:w-full  w-[544px] h-full absolute rtl:right-0 ltr:left-0  top-0 ltr:rounded-br-[60px] rtl:rounded-bl-[60px] `}></div>
-
-				<div className='pt-[80px] max-sm:px-[10px] max-md:px-[40px] xl:ltr:ml-[100px] xl:rtl:mr-[100px] relative z-[100]  ' >
-					<div className=' bg-white rounded-[50px]  grid max-md:grid-cols-1 grid-cols-2 max-lg:gap-[10px] gap-[30px]   '>
-
-						<div className=' rtl:pr-[100px] max-lg:!pr-[50px] max-sm:!p-[40px_20px_20px] p-[50px]  flex flex-col items-end gap-7'>
-							<div className='w-full flex flex-col'>
-								<h2 className="text-xl font-semibold  mb-[20px] max-md:text-center  ">
-									<span className='text-secondery '> {t("welcome_message")} </span>
-									<span className='text-primary'> {t("welcome_message_brand_name")} 👋 </span>
-								</h2>
-								<p className=" inline-block t25 font-semibold max-md:text-center ">
-									<span className='text-secondery '> {t("description")} </span>
-									<span className='text-[#ff9f00]'> {t("description_word")} </span>
-									<span className='text-secondery '> {t("electronics")} </span>
-								</p>
-							</div>
-
-							<p className=" text-[#a0a6c0] t17 max-md:text-center  "> {t("solutions")} </p>
-
-							<div className='flex gap-[10px] w-full max-md:justify-center '>
-								<Button cn={" hover:bg-opacity-80 bg-secondery"} name={t("about_us")} icon={<svg className='max-sm:w-[14px] ' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">  <path d="M6.03317 1.66669H4.44984C2.62484 1.66669 1.6665 2.62502 1.6665 4.44169V6.02502C1.6665 7.84169 2.62484 8.80002 4.4415 8.80002H6.02484C7.8415 8.80002 8.79984 7.84169 8.79984 6.02502V4.44169C8.80817 2.62502 7.84984 1.66669 6.03317 1.66669Z" fill="white"/>  <path d="M15.5585 1.66669H13.9752C12.1585 1.66669 11.2002 2.62502 11.2002 4.44169V6.02502C11.2002 7.84169 12.1585 8.80002 13.9752 8.80002H15.5585C17.3752 8.80002 18.3335 7.84169 18.3335 6.02502V4.44169C18.3335 2.62502 17.3752 1.66669 15.5585 1.66669Z" fill="white"/>  <path d="M15.5585 11.1917H13.9752C12.1585 11.1917 11.2002 12.15 11.2002 13.9667V15.55C11.2002 17.3667 12.1585 18.325 13.9752 18.325H15.5585C17.3752 18.325 18.3335 17.3667 18.3335 15.55V13.9667C18.3335 12.15 17.3752 11.1917 15.5585 11.1917Z" fill="white"/>  <path d="M6.03317 11.1917H4.44984C2.62484 11.1917 1.6665 12.15 1.6665 13.9667V15.55C1.6665 17.375 2.62484 18.3333 4.4415 18.3333H6.02484C7.8415 18.3333 8.79984 17.375 8.79984 15.5583V13.975C8.80817 12.15 7.84984 11.1917 6.03317 11.1917Z" fill="white"/></svg>} />
-								<Button cn={"bg-primary"} name={t("register_now")} icon={<svg className='max-sm:w-[14px] ' xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none"><path d="M6.50016 1.83331L7.16683 4.24998M4.75016 6.66665L2.3335 5.99998M12.1668 3.41665L10.5002 4.99998M5.50016 9.99998L3.91683 11.6666M8.00016 7.49998L12.1668 17.5L13.6668 13.1666L18.0002 11.6666L8.00016 7.49998Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>} />
-							</div>
+	<div className={` p-0 m-0 md:!min-h-[900px] md:h-screen `}>
+		<div  className={`bg-fixed min-h-[900px] md:h-screen md:w-[50%] md:rtl:translate-x-[220px] md:ltr:translate-x-[-220px] bg-cover bg-center bg-[url('/imgs/frame-left.png')] absolute top-0 rtl:right-0 ltr:left-0 max-md:scale-y-[-1] max-md:!rounded-none max-md:!translate-y-[-50%]  max-md:w-full ltr:rounded-br-[60px] rtl:rounded-bl-[60px] `} ></div>
+		
+		<div className=' max-xl:pt-[80px] xl:mt-[-80px]  container md:min-h-[900px] md:h-screen  relative flex-col flex justify-evenly  '>
+		
+			<div data-aos="fade-up" className=' lg:pb-[100px] xl:pb-0  rounded-[50px_50px_0_0] overflow-hidden  xl:ltr:ml-[100px] xl:rtl:mr-[100px] relative z-[100]   ' >
+				<div className=' overflow-hidden bg-white rounded-[50px] grid max-md:grid-cols-1 max-xl:grid-cols-[1fr,auto] grid-cols-2 max-lg:gap-[10px] gap-[30px]  items-center  '>
+		
+					<div className=' z-10 rtl:pr-[100px] max-lg:!pr-[50px] max-sm:!p-[40px_20px_20px] p-[50px]  flex flex-col items-end gap-7'>
+						<div className='w-full flex flex-col'>
+							<h2 data-aos="fade-up" className="text-xl font-semibold  mb-[20px] max-md:text-center  ">
+								<span className='text-secondery '> {t("welcome_message")} </span>
+								<span className='text-primary'> {t("welcome_message_brand_name")} 👋 </span>
+							</h2>
+							<p  data-aos="fade-up"  data-aos-delay="100" className=" inline-block t25 font-semibold max-md:text-center ">
+								<span className='text-secondery '> {t("description")} </span>
+								<span className='text-[#ff9f00]'> {t("description_word")} </span>
+								<span className='text-secondery '> {t("electronics")} </span>
+							</p>
 						</div>
-
-						<div className='box relative flex  w-full '> 
-							<svg className='absolute w-full h-full  ' xmlns='http://www.w3.org/2000/svg' width='805' height='557' viewBox='0 0 805 557' fill='none'>     <g filter='url(#filter0_f_303_5190)'>         <path d='M480.832 -124.956C648.546 68.9208 645.677 346.182 474.425 494.325C303.172 642.467 28.386 605.393 -139.328 411.516C-307.041 217.64 -304.173 -59.6216 -132.92 -207.764C38.3323 -355.907 313.118 -318.832 480.832 -124.956Z' fill='url(#paint0_linear_303_5190)' fillOpacity='0.24' />         <path d='M480.832 -124.956C648.546 68.9208 645.677 346.182 474.425 494.325C303.172 642.467 28.386 605.393 -139.328 411.516C-307.041 217.64 -304.173 -59.6216 -132.92 -207.764C38.3323 -355.907 313.118 -318.832 480.832 -124.956Z' fill='url(#paint1_linear_303_5190)' fillOpacity='0.24' />     </g>     <defs>         <filter id='filter0_f_303_5190' x='-463.26' y='-498.538' width='1268.02' height='1283.64' filterUnits='userSpaceOnUse' colorInterpolationFilters='sRGB'>             <feFlood floodOpacity='0' result='BackgroundImageFix' />             <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape' />             <feGaussianBlur stdDeviation='100' result='effect1_foregroundBlur_303_5190' />         </filter>         <linearGradient id='paint0_linear_303_5190' x1='736.878' y1='-47.4894' x2='455.855' y2='-304.16' gradientUnits='userSpaceOnUse'>             <stop stopColor='#B4C4EB' />             <stop offset='1' stopColor='white' />         </linearGradient>         <linearGradient id='paint1_linear_303_5190' x1='736.878' y1='-47.4894' x2='455.855' y2='-304.16' gradientUnits='userSpaceOnUse'>             <stop stopColor='#B4C4EB' />             <stop offset='1' stopColor='white' />         </linearGradient>     </defs> </svg>
-							<Image className=' max-sm:w-[160px] ltr:scale-x-[-1] max-md:mx-auto relatives rtl:mr-auto ltr:ml-auto  z-[10] ' alt='' src={'/imgs/person-hero.png'} width={380} height={440} />
+		
+						<p data-aos="fade-up"  data-aos-delay="300" className=" text-[#a0a6c0] t17 max-md:text-center  "> {t("solutions")} </p>
+		
+						<div data-aos="fade-up"  data-aos-delay="500" className='flex gap-[10px] w-full max-md:justify-center '>
+							<Button cn={" hover:bg-opacity-80 bg-secondery"} name={t("about_us")} icon={<svg className='max-sm:w-[14px] ' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">  <path d="M6.03317 1.66669H4.44984C2.62484 1.66669 1.6665 2.62502 1.6665 4.44169V6.02502C1.6665 7.84169 2.62484 8.80002 4.4415 8.80002H6.02484C7.8415 8.80002 8.79984 7.84169 8.79984 6.02502V4.44169C8.80817 2.62502 7.84984 1.66669 6.03317 1.66669Z" fill="white"/>  <path d="M15.5585 1.66669H13.9752C12.1585 1.66669 11.2002 2.62502 11.2002 4.44169V6.02502C11.2002 7.84169 12.1585 8.80002 13.9752 8.80002H15.5585C17.3752 8.80002 18.3335 7.84169 18.3335 6.02502V4.44169C18.3335 2.62502 17.3752 1.66669 15.5585 1.66669Z" fill="white"/>  <path d="M15.5585 11.1917H13.9752C12.1585 11.1917 11.2002 12.15 11.2002 13.9667V15.55C11.2002 17.3667 12.1585 18.325 13.9752 18.325H15.5585C17.3752 18.325 18.3335 17.3667 18.3335 15.55V13.9667C18.3335 12.15 17.3752 11.1917 15.5585 11.1917Z" fill="white"/>  <path d="M6.03317 11.1917H4.44984C2.62484 11.1917 1.6665 12.15 1.6665 13.9667V15.55C1.6665 17.375 2.62484 18.3333 4.4415 18.3333H6.02484C7.8415 18.3333 8.79984 17.375 8.79984 15.5583V13.975C8.80817 12.15 7.84984 11.1917 6.03317 11.1917Z" fill="white"/></svg>} />
+							<Button cn={"bg-primary"} name={t("register_now")} icon={<svg className='max-sm:w-[14px] ' xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none"><path d="M6.50016 1.83331L7.16683 4.24998M4.75016 6.66665L2.3335 5.99998M12.1668 3.41665L10.5002 4.99998M5.50016 9.99998L3.91683 11.6666M8.00016 7.49998L12.1668 17.5L13.6668 13.1666L18.0002 11.6666L8.00016 7.49998Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>} />
 						</div>
 					</div>
-				</div>
-
-
-				<div className=" xl:ltr:ml-[100px] xl:rtl:mr-[100px] gap-[30px]  mt-[50px] relative  flex items-start justify-between ">
-
-					<div className=" hidden lg:flex flex-col gap-[30px] ">
-						{
-							contacts.map((contact , i) =>(
-								<div key={i} className=" text-white flex gap-[20px] ">
-									<span> {contact.icon} </span>
-									<div className="flex flex-col "> 
-										<h4 className='t20 font-[400] ' >{contact.title}</h4>
-										<h4 className={`t14 font-[200] ${contact.key == "email" && " underline "} `} >{contact.desc}</h4>
-									</div>
-								</div>
-							))
-						}
+		
+					<div className=' z-[10] box relative flex  w-full ' data-aos="zoom-in"  data-aos-delay="100" > 
+						<Image className=' max-sm:w-[160px] max-lg:w-[300px] h-fit ltr:scale-x-[-1] max-md:mx-auto relatives rtl:mr-auto ltr:ml-auto  z-[10] ' alt='' src={'/imgs/person-hero.png'} width={380} height={440} />
 					</div>
-
-
-
-					<div className="flex justify-end max-lg:justify-center max-md:grid max-md:grid-cols-2 max-sm:gap-[7px] gap-[20px] flex-wrap  w-full ">
-						{
-							features.map((feature , i) =>(
-								<div key={i} className="circle  group relative cursor-pointer  border-[#eee] border-[1px] border-dashed hover:border-primary duration-300 hover:shadow-none rounded-[8px] flex flex-col max-md:flex-row max-md:gap-[20px] gap-[10px] justify-center items-center max-sm:justify-start px-[10px] flex-none max-w-[180px] max-md:max-w-full  min-h-[60px] md:min-h-[170px]  w-full  " style={{ background: "#FFF", boxShadow: "6px 4px 10px 0px rgba(205, 205, 205, 0.25)" }} >
-									<span> {feature.icon} </span>
-									<h4 className=' group-hover:ltr:translate-x-[10px] group-hover:rtl:translate-x-[-10px] duration-300 text-secondery t20 max-sm:t16 font-[300] ' >{feature.name}</h4>
-									<svg className=' max-sm:hidden circle-0 z-[1000] duration-500 absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%] max-md:w-[25px] max-md:h-[25px]  ' width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#F9A51A" strokeDasharray="2 2"/><rect x="2.5" y="2.5" width="35" height="35" rx="17.5" fill="#F9A51A"/><g clipPath="url(#clip0_10_5594)"><path d="M27.0047 20.7014L24.7434 21.9721C24.1158 22.3281 23.6934 22.9519 23.5958 23.6667L23.2555 26.2382C22.9604 28.4456 20.0109 28.9846 18.9656 27.0208L18.422 25.9925C18.3472 25.8532 18.3207 25.6903 18.3477 25.5315L19.926 16.4234C19.9934 16.0504 20.3373 15.7921 20.7105 15.8355L26.1313 16.4386C28.3429 16.6802 28.9411 19.6134 27.0047 20.7014Z" fill="white"/><path d="M18.9667 16.4017L17.9307 22.3666C17.8149 23.037 16.9115 23.1821 16.5941 22.5807L14.5453 18.7458C13.6751 17.1179 14.9834 15.1858 16.818 15.3895L18.3441 15.5614C18.7524 15.6125 19.038 15.9991 18.9667 16.4017Z" fill="white"/></g><defs><clipPath id="clip0_10_5594"><rect width="16" height="16" fill="white" transform="translate(8.89038 22.1386) rotate(-55.8962)"/></clipPath></defs></svg>
-								</div>
-							))
-						}
-
-					</div>
-
-					
+					<svg className=' z-[0] absolute inset-0 w-full h-full  ' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 880 880' fill='none'>     <g filter='url(#filter0_f_303_5190)'>         <path d='M480.832 -124.956C648.546 68.9208 645.677 346.182 474.425 494.325C303.172 642.467 28.386 605.393 -139.328 411.516C-307.041 217.64 -304.173 -59.6216 -132.92 -207.764C38.3323 -355.907 313.118 -318.832 480.832 -124.956Z' fill='url(#paint0_linear_303_5190)' fillOpacity='0.24' />         <path d='M480.832 -124.956C648.546 68.9208 645.677 346.182 474.425 494.325C303.172 642.467 28.386 605.393 -139.328 411.516C-307.041 217.64 -304.173 -59.6216 -132.92 -207.764C38.3323 -355.907 313.118 -318.832 480.832 -124.956Z' fill='url(#paint1_linear_303_5190)' fillOpacity='0.24' />     </g>     <defs>         <filter id='filter0_f_303_5190' x='-463.26' y='-498.538' width='1268.02' height='1283.64' filterUnits='userSpaceOnUse' colorInterpolationFilters='sRGB'>             <feFlood floodOpacity='0' result='BackgroundImageFix' />             <feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape' />             <feGaussianBlur stdDeviation='100' result='effect1_foregroundBlur_303_5190' />         </filter>         <linearGradient id='paint0_linear_303_5190' x1='736.878' y1='-47.4894' x2='455.855' y2='-304.16' gradientUnits='userSpaceOnUse'>             <stop stopColor='#B4C4EB' />             <stop offset='1' stopColor='white' />         </linearGradient>         <linearGradient id='paint1_linear_303_5190' x1='736.878' y1='-47.4894' x2='455.855' y2='-304.16' gradientUnits='userSpaceOnUse'>             <stop stopColor='#B4C4EB' />             <stop offset='1' stopColor='white' />         </linearGradient>     </defs> </svg>
 				</div>
-
 			</div>
+		
+			<div className=" max-lg:pt-[40px]  lg:absolute  bottom-0  md:px-[20px] max-md:mt-[30px] w-full left-0 lg:grid xl:grid-cols-[500px,1fr] lg:grid-cols-[350px,1fr] gap-[30px] items-start justify-between  ">
+		
+				<div className=" rtl:pr-[110px] ltr:pl-[110px] max-xl:!pl-0 max-xl:!pr-0 hidden lg:flex flex-col gap-[30px] ">
+					{
+						contacts.map((contact , i) =>(
+							<div key={i} className=" text-white flex gap-[20px] " data-aos="fade-up"  data-aos-delay={`${i+1}00`} >
+								<span className='group' > {contact.icon} </span>
+								<div className="flex flex-col "> 
+									<h4 className='t20 font-[400] ' >{contact.title}</h4>
+									<h4 className={`t14 font-[200] ${contact.key == "email" && " underline "} `} >{contact.desc}</h4>
+								</div>
+							</div>
+						))
+					}
+				</div>
+		
+		
+		
+				<div className="  grid grid-cols-4 max-md:grid-cols-2 max-md:gap-[7px] gap-[20px] flex-wrap w-full ">
+					{
+						features.map((feature , i) =>(
+							<div key={i} data-aos="fade-up"  data-aos-delay={`${i+1}00`} className="circle  group relative cursor-pointer  border-[#eee] border-[1px] hover:border-dashed hover:border-primary duration-300 hover:shadow-none rounded-[8px] flex flex-col max-md:flex-row max-md:gap-[5px] gap-[10px] justify-center items-center max-sm:justify-start px-[10px] flex-none max-w-[180px] max-md:max-w-full  min-h-[60px] md:min-h-[170px]  w-full  " style={{ background: "#FFF", boxShadow: "6px 4px 10px 0px rgba(205, 205, 205, 0.25)" }} >
+								<span> {feature.icon} </span>
+								<h4 className=' text-center  group-hover:ltr:translate-x-[10px] group-hover:rtl:translate-x-[-10px] duration-300 text-secondery t20 max-sm:t16 font-[300] ' >{feature.name}</h4>
+								<svg className=' max-sm:hidden circle-0 z-[1000] duration-500 absolute bottom-0 left-[50%] translate-x-[-50%] translate-y-[50%] max-md:w-[25px] max-md:h-[25px]  ' width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#F9A51A" strokeDasharray="2 2"/><rect x="2.5" y="2.5" width="35" height="35" rx="17.5" fill="#F9A51A"/><g clipPath="url(#clip0_10_5594)"><path d="M27.0047 20.7014L24.7434 21.9721C24.1158 22.3281 23.6934 22.9519 23.5958 23.6667L23.2555 26.2382C22.9604 28.4456 20.0109 28.9846 18.9656 27.0208L18.422 25.9925C18.3472 25.8532 18.3207 25.6903 18.3477 25.5315L19.926 16.4234C19.9934 16.0504 20.3373 15.7921 20.7105 15.8355L26.1313 16.4386C28.3429 16.6802 28.9411 19.6134 27.0047 20.7014Z" fill="white"/><path d="M18.9667 16.4017L17.9307 22.3666C17.8149 23.037 16.9115 23.1821 16.5941 22.5807L14.5453 18.7458C13.6751 17.1179 14.9834 15.1858 16.818 15.3895L18.3441 15.5614C18.7524 15.6125 19.038 15.9991 18.9667 16.4017Z" fill="white"/></g><defs><clipPath id="clip0_10_5594"><rect width="16" height="16" fill="white" transform="translate(8.89038 22.1386) rotate(-55.8962)"/></clipPath></defs></svg>
+							</div>
+						))
+					}
+		
+				</div>
+		
+				
+			</div>
+		
+		</div>
+
 		</div>
   )
 }
+
+

@@ -40,7 +40,7 @@ const page = () => {
 
     
     return (
-        <div className='flex flex-col' >
+        <div className='flex flex-col bg-[#ffffff] ' >
             <Landing   />
             <Feature  />
             <div className='md:hidden' > <Testimonials   /> </div>

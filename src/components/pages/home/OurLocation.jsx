@@ -21,7 +21,7 @@ export default function OurLocation() {
 				<div className='mt-[50px] px-[40px] flex flex-wrap justify-between items-center max-md:justify-center  gap-[10px] ' >
 					{
 						imgs?.map((e,i)=> (
-							<Image className='w-[100%] object-contain max-w-[130px] h-fit max-sm:max-w-[80px]   drop-shadow-[0px_10px_20px_0px_rgba(185,185,185,0.25)]' src={e} width={130} height={160} alt='' key={i} />
+							<Image data-aos="zoom-in"  data-aos-delay={`${i+1}00`} className='w-[100%] object-contain max-w-[130px] h-fit max-sm:max-w-[80px]   drop-shadow-[0px_10px_20px_0px_rgba(185,185,185,0.25)]' src={e} width={130} height={160} alt='' key={i} />
 						))
 					}
 				</div>
