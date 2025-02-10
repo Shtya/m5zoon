@@ -5,22 +5,33 @@
 
 
 
+
 @layer components {
     .t11 { font-size: clamp(10px, 2vw, 11px); }
-    .t12 { font-size: clamp(11px, 2vw, 14px); }
+    /* .t12 { font-size: clamp(11px, 2vw, 14px); } */
     .t13 { font-size: clamp(12px, 2vw, 15px); }
     .t14 { font-size: clamp(13px, 2vw, 16px); }
     .t15 { font-size: clamp(14px, 2vw, 17px); }
     .t16 { font-size: clamp(15px, 2vw, 18px); }
     .t17 { font-size: clamp(16px, 2vw, 19px); }
     .t18 { font-size: clamp(17px, 2vw, 20px); }
-    .t19 { font-size: clamp(18px, 2vw, 21px); }
+    /* .t19 { font-size: clamp(18px, 2vw, 21px); } */
     .t20 { font-size: clamp(19px, 2vw, 22px); }
-    .t21 { font-size: clamp(20px, 2vw, 23px); }
+    /* .t21 { font-size: clamp(20px, 2vw, 23px); } */
     .t22 { font-size: clamp(21px, 2vw, 24px); }
-    .t23 { font-size: clamp(22px, 2vw, 25px); }
-    .t24 { font-size: clamp(23px, 2vw, 26px); }
+    /* .t23 { font-size: clamp(22px, 2vw, 25px); } */
+    /* .t24 { font-size: clamp(23px, 2vw, 26px); } */
     .t25 { font-size: clamp(24px, 2vw, 27px); }
+    /* .t26 { font-size: clamp(24px, 2vw, 26px); } */
+    /* .t27 { font-size: clamp(25px, 2vw, 27px); } */
+    /* .t28 { font-size: clamp(26px, 2vw, 28px); } */
+    /* .t29 { font-size: clamp(27px, 2vw, 29px); } */
+    /* .t30 { font-size: clamp(28px, 2vw, 30px); } */
+    /* .t31 { font-size: clamp(29px, 2vw, 31px); } */
+    /* .t32 { font-size: clamp(30px, 2vw, 32px); } */
+    /* .t33 { font-size: clamp(31px, 2vw, 33px); } */
+    /* .t34 { font-size: clamp(32px, 2vw, 34px); } */
+    .t35 { font-size: clamp(33px, 2vw, 35px); }
   }
   
 
@@ -81,4 +92,14 @@ html {
 .svg * {
     transition: .3s;
     cursor: pointer;
+}
+
+
+
+
+.shape{
+    clip-path: polygon(39% 23%, 55% 24%, 77% 17%, 100% 0, 100% 100%, 0 100%, 0 0, 20% 15%);
+    clip-path: polygon(36% 21%, 65% 21%, 80% 15%, 100% 0, 100% 100%, 0 100%, 0 0, 20% 16%);
+
+
 }

@@ -72,7 +72,7 @@ export default function Navbar() {
     const [navIsWhite , setNavIsWhite] = useState(false)
     const [isAllowed, setisAllowed] = useState(true)
     useEffect(() => {
-        if(["/contact-us" , "/about-us" ].includes(pathname)){
+        if(["/contact-us" , "/about-us" , "/services/fulfillment" , "/services/drop-shipping" , "/services/import-sourcing" , "/services/call-center" ].includes(pathname)){
             setNavIsWhite(true)
         }
         else setNavIsWhite(false)

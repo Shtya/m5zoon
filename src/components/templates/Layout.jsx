@@ -1,6 +1,6 @@
 "use client"
 import Navbar from './Navbar'
-import Footer from '../atoms/Footer'
+import Footer from './Footer'
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -13,28 +13,34 @@ export default function Layout({children}) {
             offset: 0,
             duration: 1000,
             easing: 'ease-in-out',
-            once: true // true,
+            once: false // true,
         });
     }, []);
 
 
+    const [showFooter , setShowFooter] = useState(true)
     const pathname = usePathname()
     const [isAllowed, setisAllowed] = useState(false)
         useEffect(() => {
-            if( ["/sign-up" , "/login"].includes(pathname) ){
+            if( ["/sign-up" , "/login"].includes(pathname)  ){
                 setisAllowed(false)
             }
             else{
                 setisAllowed(true)
             }
+
+
+
+            if(pathname.startsWith("/services")) setShowFooter(false)
+            else setShowFooter(true)
         },[pathname])
 
 
   return (
-	<div className=' main  relative' >
+	<div className=' main  relative w-full overflow-x-hidden ' >
 		{isAllowed && <Navbar />}
 		<main className='min-h-[50vh]' > {children} </main>
-		{isAllowed && <Footer />}
+		{isAllowed && showFooter && <Footer />}
 	</div>
   )
 }
