@@ -52,7 +52,7 @@ export default function Footer2() {
             <div className="container  max-md:grid max-sm:grid-cols-1 max-md:grid-cols-2 max-md:justify-center flex flex-wrap items-start justify-between gap-[30px] relative pt-[150px] " >
                 
                 <div className="max-w-[300px] max-md:max-w-[200px] max-md:mx-auto w-full ">
-                    <Image className=' max-sm:mx-auto mb-[10px] w-[120px] h-fit ' src={"/imgs/logo.png"} alt='' width={120} height={35} />
+                    <Link href={"/"} > <Image className=' max-sm:mx-auto mb-[10px] w-[120px] h-fit ' src={"/imgs/logo.png"} alt='' width={120} height={35} /> </Link> 
                     <p className='t16 font-normal max-sm:text-center ' > {t("about_platform")} </p>
                 </div>
 

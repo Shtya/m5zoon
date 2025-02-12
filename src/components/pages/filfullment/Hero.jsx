@@ -1,10 +1,11 @@
 import Button from '@/components/atoms/Button';
 import Title from '@/components/helpers/Title';
+import Title3 from '@/components/helpers/Title3';
 import React from 'react';
 
-export default function Hero({t , data}) {
+export default function Hero({data}) {
     return (
-        <div className='h-screen max-md:pt-[60px] relative '>
+        <div className='h-screen relative '>
 			<video  autoPlay  loop  muted  playsInline  className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-[1] ">
 				<source src={data?.img} type="video/mp4" />
 			</video>
@@ -12,7 +13,12 @@ export default function Hero({t , data}) {
       		<div className="absolute z-[12] top-0 left-0 w-full h-full " style={{backgroundImage : "linear-gradient(354deg, rgba(11, 49, 92, 0.11) -49.44%, #00162F 112.51%)"}} ></div>
 
             <div className='container relative z-[20] max-w-[880px] flex flex-col max-md:gap-[15px] gap-[40px] items-center justify-center min-h-screen '>
-                <Title dataAos={'fade-down'} delay={200} order={-1} title={data?.title} title2={data?.title2} cn={'t35 max-md:t25 max-sm:t20 font-[600] text-white text-center '} />
+                {
+                    data?.title3 
+                    ? <Title3 dataAos={'fade-down'} delay={200} order={-1} title={data?.title} title2={data?.title2} title3={data?.title3} cn={'t35 max-md:t25 max-sm:t20 font-[600] text-white text-center '} />
+                    : <Title dataAos={'fade-down'} delay={200} order={-1} title={data?.title} title2={data?.title2} cn={'t35 max-md:t25 max-sm:t20 font-[600] text-white text-center '} />
+                }
+                
                 <p data-aos='fade-down' className='text-[#F2F2F2] font-[400] t20 max-md:t18 max-sm:t15 text-center '> {data?.desc} </p>
 
                 <div data-aos='fade-up' data-aos-delay='200' className='flex gap-[10px] w-full justify-center '>

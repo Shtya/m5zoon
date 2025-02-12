@@ -21,7 +21,7 @@ export default function ServicesForSailer({t , data , title1 , title2 , title3})
                 {data.map((item, i) => (
                     <div key={i} className={`mb-4 max-md:flex-col max-md:gap-[15px] flex justify-between items-center w-full ${i % 2 === 0 ? 'right-timeline' : 'flex-row-reverse left-timeline'}`}>
                         <div className='order-1 max-md:hidden w-[47%]'></div>
-                        <div data-aos="zoom-in" data-aos-delay={item.delay}   className={`  ${i%2 == 0 ? "bg-secondery" : "border-[2px] border-[#d5d5d6] ml-[2px] bg-white "} z-20 flex items-center order-1 shadow-xl w-[25px] h-[25px] rounded-full`}> </div>
+                        <div data-aos="zoom-in" data-aos-delay={item.delay}   className={`  ${i%2 == 0 ? "bg-secondery" : "border-[2px] border-[#d5d5d6] ml-[2px] bg-white "} ${item.bg == "white" ? "max-md:!bg-white" : "max-md:!bg-secondery " } max-md:border-[2px] max-md:border-[#d5d5d6] z-20 flex items-center order-1 shadow-xl w-[25px] h-[25px] rounded-full`}> </div>
                         <div data-aos="fade-up" data-aos-delay={item.delay}  className={` flex max-md:flex-col max-md:items-center items-center gap-[10px]  order-1 rounded-[10px] min-h-[120px] w-[47%] max-md:w-full px-[20px] py-[10px] ${item.bg == "secondery" ? "bg-secondery text-white " : " bg-white text-secondery "} ` } style={{boxShadow : "0px 10px 60px 0px #262D7614"}} >
                             <Image data-aos="zoom-out" data-aos-delay={item.delay + 300} alt='' src={item.icon} width={60} height={60} />
                             <div>

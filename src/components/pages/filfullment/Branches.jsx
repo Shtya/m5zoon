@@ -24,9 +24,9 @@ export default function Branches() {
 				<div className=" w-full mt-[60px] flex items-center justify-center gap-y-[30px] gap-x-[20px] flex-wrap ">
 					{
 						data.map((item, index) => (
-                            <div  data-aos="zoom-out" data-aos-delay={200} key={index} className='max-w-[350px] min-w-[250px] max-lg:max-w-[200px]  w-full bg-white rounded-[500px] flex items-center justify-center gap-[10px] border border-[#EEEEEE] px-[20px] min-h-[85px] p-[10px]  '>
+                            <div  data-aos="zoom-out" data-aos-delay={200} key={index} className='max-w-[350px] min-w-[250px] max-lg:max-w-[200px] max-sm:max-w-fit  w-full bg-white rounded-[500px] flex items-center justify-center gap-[10px] border border-[#EEEEEE] px-[20px] max-sm:px-[5px] min-h-[85px] p-[10px]  '>
                                 <Image className='' width={45} height={45} src={item.icon} alt={item.title} />
-								<h3 className='  t18 font-[400] text-[#767575] ' >{item.title}</h3>
+								<h3 className='  t18 max-sm:t15 font-[400] text-[#767575] ' >{item.title}</h3>
                             </div>
                             
                         ))

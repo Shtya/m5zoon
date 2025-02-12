@@ -17,9 +17,9 @@ export default function WhatYouNeed({ data, t }) {
                     {data?.data?.map((e, i) => (
                         <div key={i}>
                             {e.key == 'border' ? (
-                                <Image data-aos="zoom-in" data-aos-delay="200" className=' max-lg:hidden h-[100px] max-xl:max-w-[150px] duration-300 max-w-[200px] w-full object-contain' src={e.icon} alt='' width={100} height={100} />
+                                <Image data-aos="zoom-in" data-aos-delay="100" className=' max-lg:hidden h-[100px] max-xl:max-w-[150px] duration-300 max-w-[200px] w-full object-contain' src={e.icon} alt='' width={100} height={100} />
                             ) : (
-                                <div key={i} data-aos="fade-up" data-aos-delay="200" className='  items-start justify-center  h-full max-w-[220px]  w-full flex flex-col ' >
+                                <div key={i} data-aos="fade-up" data-aos-delay="100" className='  items-start justify-center  h-full max-w-[220px]  w-full flex flex-col ' >
                                     <Image className='mx-auto' src={e.icon} alt='' width={100} height={100} />
                                     <h3 className=' w-full mt-[10px] select-none !text-center t20 max-lg:t18 font-[400] text-secondery '> {e.title} </h3>
                                     <p className=' select-none text-center t17 max-md:text-balance max-lg:t18 max-lg:t15 font-[300] text-[#ADB7C3]  '> {e.desc} </p>

@@ -29,14 +29,11 @@ export default function Services() {
     return (
         <div className='bg-[#fbfcff] ' id='our-services' >
             <div className='container py-[30px] my-[40px] '>
-            <Title cn='text-center' title={  t('our_premium_services')} title2={  t('less_effort')} />
+            <Title dataAos={"fade-up"} cn='text-center' title={  t('our_premium_services')} title2={  t('less_effort')} />
 
-{/* after:absolute after:top-0 after:left-0 after:h-0 hover:after:h-[51%] after:duration-300 after:w-full after:bg-secondery after:z-[0]
-					before:absolute before:bottom-0 before:left-0 before:h-0 hover:before:h-[51%] before:duration-300 before:w-full before:bg-secondery before:z-[0] */}
             <div className='grid grid-cols-2 max-md:gap-[20px] max-sm:gap-[10px] gap-[30px] max-w-[1000px] w-full mx-auto mt-[60px]  '>
                 {servciesData?.map((e, i) => (
-                    <div
-                        key={i}
+                    <div  key={i} data-aos="fade-up"  data-aos-delay={`${i}00`}
                         className={` hover:bg-secondery  duration-300 group relative group min-h-[118px] max-md:min-h-[80px] cursor-pointer hover:text-white text-secondery2 max-sm:px-[10px] px-[30px] bg-white rounded-[10px] overflow-hidden shadow-[0px_10px_20px_0px_rgba(215,215,215,0.25)] max-md:gap-[10px] gap-[18px] items-center max-md:justify-start inline-flex `}>
                         <span className=' group-hover:scale-[1.4] ltr:group-hover:mr-[10px] rtl:group-hover:ml-[20px] z-[10]  duration-300 '> {e.icon} </span>
                         <h4 className=' z-[10] duration-300 max-md:t14  t20 group-hover:text-white  text-[#09396f] capitalize font-normal '> {e.label} </h4>

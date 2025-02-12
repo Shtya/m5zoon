@@ -37,7 +37,7 @@ export default function Layout({children}) {
 
 
   return (
-	<div className=' main  relative w-full overflow-x-hidden ' >
+	<div className=' main  relative w-full ' >
 		{isAllowed && <Navbar />}
 		<main className='min-h-[50vh]' > {children} </main>
 		{isAllowed && showFooter && <Footer />}

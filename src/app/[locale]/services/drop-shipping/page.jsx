@@ -40,10 +40,10 @@ export default function page() {
         { title: t_('services.customer_support.title'), desc: t_('services.customer_support.description'), icon: '/fulfillment/serv2.png', bg: 'white', delay: '0' },
         { title: t_('services.product_exposure.title'), desc: t_('services.product_exposure.description'), icon: '/fulfillment/serv3.png', bg: 'white', delay: '100' },
         { title: t_('services.product_sourcing.title'), desc: t_('services.product_sourcing.description'), icon: '/fulfillment/serv4.png', bg: 'secondery', delay: '100' },
-        { title: t_('services.quality_inspection.title'), desc: t_('services.quality_inspection.description'), icon: '/fulfillment/serv5.png', bg: 'secondery', delay: '200' },
-        { title: t_('services.profit_collection.title'), desc: t_('services.profit_collection.description'), icon: '/fulfillment/serv6.png', bg: 'white', delay: '200' },
-        { title: t_('services.payment_options.title'), desc: t_('services.payment_options.description'), icon: '/fulfillment/serv7.png', bg: 'white', delay: '300' },
-        { title: t_('services.detailed_reports.title'), desc: t_('services.detailed_reports.description'), icon: '/fulfillment/serv8.png', bg: 'secondery', delay: '300' },
+        { title: t_('services.quality_inspection.title'), desc: t_('services.quality_inspection.description'), icon: '/fulfillment/serv5.png', bg: 'secondery', delay: '100' },
+        { title: t_('services.profit_collection.title'), desc: t_('services.profit_collection.description'), icon: '/fulfillment/serv6.png', bg: 'white', delay: '100' },
+        { title: t_('services.payment_options.title'), desc: t_('services.payment_options.description'), icon: '/fulfillment/serv7.png', bg: 'white', delay: '100' },
+        { title: t_('services.detailed_reports.title'), desc: t_('services.detailed_reports.description'), icon: '/fulfillment/serv8.png', bg: 'secondery', delay: '100' },
     ];
 
     const JoinUsData = [

@@ -15,7 +15,7 @@ export default function ShowSection({data , dir}) {
 
 			<div className={`row relative p-[20px] ${dir == "rtl" ? "order-[-1] max-lg:order-1 " : "" } `}  >
 
-				<h2 className='text-secondery t25 max-sm:t17 font-semibold max-lg:text-center max-lg:text-balance ' >  
+				<h2 data-aos="fade-up" className='text-secondery t25 max-sm:t17 font-semibold max-lg:text-center max-lg:text-balance ' >  
 					{data.title}
 					<span className='text-primary'> {data.title2} </span>
 					{data.title3}
@@ -23,7 +23,7 @@ export default function ShowSection({data , dir}) {
 
 				{
 					data.lists?.map((e,i)=>(
-						<div key={i} className='flex max-lg:flex-col items-center gap-[10px] mt-[40px] ' >
+						<div  data-aos="fade-up"  data-aos-delay={`${i}00`} key={i} className='flex max-lg:flex-col items-center gap-[10px] mt-[40px] ' >
 							<Image data-aos="zoom-in" width={55} height={55} alt='' src={e.icon} />
 							<div  > 
 								<h4 className='max-lg:text-center max-lg:text-balance max-sm:t16 t22 font-normal text-secondery ' > {e.title} </h4>

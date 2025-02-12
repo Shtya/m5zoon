@@ -12,50 +12,55 @@ import { useTranslations } from 'next-intl';
 import React from 'react';
 
 export default function page() {
+    const t = useTranslations('export');
     const t_ = useTranslations('filfullment');
 
+
     const HeroData = {
-        img: '/video/fulfliment.mp4',
-        title: t_('title'),
-        title2: t_('store'),
-        desc: t_('description'),
-        btn1: t_('join'),
-        btn2: t_('contact'),
+        img: '/video/shipping & export.mp4',
+        title: t('call_center_service.title'),
+        title2: t('call_center_service.title2'),
+        title3: t('call_center_service.title3'),
+        desc: t('call_center_service.description'),
+        btn1: t('cta.register_now'),
+        btn2: t('cta.join_us'),
         href1: '/',
         href2: '/',
     };
 
-    const t = useTranslations('');
+
     const WhyChooseM5zzonData = {
-        title1: t('what_we_offer'),
-        title2: t('fulfillment_partner'),
-        title3: t('fulfillment_partner2'),
-        title4: t('fulfillment_partner3'),
-        desc: t('services_description'),
-        btn1: t('join_now'),
-        img: '/fulfillment/sec2Fulfillment.png',
+        title1: t('about_us.title'),
+        title2: t('about_us.title1'),
+        title3: t('about_us.title2'),
+        title4: t('about_us.title3'),
+        desc: t('about_us.description'),
+        btn1: t('about_us.join_now'),
+        img: '/export/sec1.png',
         href1: '/',
     };
 
+
+
     const InfoSecData = {
-        title1: t('get_to_know_makzoun_services'),
-        title2: t('services_intro'),
-        title3: t('services_intro2'),
+        title1: t('services.title'),
+        title2: t('services.description'),
+        title3: t('services.description2'),
 
         lists: [
-            { title: t('storage_and_packaging.title'), title2: t('storage_and_packaging.title2'), desc: t('storage_and_packaging.desc'), img: '/fulfillment/sec1.png' },
-            { title: t('customer_service.title'), title2: t('customer_service.title2'), desc: t('customer_service.desc'), img: '/fulfillment/sec2.png' },
-            { title: t('fast_shipping.title'), title2: t('fast_shipping.title2'), desc: t('fast_shipping.desc'), img: '/fulfillment/sec3.png' },
-            { title: t('profit_collection.title'), title2: t('profit_collection.title2'), desc: t('profit_collection.desc'), img: '/fulfillment/sec4.png' },
-            { title: t('product_import_and_quality_check.title'), title2: t('product_import_and_quality_check.title2'), desc: t('product_import_and_quality_check.desc'), img: '/fulfillment/sec5.png' },
-            { title: t('additional_inventory_services.title'), title2: t('additional_inventory_services.title2'), desc: t('additional_inventory_services.desc'), img: '/fulfillment/sec6.png' },
-            { title: t('detailed_reports.title'), title2: t('detailed_reports.title2'), desc: t('detailed_reports.desc'), img: '/fulfillment/sec7.png' },
-        ],
+            { title: t('services.storage_and_packaging.title'), title2: t('services.storage_and_packaging.title2'), desc: t('services.storage_and_packaging.description'), img: '/export/1.png' }, 
+            { title: t('services.customer_support.title'), title2: t('services.customer_support.title2'), desc: t('services.customer_support.description'), img: '/export/2.png' }, 
+            { title: t('services.shipping.title'), title2: t('services.shipping.title2'), desc: t('services.shipping.description'), img: '/export/3.png' }, 
+            { title: t('services.profit_collection.title'), title2: t('services.profit_collection.title2'), desc: t('services.profit_collection.description'), img: '/export/4.png' }, 
+            { title: t('services.product_import.title'), title2: t('services.product_import.title2'), desc: t('services.product_import.description'), img: '/export/5.png' }, 
+            { title: t('services.additional_services.title'), title2: t('services.additional_services.title2'), desc: t('services.additional_services.description'), img: '/export/6.png' }, 
+            { title: t('services.analytics.title'), title2: t('services.analytics.title2'), desc: t('services.analytics.description'), img: '/export/7.png' }, 
+             ]
     };
 
     return (
         <div>
-            <Hero t={t_} data={HeroData} />
+            <Hero data={HeroData} />
             <WhyChooseM5zoon data={WhyChooseM5zzonData} />
             <Branches />
 
@@ -86,15 +91,9 @@ export default function page() {
                 </div>
             </div>
 
-            {/* <Brands /> */}
-            {/* <ServicesForExporter t={t_} data={ServicesForSailerData} /> */}
-            {/* <JoinUs t={t_} data={JoinUsData} /> */}
-            {/* <ServicesForSailer t={t_} data={ServicesForSuppliers} title1 = {t_("supplier_services")} title2 = {t_("supplier_services_intro")} title3 = {t_("supplier_services_intro2")}  /> */}
-            {/* <WhatYouNeed data={whatYouNeedData} t={t_} /> */}
-
             <OurPartners title={<TitleArrow dataAos={'zoom-out'} cn={''} title={t_('partners_intro')} />} desc={<Title dataAos={'zoom-out'} delay={100} icon={<Mouce />} title={t_('partners_description')} title2={t_('partners_description2')} cn={' text-center mb-[60px] t25 !font-[400] mt-[10px] '} />} />
 
-            {/* <FAQPage title={<TitleArrow dataAos={'zoom-out'} cn={''} title={t_('important_questions')} />} desc={<Title dataAos={'zoom-out'} delay={100} icon={<Mouce />} title={t_('questions_intro')} title2={t_('questions_intro2')} cn={' text-center mb-[60px] t25 !font-[400] mt-[10px] '} />} /> */}
+            <FAQPage title={<TitleArrow dataAos={'zoom-out'} cn={''} title={t_('important_questions')} />} desc={<Title dataAos={'zoom-out'} delay={100} icon={<Mouce />} title={t_('questions_intro')} title2={t_('questions_intro2')} cn={' text-center mb-[60px] t25 !font-[400] mt-[10px] '} />} />
 
             <Footer2 />
         </div>

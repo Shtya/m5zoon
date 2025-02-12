@@ -24,7 +24,7 @@ export default function JoinUs({data , t}) {
 
                     {
                         data?.map((e,i)=> (
-                            <div key={i} data-aos="fade-up" data-aos-delay={200}  className=' relative max-md:justify-start group duration-300 rounded-[10px] overflow-hidden max-md:max-w-[230px] max-md:min-h-[230px] h-full max-w-[550px] min-h-[350px] flex flex-col items-center justify-center p-[20px] w-full ' style={{boxShadow : "0px 10px 60px 0px #262D7614"}} > 
+                            <div key={i} data-aos="fade-up" data-aos-delay={200}  className=' relative max-md:justify-start group duration-300 rounded-[10px] overflow-hidden max-md:max-w-[230px] max-md:min-h-[230px] max-sm:max-w-full max-sm:h-fit h-full max-w-[550px] min-h-[350px] flex flex-col items-center justify-center p-[20px] w-full ' style={{boxShadow : "0px 10px 60px 0px #262D7614"}} > 
                                 <Image className=' absolute inset-0 object-cover w-full h-full  ' alt='' src={"/imgs/frame.png"} width={550} height={350}  />
                                 <div className='absolute inset-0 h-full w-full opacity-90 ' style={{background : e.key === "blue" ? "linear-gradient(180deg, #09396F 0%, #0F3762 100%)" : "linear-gradient(180deg, #FAAB27 0%, #F9A51A 100%)" }} > </div>
                                 

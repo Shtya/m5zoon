@@ -39,28 +39,28 @@ export default function page() {
                         </div>
 
                         <div className='pt-[40px] flex flex-col justify-start h-full'>
-                            <Title cn={' !text-right ltr:!text-left text-[#09396f] text-4xl font-medium'} title={t('welcome_back')} title2={t('back')} />
-                            <div className=' mt-[10px] text-[#637381] text-2xl font-normal '> {t('enter_your_details')} </div>
+                            <Title cn={' !text-right ltr:!text-left text-[#09396f] text-4xl max-md:!t16 font-medium'} title={t('welcome_back')} title2={t('back')} />
+                            <div className=' md:mt-[10px] text-[#637381] text-2xl max-md:!t20 max-md:text-center  font-normal '> {t('enter_your_details')} </div>
 
-                            <div className='my-[70px]'>
+                            <div className='my-[70px] max-md:my-[40px] '>
                                 <Radio setError={setError} watch={watch} setValue={setValue} KEY='type_account' cn='!grid grid-cols-3 max-md:grid-cols-3 max-[1150px]:grid-cols-2  ' data={TypeAccount} />
                             </div>
 
-                            <form action='' className=' grid grid-cols-1 gap-x-[20px] gap-y-[40px] '>
+                            <form action='' className=' grid grid-cols-1 gap-x-[20px] gap-y-[40px] max-md:gap-y-[20px] '>
                                 <Input required={true} KEY={'email'} error={errors?.email} type={'email'} register={register('email')} place={t('enter_email')} label={t('email')} />
                                 <Input required={true} KEY={'password'} error={errors?.password} type={'password'} register={register('password')} place={t('enter_password')} label={t('password_required')} icon={'/imgs/sign-up/eye-crossed 1.svg'} />
                             </form>
 
                             <div className='flex text-center justify-between mt-[40px] '>
-                                <Checkbox cnLabel={'w-full'} cn={'!mt-0'} KEY={'rememberMe'} setValue={setValue} watch={watch} label={termsLabel} />
-                                <Link href={'/forget-password'} className='text-[#f9a51a] text-lg font-normal underline'>
+                                <Checkbox cnLabel={'w-full'} cn={'!mt-0 max-md:t18 t20 '} KEY={'rememberMe'} setValue={setValue} watch={watch} label={termsLabel} />
+                                <Link href={'/forget-password'} className='text-[#f9a51a] max-md:t18 t20 font-normal underline'>
                                     {t('forgot_password')}
                                 </Link>
                             </div>
 
                             <Button name={t('login')} cn={'  !max-w-[670px] !w-full mx-auto !my-[40px] hover:bg-opacity-90  bg-secondery '} />
 
-                            <p className=' pb-[30px] text-center text-[#09396f] text-2xl font-normal'>
+                            <p className=' pb-[30px] text-center text-[#09396f] text-2xl max-md:t18  font-normal'>
                                 {t('no_account')}
                                 <Link className='text-[#f9a51a]' href={'/sign-up'}>
                                     {t('join_us_now')}
