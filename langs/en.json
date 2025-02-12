@@ -6,7 +6,7 @@
         "services2": {
             "product_sourcing": {
                 "title": "Product Sourcing",
-                "description": "Finding and supplying products from China, ensuring their quality in our warehouses and that they are ready for shipping."
+                "description": "Finding and supplying products from China, ensuring their quality in our warehouses and readiness for shipping."
             },
             "customer_service": {
                 "title": "Customer Service",
@@ -14,15 +14,15 @@
             },
             "storage_packaging": {
                 "title": "Storage and Packaging",
-                "description": "A full team dedicated to storing and packaging products to maintain their quality and ensure they reach your customers in good condition."
+                "description": "A dedicated team focused on storing and packaging products to maintain their quality and ensure they reach your customers in good condition."
             },
             "diverse_products": {
                 "title": "Products from A to Z",
-                "description": "Diverse products for all categories and tastes that suit your target audience with high quality."
+                "description": "A variety of products for all categories and tastes, suitable for your target audience with high quality."
             },
             "payment_options": {
                 "title": "Convenient Payment Options (Visa)",
-                "description": "Facilitating the payment process for your ads if you face issues paying for ads with Visa."
+                "description": "Facilitating the payment process for your ads if you face issues paying with Visa."
             },
             "funding": {
                 "title": "Funding",
@@ -30,30 +30,30 @@
             },
             "comprehensive_reports": {
                 "title": "Comprehensive Reports",
-                "description": "Regular follow-up on your daily reports to understand and analyze your data to continuously improve your performance."
+                "description": "Regular follow-up on your daily reports to understand and analyze your data for continuous performance improvement."
             },
             "profit_collection": {
                 "title": "Profit Collection and Transfer",
-                "description": "Collecting your order funds and transferring profits as soon as a withdrawal request is made within 24 hours."
+                "description": "Collecting your order funds and transferring profits within 24 hours of a withdrawal request."
             }
         },
 
-        "title": "For fulfillment services with Makhzon platform to develop your e-commerce business.",
+        "title": "Fulfillment Services with Makhzon Platform to Develop Your E-commerce.",
         "store": "Store, Get, Deliver",
-        "description": "An integrated platform offering fulfillment services, including storage, packaging, and shipping, to help you develop your e-commerce business efficiently and quickly.",
+        "description": "Integrated Fulfillment services from Makhzon, where we provide you with secure storage, precise order processing, and super-fast shipping at competitive prices and flexible payment options, helping you grow your e-commerce business easily in the Arab region.",
         "contact": "Contact Us",
         "join": "Join Us",
 
-        "platform_intro": "A dropshipping platform to be your ideal partner in providing solutions to develop your e-commerce business.",
-  "platform_intro2": "Simpler, Faster, and Easier",
-  "platform_description": "An integrated dropshipping platform that provides you with innovative solutions and a wide range of products to develop your e-commerce business easily and quickly.",
+        "platform_intro": "A dropshipping platform to be your ideal partner in providing solutions to develop your e-commerce.",
+        "platform_intro2": "Simpler, Faster, and Easier",
+        "platform_description": "An integrated dropshipping platform that offers you innovative solutions and a wide range of products to develop your e-commerce easily and quickly.",
 
         "join_makhzon_team": "Join the Makhzon Team",
-        "makhzon_complete": "Makhzon is complete... for suppliers and marketers, because everyone's success",
+        "makhzon_complete": "Makhzon Complete... for Suppliers and Marketers, because everyone's success",
         "makhzon_complete2": "starts here",
         "makhzon_for_marketers": "Makhzon for Marketers",
         "makhzon_for_suppliers": "Makhzon for Suppliers",
-        "marketers_intro": "Do you need ready products to start your marketing campaign? We provide you with a complete and always available inventory so you can start marketing without delay. Start today and make success your ally!",
+        "marketers_intro": "Need ready products to start your marketing campaign? We provide you with a complete and always available inventory so you can start marketing without delay. Start today and make success your ally!",
         "suppliers_intro": "Are you looking for a way to manage your inventory easily and effectively? With our solutions, you can focus on developing your products and leave inventory management to us. Because we know that your success starts with organizing your inventory!",
         "join_as_supplier": "Join as a Supplier",
         "join_as_marketer": "Join as a Marketer",
@@ -65,7 +65,7 @@
         "services": {
             "competitive_storage": {
                 "title": "Competitive Storage Prices",
-                "description": "Providing economical storage solutions that suit your budget and ensure the safety and quality of your products."
+                "description": "Providing economical storage solutions that fit your budget and ensure the safety and quality of your products."
             },
             "customer_support": {
                 "title": "Premium Customer Service",
@@ -85,7 +85,7 @@
             },
             "profit_collection": {
                 "title": "Easy Profit Collection and Transfer",
-                "description": "Your profits in your hands quickly and securely through collecting funds and transferring them to you through more than 10 flexible methods."
+                "description": "Your profits in your hands quickly and securely through fund collection and transfer in more than 10 flexible ways."
             },
             "payment_options": {
                 "title": "Convenient Payment Options (Visa)",
@@ -95,115 +95,248 @@
                 "title": "Detailed Reports to Improve Your Business",
                 "description": "Get accurate data and comprehensive information to help you make better decisions and understand your inventory."
             }
-        },
-
-        "start_with_makhzon": "What do you need to start your project with Makhzon?",
-        "start_intro": "Simple and easy steps to start with the Makhzon platform",
-        "start_intro2": "for e-commerce.",
-
-        "steps": {
-            "profit_receiving": {
-                "title": "Receiving Profits",
-                "description": "Receiving your profits immediately after collection from the customer."
-            },
-            "order_addition": {
-                "title": "Adding Orders to the Platform",
-                "description": "When you receive new orders, add them to the Makhzon system."
-            },
-            "product_selection": {
-                "title": "Choosing the Right Product",
-                "description": "Selecting the right product from a diverse range of products."
-            },
-            "account_creation": {
-                "title": "Creating an Account",
-                "description": "Creating a new account on the Makhzon platform."
-            }
-        },
-
-        "partners_intro": "Meet Our Partners",
-        "partners_description": "Partners of Success",
-        "partners_description2": "Makhzon Platform",
-
-        "branches_locations": "Locations of Makhzon Branches",
-        "branches_description": "Makhzon platform is now available in Saudi Arabia, UAE,",
-        "branches_description2": "Jordan, and Oman.",
-
-        "important_questions": "Questions That Matter to You",
-        "questions_intro": "Still have questions? Browse through",
-        "questions_intro2": "the following questions.",
-
-        "branch_locations": "Locations of Makhzon Branches",
-        "sales_description": "Selling goods through the Makhzon platform in the best available markets",
-        "different_countries": "in different countries.",
-        "countries": {
-            "oman": "Sultanate of Oman",
-            "saudi_arabia": "Kingdom of Saudi Arabia",
-            "uae": "United Arab Emirates",
-            "jordan": "Jordan",
-            "morocco": "Morocco"
         }
     },
+
+    "start_with_makhzon": "What do you need to start your project with Makhzon?",
+    "start_intro": "Easy and simple steps to get started with the Makhzon platform",
+    "start_intro2": "for e-commerce.",
+
+    "steps": {
+        "profit_receiving": {
+            "title": "Receiving Profits",
+            "description": "Receive your profits immediately after collection from the customer."
+        },
+        "order_addition": {
+            "title": "Adding Orders to the Platform",
+            "description": "When you receive new orders, add them to the Makhzon system."
+        },
+        "product_selection": {
+            "title": "Choosing the Right Product",
+            "description": "Select the right product from a wide range of options."
+        },
+        "account_creation": {
+            "title": "Creating an Account",
+            "description": "Create a new account on the Makhzon platform."
+        }
+    },
+
+    "partners_intro": "Meet Our Partners",
+    "partners_description": "Success partners of",
+    "partners_description2": "the Makhzon platform.",
+
+    "branches_locations": "Makhzon Branch Locations",
+    "branches_description": "Makhzon is now available in Saudi Arabia and the UAE.",
+    "branches_description2": "Also in Jordan and Oman.",
+
+    "important_questions": "Important Questions",
+    "questions_intro": "Still have questions? Browse",
+    "questions_intro2": "the following questions.",
+
+    "branch_locations": "Makhzon Branch Locations",
+    "sales_description": "Sell goods through Makhzon in the best available markets",
+    "different_countries": "across different countries.",
+    "countries": {
+        "oman": "Sultanate of Oman",
+        "saudi_arabia": "Saudi Arabia",
+        "uae": "United Arab Emirates",
+        "jordan": "Jordan",
+        "seesoon": "Coming soon"
+    },
+
     "footer2": {
         "important_links": "Important Links",
         "customer_reviews": "Customer Reviews",
         "our_locations": "Our Locations",
         "home": "Home",
-        "about_platform": "A leading e-commerce platform in dropshipping, we offer competitively priced products without the need for capital, with comprehensive logistics services such as shipping and storage, allowing you to focus on increasing your sales.",
+        "about_platform": "A leading e-commerce dropshipping platform offering competitively priced products without the need for capital, along with comprehensive logistics services such as shipping and storage, allowing you to focus on increasing your sales.",
         "contact_us": "Contact Us",
         "makhzon_branches": "Makhzon Branches",
         "our_services": "Our Services",
         "join_as_marketer": "Join as a Marketer",
-        "important_questions": "Questions That Matter to You",
+        "important_questions": "Important Questions",
         "why_choose_us": "Why Choose Us",
         "join_as_supplier": "Join as a Supplier",
         "success_partners": "Success Partners",
         "our_features": "Our Features",
-        "copyright": "All rights reserved to Makhzon Platform © 2025"
+        "copyright": "All rights reserved to Makhzon platform © 2025"
     },
 
-    "get_to_know_makzoun_services": "Get to Know Makhzoun Services",
-    "services_intro": "All our services guarantee you solutions for all areas of e-commerce",
+    "get_to_know_makzoun_services": "Get to Know Makhzon Services",
+    "services_intro": "All our services ensure comprehensive solutions for e-commerce",
     "services_intro2": "in one place",
+
     "storage_and_packaging": {
         "title": "Storage and Packaging",
-        "title2": "Professionally",
-        "desc": "We provide you with secure and equipped storage spaces to keep your products in perfect condition, with smart inventory management that ensures constant quantity updates. We also offer professional packaging services according to the highest standards, ensuring that orders reach your customers with high quality and a unique unboxing experience. Additionally, you can rely on our private warehouses available 24/7 to store and manage your products with ease and security."
+        "title2": "with Expertise",
+        "desc": "We provide secure and well-equipped storage spaces to keep your products in perfect condition, with smart inventory management that ensures continuous stock updates. We also offer professional packaging services that meet the highest standards, ensuring high-quality deliveries and a unique unboxing experience for your customers. Additionally, our private warehouses are available 24/7 for easy and safe product storage and management."
     },
+
     "customer_service": {
-        "title": "Customer Service",
+        "title": "Customer Call Service",
         "title2": "to Enhance Satisfaction",
-        "desc": "Customer support is a fundamental element in the success of any online store, so we provide you with a specialized team to respond to customer inquiries, handle their requests and issues quickly and professionally, helping you build a strong relationship with your customers and increase loyalty and repeat purchases."
+        "desc": "Customer support is essential for any successful online store. That’s why we provide a specialized team to handle customer inquiries, process their requests, and resolve issues quickly and professionally, helping you build strong relationships and increase customer loyalty and repeat purchases."
     },
+
     "fast_shipping": {
-        "title": "Fast Shipping and Delivery to Ensure a",
-        "title2": "Premium Customer Experience",
-        "desc": "We guarantee fast and reliable shipping services in collaboration with the best delivery companies, ensuring that orders reach your customers on time and in excellent condition, enhancing customer satisfaction and reducing return rates."
+        "title": "Fast Shipping and Delivery for an",
+        "title2": "Exceptional Customer Experience",
+        "desc": "We guarantee fast and reliable shipping services in partnership with top delivery companies, ensuring that orders reach your customers on time and in perfect condition, enhancing customer satisfaction and reducing return rates."
     },
+
     "profit_collection": {
-        "title": "Profit Collection and Transfer Within",
-        "title2": "24 Hours Only",
-        "desc": "No need to wait long to receive your profits! With Makhzoun, we guarantee the collection and transfer of your profits within 24 hours, giving you a fast cash flow to support your expansion and business growth without any delay. We provide more than 10 different payment methods, including bank transfers, e-wallets, and payment cards, giving you complete flexibility in receiving your profits in the way that suits you."
+        "title": "Profit Collection and Transfers",
+        "title2": "Within Just 24 Hours",
+        "desc": "No more waiting to receive your profits! With Makhzon, you can collect and transfer your earnings within just 24 hours, ensuring quick cash flow to support your business growth. We also offer over 10 different payment methods, including bank transfers, e-wallets, and card payments, giving you full flexibility in how you receive your profits."
     },
+
     "product_import_and_quality_check": {
-        "title": "Product Import and Quality Check with",
-        "title2": "Guaranteed Quality",
-        "desc": "We help you find trending products and import them at the best prices, with a thorough quality check before shipping them to your warehouses, ensuring that you offer reliable products that maintain your store's reputation and enhance customer trust."
+        "title": "Product Import and Quality Check",
+        "title2": "Guaranteed",
+        "desc": "We help you find trending products and import them at the best prices, with a thorough quality check before shipping to your warehouses, ensuring you offer reliable products that maintain your store’s reputation and build customer trust."
     },
+
     "additional_inventory_services": {
         "title": "Additional Inventory Services",
         "title2": "to Boost Your Business",
-        "desc": "We provide additional services such as financing (Fund) that allows you to get products now and pay later after achieving sales, helping you grow your business without the need for a large initial investment. We also offer a Visa to facilitate online payments, enabling you to grow your e-commerce business without financial constraints."
+        "desc": "We offer additional services such as funding (Fund), allowing you to acquire products now and pay later after making sales, helping you expand your business without needing a large upfront investment. We also provide Visa payment solutions for seamless online transactions, helping you scale your e-commerce business without financial restrictions."
     },
+
     "detailed_reports": {
         "title": "Detailed Reports to Track and Analyze",
         "title2": "Your Business Performance",
-        "desc": "Through the dashboard, you can access accurate reports about your inventory, including sorting details and available quantities, as well as sales performance and return rates. This data helps you make smart decisions to improve your operations and boost your profits."
+        "desc": "Through the control panel, you can access precise reports on your inventory, including sorting details and available quantities, along with sales performance and return rates. This data helps you make smart decisions to improve operations and maximize profits."
     },
+
+    "call-center": {
+        "call_center_service": {
+            "title": "Make Your Brand Shine with a Premium Call Center Service Ensuring",
+            "title2": "Fast and Effective",
+            "title3": "Customer Interaction.",
+            "description": "We provide direct communication with your customers to ensure their perfect experience, quickly resolving inquiries and issues efficiently, enhancing service quality, and increasing customer satisfaction. We are here to bring you closer to success step by step."
+        },
+        "cta": {
+            "register_now": "Register Now",
+            "join_us": "Join Us"
+        },
+
+        "about_us": {
+            "title": "Who We Are and Why Choose Us",
+            "title1": "Makhzon, Your Ideal Partner for",
+            "title2": "Call Center Services",
+            "title3": "Where Professionalism Meets Speed and Quality.",
+            "description": "At Makhzon, we provide integrated call center services to support your e-commerce business, from handling customer calls and inquiries to managing orders, resolving complaints, and boosting sales with a professional team that enhances conversions and repeat purchases. We are your ideal partner for e-commerce success in the Arab region.",
+            "join_now": "Join Us Now"
+        },
+
+        "services": {
+            "title": "Discover Makhzon Services",
+            "subtitle": "Makhzon – Where Call Center Expertise Meets",
+            "subtitle2": "Your Business Success"
+        },
+
+        "customer_support": {
+            "title": "Customer Support That Elevates",
+            "title2": "Your Customer Satisfaction",
+            "description": "First impressions last! Our trained team is ready to handle customer calls, respond to inquiries, and resolve issues professionally and promptly, ensuring an exceptional experience that strengthens customer trust in your brand."
+        },
+
+        "order_management": {
+            "title": "Order Call Management",
+            "title2": "with Efficiency and Ease",
+            "description": "Let us handle customer order follow-ups, confirmations, and status updates, ensuring a more organized service and a hassle-free experience for your customers."
+        },
+
+        "branded_call_center": {
+            "title": "A Professional Call Center for Your Brand...",
+            "title2": "In Your Voice and Identity",
+            "description": "If you own an online store, platform, or company and need a professional call center in your brand’s name, we offer a fully integrated service with a specialized team that represents your brand exactly as if it were you."
+        },
+
+        "telesales": {
+            "title": "Telesales – Never Miss",
+            "title2": "a Sales Opportunity",
+            "description": "Our expert telesales team follows up with potential customers and motivates them to complete purchases, leading to higher conversion rates and faster revenue growth."
+        },
+
+        "reports_analysis": {
+            "title": "Smart Reports & Analytics",
+            "title2": "to Enhance Performance",
+            "description": "At Makhzon, we provide you with accurate reports and analytics that give you a clear vision of customer service performance, helping you improve operations, reduce errors, and increase customer satisfaction."
+        },
+        "flexible_solutions": {
+            "title": "Flexible Solutions",
+            "title2": "Tailored to Your Needs",
+            "description": "We understand that every business requires flexible and customizable services. That's why we offer comprehensive call center solutions that adapt to the size of your business and unique requirements."
+        }
+    },
+
+    "export": {
+        "call_center_service": {
+            "title": "Make Your Brand Shine with an Outstanding Call Center Service Ensuring",
+            "title2": "Fast & Efficient",
+            "title3": "Customer Interaction.",
+            "description": "We provide direct communication with your customers to ensure an optimal experience and swiftly resolve inquiries or issues with efficiency. This enhances service levels and boosts customer satisfaction. We are here to bring you closer to success, step by step."
+        },
+        "cta": {
+            "register_now": "Register Now",
+            "join_us": "Join Us"
+        },
+        "about_us": {
+            "title": "Who We Are and Why Choose Us",
+            "title1": "Makhzon - Your Perfect Partner for",
+            "title2": "a Successful E-commerce Business",
+            "title3": "in the Arab Region",
+            "description": "With Makhzon, start your e-commerce business in the Arab region without the need for capital. We provide you with premium products at competitive prices and handle everything from shipping and storage to collection and returns. Our specialized team ensures the highest delivery rates and the lowest return rates, offering high-quality products and multiple payment options to help you receive your earnings quickly and easily.",
+            "join_now": "Join Us Now"
+        },
+        "services": {
+            "title": "Explore Makhzon Services",
+            "description": "All our services provide solutions for all aspects of e-commerce",
+            "description2": "in one place.",
+            "storage_and_packaging": {
+                "title": "Storage & Packaging",
+                "title2": "with Professionalism",
+                "description": "We offer secure and well-equipped storage spaces to keep your products in perfect condition, with smart inventory management that ensures continuous quantity updates. We also provide high-standard packaging services to guarantee your orders reach customers in excellent condition, offering a unique unboxing experience. Additionally, you can rely on our dedicated warehouses available 24/7 for seamless product storage and management."
+            },
+            "customer_support": {
+                "title": "Customer Support",
+                "title2": "to Enhance Satisfaction",
+                "description": "Customer support is a crucial element in the success of any online store. That’s why we provide a dedicated team to respond to customer inquiries, handle requests, and resolve issues promptly and professionally. This helps you build strong customer relationships and increase loyalty and repeat purchases."
+            },
+            "shipping": {
+                "title": "Fast & Reliable Shipping",
+                "title2": "for an Exceptional Customer Experience",
+                "description": "We guarantee fast and reliable shipping services in collaboration with top delivery companies, ensuring that orders reach your customers on time and in excellent condition. This enhances customer satisfaction and reduces return rates."
+            },
+            "profit_collection": {
+                "title": "Profit Collection & Transfer",
+                "title2": "Within Just 24 Hours",
+                "description": "No need to wait long to receive your earnings! With Makhzon, we ensure that your profits are collected and transferred within just 24 hours, providing you with a fast cash flow to support your business growth without delays. We offer more than 10 different payment methods, including bank transfers, digital wallets, and credit card payments, giving you complete flexibility in receiving your earnings."
+            },
+            "product_import": {
+                "title": "Product Import & Quality Inspection",
+                "title2": "with Guaranteed Standards",
+                "description": "We assist you in finding trending products and importing them at the best prices, conducting thorough quality inspections before shipping them to your storage. This ensures that you offer reliable products, maintaining your store’s reputation and strengthening customer trust."
+            },
+            "additional_services": {
+                "title": "Additional Inventory Services",
+                "title2": "to Boost Your Business",
+                "description": "We provide additional services like financing (Fund), allowing you to acquire products now and pay later after making sales. This helps you grow your business without a significant initial investment. We also offer a visa solution to facilitate online payments, enabling you to expand your e-commerce business without financial limitations."
+            },
+            "analytics": {
+                "title": "Detailed Reports",
+                "title2": "to Track & Analyze Your Business Performance",
+                "description": "Through the control panel, you can access accurate reports about your inventory, including sorting details and available quantities, as well as sales performance and return rates. These insights help you make informed decisions to improve your operations and maximize profits."
+            }
+        }
+    },
+
     "who_we_are": "Who We Are and Why Choose Us",
-    "slogan": "Makhzoun is Your Ideal Partner for Successful",
-    "slogan1": "E-commerce",
+    "slogan": "Makhzon - Your Ideal Partner for",
+    "slogan1": "Successful E-commerce",
     "slogan2": "in the Arab Region",
-    "about_makhzon": "With Makhzoun, start your e-commerce business in the Arab region without the need for capital. We provide you with unique products at competitive prices, covering everything from shipping and storage to collection and returns. Our specialized team ensures the highest delivery rates and the lowest return rates, with high-quality products and diverse payment options to collect your profits quickly and easily.",
+    "about_makhzon": "With Makhzon, start your e-commerce business in the Arab region without the need for capital. We provide you with premium products at competitive prices and handle everything from shipping and storage to collection and returns. Our specialized team ensures the highest delivery rates and the lowest return rates, offering high-quality products and multiple payment options to help you receive your earnings quickly and easily.",
     "call_to_action": {
         "register_as_marketer": "Register Now as a Marketer",
         "register_as_supplier": "Register Now as a Supplier"
@@ -213,10 +346,10 @@
         "years": "+5"
     },
     "what_we_offer": "What We Offer You",
-    "fulfillment_partner": "Makhzoun is Your Ideal Partner in",
+    "fulfillment_partner": "Makhzon - Your Ultimate Partner in",
     "fulfillment_partner2": "Fulfillment Services",
-    "fulfillment_partner3": "where storage precision meets execution speed and delivery efficiency.",
-    "services_description": "At Makhzoun, we provide you with integrated e-commerce fulfillment services, starting from storage, preparation, shipping, and money collection to order management through a professional dashboard, enabling you to provide high-quality products to your customers easily and accelerate your profit growth, with guaranteed highest success rates in delivery and lowest return rates, at competitive prices and flexible payment options, making us your ideal partner for the success of your e-commerce business in the Arab region.",
+    "fulfillment_partner3": "Where Storage Precision Meets Fast Execution and Efficient Delivery.",
+    "services_description": "At Makhzon, we provide you with comprehensive e-commerce fulfillment services, from storage, preparation, shipping, and payment collection to order management via a professional control panel. This allows you to easily provide high-quality products to your customers, accelerate profit growth, and ensure the highest delivery success rates with the lowest return rates. We offer competitive prices and flexible payment options, making us your ideal partner for e-commerce success in the Arab region.",
     "join_now": "Join Us Now",
     "login": "Login",
     "contact_us": "Contact Us",
@@ -224,15 +357,15 @@
     "our_services": "Our Services",
     "home": "Home",
     "welcome_message": "Welcome to",
-    "welcome_message_brand_name": "Makhzoun!",
-    "description": "Your business is easier and your success is faster with an ideal platform that makes us your perfect partner in",
-    "description_word": "the world of e-commerce",
-    "electronics": ".",
-    "solutions": "We provide you with innovative solutions and constant support to ensure that your online store turns into a success stage thanks to an integrated platform that provides everything you need from products, shipping, and storage to customer service.",
+    "welcome_message_brand_name": "Makhzon!",
+    "description": "Your work is easier, and your success is faster with a perfect platform that makes us your ideal partner in",
+    "description_word": "the world of e-commerce.",
+    "electronics": "E-commerce.",
+    "solutions": "We provide you with innovative solutions and continuous support to ensure that your online store reaches new heights of success. Our integrated platform offers everything you need, from product sourcing, shipping, and storage to customer service.",
     "register_now": "Register Now",
     "about_us": "About Us",
     "call_center": "Call Center",
-    "import_sourcing": "Import and Sourcing",
+    "import_sourcing": "Import & Sourcing",
     "dropshipping": "Dropshipping",
     "fulfillment": "Order Fulfillment",
     "email": "info@m5zoon.com",
@@ -242,78 +375,82 @@
     "shipping_operations": "Shipping Operations",
     "success_partners": "Success Partners",
     "products_count": "Number of Products",
-    "store_needs": "What Your Online Store Needs from",
+    "store_needs": "Everything Your Online Store Needs from",
     "fulfillment_services": "Fulfillment Services",
-    "shipping_cod": "and Shipping with Cash on Delivery (COD)",
-    "smart_inventory_management": "Smart and Easy Inventory Management",
-    "inventory_tracking": "The ability to track inventory moment by moment with ease. With a team to sort inventory and provide innovative solutions that make your store more efficient.",
-    "selected_products": "Products of Your Choice at Your Fingertips",
-    "product_selection": "Choose the product that suits you, and we at Makhzoun will ensure quality inspection and the availability of the quantity you need with ease and speed, with secure storage and professional packaging services.",
-    "profit_collection_transfer": "Money Collection and Profit Transfer in the Right Way",
-    "profit_transfer": "Profit transfer is simpler and faster than you think. We provide you with flexible and secure solutions for COD money collection and profit transfer in the way that suits you, whether through a bank account or an e-wallet.",
+    "shipping_cod": "Shipping & Cash on Delivery (COD) Collection",
+    "smart_inventory_management": "Manage Your Inventory Smartly and Easily",
+    "inventory_tracking": "Track your stock in real-time with ease. Our team helps sort inventory and offers innovative solutions to make your store more efficient.",
+    "selected_products": "Handpicked Products at Your Fingertips",
+    "product_selection": "Choose the product that suits you, and at Makhzon, we ensure quality inspection and availability of the required quantity quickly and easily, with secure storage and professional packaging services.",
+    "profit_collection_transfer": "Seamless Profit Collection and Transfer",
+    "profit_transfer": "Profit transfers are simpler and faster than ever. We provide flexible and secure COD collection solutions, allowing you to receive your profits via bank transfer or digital wallets.",
     "trusted_suppliers_marketers": "Suppliers and Marketers Trust Us –",
-    "join_us_today": "Be One of Them Today with Makhzoun",
-    "always_ready": "Always Be Ready with Unlimited Profit Collection and Transfer",
-    "from_warehouse_to_door": "From Warehouse to Customer's Door",
-    "fast_delivery": "We care about the fast delivery of your orders to ensure customer satisfaction and increase loyalty, to reduce return rates and increase delivery rates.",
-    "quality_products_services": "Quality Products and Services",
-    "quality_priority": "We prioritize quality to provide you with high-value products and exceptional services that ensure an exceptional experience and sustainable success for you.",
-    "customer_support": "Premium Customer Service for Every Inquiry",
-    "dedicated_support_team": "A full support team follows up on orders promptly, to respond quickly to customer inquiries and solve their problems professionally, enhancing trust, with professional customer service that shows your interest in every inquiry.",
-    "our_premium_services": "Our Premium Services Now on One Platform to Support Your Business Growth and Achieve Success",
-    "less_effort": "with Less Effort.",
-    "storage_packaging": "Storage, Packaging, and Packing",
-    "payment_collection": "Money Collection and Transfer",
-    "direct_customer_communication": "Direct Communication with Customers",
-    "product_and_advertising_finance": "Product and Advertising Financing",
-    "order_followup": "Order Follow-up and Confirmation",
-    "customs_clearance": "Customs Clearance",
-    "ads_and_product_finance": "Financing for Ads and Products",
-    "visa_for_ads": "Visa to Pay for Your Ads",
+    "join_us_today": "Join Them Today with Makhzon",
 
-    "customer_reviews": "Our Customers' Reviews After Using",
+    "always_ready": "Always be ready with unlimited profit collection and transfers.",
+    "from_warehouse_to_door": "From the warehouse to the customer's door.",
+    "fast_delivery": "We ensure your orders arrive quickly to enhance customer satisfaction and loyalty, reducing return rates and increasing successful deliveries.",
+
+    "quality_products_services": "Quality Products & Services",
+    "quality_priority": "We prioritize quality to provide you with high-value products and outstanding services, ensuring an exceptional experience and sustainable success.",
+
+    "customer_support": "Exceptional Customer Support for Every Inquiry",
+    "dedicated_support_team": "A dedicated support team that tracks orders promptly, responds quickly to customer inquiries, and resolves issues professionally to build trust—offering a professional customer service experience that shows care for every inquiry.",
+
+    "our_premium_services": "Our premium services are now available on one platform to support your business growth and success.",
+    "less_effort": "With minimal effort.",
+
+    "storage_packaging": "Storage, Packaging, and Packing",
+    "payment_collection": "Profit Collection & Transfers",
+    "direct_customer_communication": "Direct Communication with Customers",
+    "product_and_advertising_finance": "Product & Advertising Financing",
+    "order_followup": "Order Follow-up & Confirmation",
+    "customs_clearance": "Customs Clearance",
+    "ads_and_product_finance": "Advertising & Product Financing",
+    "visa_for_ads": "Visa for Ad Payments",
+
+    "customer_reviews": "Customer Reviews After Using ",
     "M5zoon": "M5zoon",
     "customers": [
         {
-            "name": "Ibtisam Nasser",
+            "name": "Ibtesam Nasser",
             "title": "E-commerce Store Owner in Saudi Arabia",
-            "review": "My experience with 'M5zoon' was excellent! The interface is user-friendly, and customer support is quick. It helped me efficiently organize inventory and improve business operations. I highly recommend it."
+            "review": "My experience with 'M5zoon' was excellent! The interface is user-friendly, and customer support is fast. It helped me efficiently organize my inventory and improve work efficiency. Highly recommended!"
         },
         {
             "name": "Talal Youssef",
             "title": "E-commerce Store Owner in Saudi Arabia",
-            "review": "'M5zoon' made inventory management easier for me. The interface is clear, and tech support is fast. A great experience, I highly recommend it."
+            "review": "'M5zoon' made inventory management much easier. The interface is clear, and technical support is quick. A great experience—I highly recommend it."
         },
         {
             "name": "Aisha Mohammed",
             "title": "E-commerce Store Owner in Saudi Arabia",
-            "review": "'M5zoon' has greatly simplified my inventory management. The interface is simple, and tech support is quick. A fantastic experience that I recommend for any business."
+            "review": "'M5zoon' significantly simplified my inventory management. The interface is simple, and the technical support is fast. A great experience—I highly recommend it to any business."
         },
         {
             "name": "Nasser Faisal",
             "title": "E-commerce Store Owner in Saudi Arabia",
-            "review": "My experience with 'M5zoon' was wonderful. The interface is easy to use, and tech support is fast. It helped me improve inventory organization and efficiency. I highly recommend it."
+            "review": "My experience with 'M5zoon' was fantastic. The interface is easy to use, and technical support is fast. It helped me improve inventory organization and efficiency. I recommend it!"
         },
         {
             "name": "Fahad Al-Qahtani",
             "title": "E-commerce Store Owner in Saudi Arabia",
-            "review": "My experience with 'M5zoon' was excellent! The interface is user-friendly, and customer support is fast. It helped me efficiently organize inventory and improve business efficiency. Highly recommended!"
+            "review": "My experience with 'M5zoon' was excellent! The interface is user-friendly, and customer support is quick. It helped me efficiently organize my inventory and improve work efficiency. Highly recommended!"
         },
         {
             "name": "Hala Abdullah",
             "title": "E-commerce Store Owner in Saudi Arabia",
-            "review": "'M5zoon' was a great experience for me. The interface is simple and easy, and it helped me improve my inventory management. Support was fast and effective. I recommend it."
+            "review": "'M5zoon' was a unique experience for me. The interface is simple and easy to use, helping me improve inventory management significantly. Support was fast and effective. I recommend it."
         },
         {
             "name": "Saud Abdullah",
             "title": "E-commerce Store Owner in Saudi Arabia",
-            "review": "'M5zoon' is excellent and easy to use. It helped me efficiently manage my inventory, and customer support was fast. A fantastic experience, highly recommended."
+            "review": "'M5zoon' is excellent and easy to use. It helped me efficiently organize my inventory, and customer support was fast. A great experience—I highly recommend it."
         }
     ],
 
-    "titlefaqs": "Frequently Asked ",
-    "important": "Questions",
-
+    "titlefaqs": "Questions You ",
+    "important": "Might Find Important",
     "faqs": [
         {
             "question": "Do I need capital to start my business?",
@@ -321,138 +458,87 @@
         },
         {
             "question": "How can I receive my profits with M5zoon?",
-            "answer": "Your profits are easily transferred via your bank account or e-wallet. We also provide Cash on Delivery (COD) collection options for greater flexibility."
+            "answer": "Your profits are easily transferred to your bank account or digital wallet. We also offer cash-on-delivery (COD) collection for greater flexibility."
         },
         {
-            "question": "Can I sell products if I am outside the Gulf countries?",
-            "answer": "Yes, you can sell products from anywhere in the world. M5zoon supports international shipping and distribution, making it easier to reach your target markets."
-        },
-        {
-            "question": "Is there a minimum withdrawal limit for profits?",
-            "answer": "There is no strict minimum, but some conditions may depend on the transfer method, bank, or e-wallet used. For more details, you can contact support."
-        },
-        {
-            "question": "Which countries does M5zoon support?",
-            "answer": "M5zoon supports most Gulf countries, including Saudi Arabia, UAE, Kuwait, Bahrain, Qatar, and Oman, and we are expanding internationally to support new markets soon."
+            "question": "Can I sell products if I’m outside the Gulf region?",
+            "answer": "Yes, you can sell products from anywhere in the world. M5zoon supports international shipping and distribution, making it easy to reach your target markets."
         },
         {
             "question": "Is there a minimum withdrawal limit for profits?",
-            "answer": "There is no strict minimum, but some conditions may depend on the transfer method, bank, or e-wallet used. For more details, you can contact support."
+            "answer": "There is no strict minimum, but some conditions may depend on the transfer method, bank, or digital wallet used. For more details, contact support."
         },
         {
             "question": "Which countries does M5zoon support?",
-            "answer": "M5zoon supports most Gulf countries, including Saudi Arabia, UAE, Kuwait, Bahrain, Qatar, and Oman, and we are expanding internationally to support new markets soon."
+            "answer": "M5zoon supports most Gulf countries, including Saudi Arabia, UAE, Kuwait, Bahrain, Qatar, and Oman. We are also expanding internationally to support new markets soon."
         }
     ],
-    "partners_message": "M5zoon’s Success ",
-    "sucees": "Partners",
+
+    "partners_message": "M5zoon Partners ",
+    "success": "for Success",
+
     "footer": {
         "title": "Contact Us",
-        "description": "We provide you with complete e-commerce solutions in the Gulf market at competitive prices, without the need for storage or logistical complexities. We take care of everything, from warehousing to shipping, so you can focus on increasing your sales. Join us today and make your store's success easier than ever.",
+        "description": "We provide comprehensive e-commerce solutions in the Gulf market at competitive prices, without the need for storage or logistical complexities. We handle everything from storage to shipping, so you can focus on increasing your sales. Join us today and make your store's success easier than ever.",
         "headquarters": "Headquarters",
         "contact_uae": "Contact in UAE",
-        "contact_ksa": "Contact in KSA",
-        "location": "Dubai - United Arab Emirates",
+        "contact_ksa": "Contact in Saudi Arabia",
+        "location": "Dubai, United Arab Emirates",
         "email": "info@m5zoon.com",
         "copyright": "All rights reserved to M5zoon © 2025"
     },
 
     "services": {
-        "title": "We offer affiliate marketing strategies to increase your sales",
-        "growth_message": "For rapid growth",
-        "profit_collection": "Profit Collection",
+        "title": "We Offer Affiliate Marketing Strategies to Boost Your Sales",
+        "growth_message": "And Achieve Rapid Growth",
         "product_packaging": "Product Packaging",
-        "account_management": "Account Management",
+        "profit_collection": "Profit Collection",
         "customer_service": "Customer Service",
-        "customs_clearance": "Customs Clearance",
-        "shipping_delivery": "Shipping & Delivery"
+        "account_management": "Account Management",
+        "shipping_delivery": "Shipping & Delivery",
+        "customs_clearance": "Customs Clearance"
     },
 
     "sign-up": {
         "welcome": "Welcome to ",
         "m5zoon": "M5zoon?!",
-        "enter_account_details": "Enter your account details and start managing your business now",
-        "fulfillment": "Fulfillment",
-        "supplier": "Supplier",
-        "marketer": "Marketer",
+        "enter_account_details": "Enter your account details and start your business now.",
         "last_name_required": "Last Name",
         "first_name_required": "First Name",
         "last_name": "Last Name",
         "first_name": "First Name",
         "phone_number_required": "Phone Number",
         "email_required": "Email",
-        "enter_phone_number": "Enter phone number",
-        "enter_email": "Enter email",
+        "enter_phone_number": "Enter your phone number",
         "confirm_password_required": "Confirm Password",
         "password_required": "Password",
-        "enter_password": "Enter password",
-        "do_you_have_ecommerce_experience": "Do you have experience in eCommerce?",
+        "do_you_have_ecommerce_experience": "Do you have e-commerce experience?",
         "no": "No",
         "yes": "Yes",
-        "years_of_experience": "Years of experience",
-        "no_experience": "No experience",
+        "years_of_experience": "Years of Experience",
+        "no_experience": "No Experience",
         "more_than_7_years": "More than 7 years",
         "average_orders": "What is your average number of orders?",
-        "terms_agreement": "By signing up, you agree to",
+        "terms_agreement": "By registering, you agree to our",
         "terms_and_conditions": "Terms & Conditions",
         "and": "and",
         "privacy_policy": "Privacy Policy",
         "create_account": "Create Account",
-        "login": "Login",
         "already_have_account": "Already have an account?",
-
         "welcome_back": "Welcome ",
-        "back": "back?!",
-        "enter_your_details": "Enter your account details and continue your business now",
+        "back": "Back?!",
+        "enter_your_details": "Enter your account details and continue your business now.",
+        "fulfillment": "Order Fulfillment",
+        "supplier": "Supplier",
+        "marketer": "Marketer",
         "email": "Email",
+        "enter_email": "Enter your email",
         "password": "Password",
-        "forgot_password": "Forgot your password?",
-        "remember_me": "Remember me",
-        "join_us_now": "Join us now",
-        "no_account": "Don't have an account?"
-    },
-
-    "contact-us": {
-        "full_name": "Your Full Name",
-        "placeholder_text": "(Placeholder)",
-        "input_field_description": "Alternative text for input field",
-        "currency_symbol": "SAR",
-        "email": "Email",
-        "whatsapp_contact": "Contact via WhatsApp",
-        "contact_us": "Contact Us",
-        "visit_us_now": "Visit Us Now",
-        "phone_code": "Country Code",
-        "phone_number": "Mobile Number",
-        "message_content": "Message Content",
-        "message_text": "Message Text",
-        "our_location": "Our Location",
-        "email_address": "Email Address",
-        "dubai_uae": "Dubai - United Arab Emirates",
-        "company_email": "info@m5zoon.com",
-        "send_button": "Send",
-        "contact_us_button": "Get in Touch",
-        "facebook_url": "https://facebook.com/",
-        "sample_phone_number": "+20175345757",
-        "sample_country_code": "+966"
-    },
-
-    "about-us": {
-        "title": "Get to Know Us",
-        "numbers_and_statistics": "Numbers &",
-        "statics": "Statistics",
-        "about_platform": "About",
-        "m5zoon": "Makhzon Platform",
-        "success_message": "Makhzon is your place to achieve success in",
-        "eccomerce": "E-commerce!",
-        "platform_description": "A comprehensive e-commerce and dropshipping platform designed to provide innovative and easy solutions for shoppers and business owners in the Middle East. Makhzon was founded to simplify the process of selling products online by offering unique products, outstanding logistics services, and full support for entrepreneurs and online store owners.",
-        "subscribe_now": "Subscribe Now",
-        "why_choose_us": "Why Choose",
-        "m5zoon2": "Makhzon?!",
-        "technical_support": "24/7 Technical Support",
-        "trust_and_security": "Trust & Security",
-        "attention_to_detail": "Attention to Every Detail",
-        "technical_support_description": "Innovative technical support, always by your side to ensure your business runs smoothly and efficiently. We turn every technical challenge into an opportunity for success.",
-        "financial_security_description": "We offer you a secure financial experience, ensuring high-quality products and continuous account monitoring to maximize your profits.",
-        "comprehensive_services": "We provide all services related to e-commerce, from product management to customer follow-up, ensuring your business success."
+        "enter_password": "Enter your password",
+        "forgot_password": "Forgot Password?",
+        "remember_me": "Remember Me",
+        "login": "Login",
+        "join_us_now": "Join Us Now",
+        "no_account": "Don’t have an account?"
     }
 }
