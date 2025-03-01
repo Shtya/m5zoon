@@ -5,11 +5,11 @@ export default function ShowSection({data , dir}) {
 
   return (
 	<div className='relative overflow-hidden ' > 
-		<Image  className={`w-[700px] h-[700px]  ${dir == "rtl" ? "right-0 !bottom-0 " : "left-0"} bottom-[-200px] absolute`} src={data.shadowImg} alt='' width={550} height={450} />
+		<Image  className={`w-[700px] z-[1] h-[700px]  ${dir == "rtl" ? "right-0 !bottom-0 " : "left-0"} bottom-[-200px] absolute`} src={data.shadowImg} alt='' width={550} height={450} />
 
 		<div className='container grid  grid-cols-2 max-lg:grid-cols-1  items-center gap-[40px] my-[40px] py-[30px] ' >
 			
-			<div className={`row max-lg:mx-auto flex  ${dir == "rtl" ? "justify-end" : "justify-start"} `}>
+			<div className={`z-[0] max-lg:mx-auto flex  ${dir == "rtl" ? "justify-end" : "justify-start"} `}>
 				<Image  data-aos="zoom-in" className=' max-md:px-[50px] '  src={data.img} alt='' width={550} height={450} />
 			</div>
 

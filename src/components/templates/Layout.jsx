@@ -5,13 +5,14 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { usePathname } from '@/navigation';
+import ScrollToTop from '../atoms/ScrollToTop';
 
 export default function Layout({children}) {
 
 	useEffect(() => {
         AOS.init({
             offset: 0,
-            duration: 1000,
+            duration: 600,
             easing: 'ease-in-out',
             once: false // true,
         });
@@ -41,6 +42,7 @@ export default function Layout({children}) {
 		{isAllowed && <Navbar />}
 		<main className='min-h-[50vh]' > {children} </main>
 		{isAllowed && showFooter && <Footer />}
+        <ScrollToTop />
 	</div>
   )
 }

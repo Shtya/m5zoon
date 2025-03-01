@@ -54,7 +54,7 @@ export default function page() {
     };
 
     return (
-        <div>
+        <div className='overflow-auto' >
             <Hero t={t_} data={HeroData} />
             <WhyChooseM5zoon data={WhyChooseM5zzonData} />
             <Branches />
@@ -86,15 +86,9 @@ export default function page() {
                 </div>
             </div>
 
-            {/* <Brands /> */}
-            {/* <ServicesForExporter t={t_} data={ServicesForSailerData} /> */}
-            {/* <JoinUs t={t_} data={JoinUsData} /> */}
-            {/* <ServicesForSailer t={t_} data={ServicesForSuppliers} title1 = {t_("supplier_services")} title2 = {t_("supplier_services_intro")} title3 = {t_("supplier_services_intro2")}  /> */}
-            {/* <WhatYouNeed data={whatYouNeedData} t={t_} /> */}
-
             <OurPartners title={<TitleArrow dataAos={'zoom-out'} cn={''} title={t_('partners_intro')} />} desc={<Title dataAos={'zoom-out'} delay={100} icon={<Mouce />} title={t_('partners_description')} title2={t_('partners_description2')} cn={' text-center mb-[60px] t25 !font-[400] mt-[10px] '} />} />
 
-            {/* <FAQPage title={<TitleArrow dataAos={'zoom-out'} cn={''} title={t_('important_questions')} />} desc={<Title dataAos={'zoom-out'} delay={100} icon={<Mouce />} title={t_('questions_intro')} title2={t_('questions_intro2')} cn={' text-center mb-[60px] t25 !font-[400] mt-[10px] '} />} /> */}
+            <FAQPage dataFaqs={"faqs_fullfillment"} title={<TitleArrow dataAos={'zoom-out'} cn={''} title={t_('important_questions')} />} desc={<Title dataAos={'zoom-out'} delay={100} icon={<Mouce />} title={t_('questions_intro')} title2={t_('questions_intro2')} cn={' text-center mb-[60px] t25 !font-[400] mt-[10px] '} />} />
 
             <Footer2 />
         </div>

@@ -8,13 +8,9 @@ import React from 'react';
 
 export default function JoinUs({data , t}) {
 
-
-
-    // { title: t_("makhzon_for_suppliers"), desc: t_("suppliers_intro"), button: t_("join_as_supplier"), href: '/supplier', icon: '' },
-
     return (
 		
-        <div className='py-[80px] bg-white  relative  ' >
+        <div className='py-[80px] bg-white  relative' id='join-us' >
 			<div className='container w-full h-full'>
 
                 <TitleArrow dataAos={'fade-up'} cn={''} title={t('join_makhzon_team')} />

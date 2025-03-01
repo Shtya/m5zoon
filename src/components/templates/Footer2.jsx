@@ -3,6 +3,8 @@ import { Link } from '@/navigation';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import React from 'react';
+import { socialMedia } from './Footer';
+import Logo from '../atoms/Logo';
 
 export default function Footer2() {
     const t = useTranslations('footer2'); 
@@ -14,57 +16,59 @@ export default function Footer2() {
         { href : "/f" , icon : <svg className=' '  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path   d="M8.06797 3.32203H9.66597V0.619025C8.89226 0.53857 8.11485 0.498849 7.33697 0.500025C5.02497 0.500025 3.44397 1.91103 3.44397 4.49503V6.72203H0.834473V9.74803H3.44397V17.5H6.57197V9.74803H9.17297L9.56397 6.72203H6.57197V4.79253C6.57197 3.90003 6.80997 3.32203 8.06797 3.32203Z" className='fill-white '/></svg> ,} ,
     ]
 
+
     const links = [
         {
             title : t("important_links"),
             list : [
-                { title : t("home") , href : "/home" },
-                { title : t("our_services") , href : "/our-services" },
-                { title : t("why_choose_us") , href : "/why-choose-us" },
-                { title : t("our_features") , href : "/our-features" },
+                { title : t("home") , href : "/" },
+                { title : t("our_services") , href : "/#our-services" },
+                { title : t("why_choose_us") , href : "/about-us#why-choose-us" },
+                { title : t("our_features") , href : "/#our-features" },
             ]
         },
         {
             title : t("important_links"),
             list : [
-                { title : t("our_locations") , href : "/our-locations" },
-                { title : t("makhzon_branches") , href : "/makhzon-branches" },
-                { title : t("important_questions") , href : "/important-questions" },
-                { title : t("success_partners") , href : "/success-partners" },
+                { title : t("our_locations") , href : "/#our-locations" },
+                { title : t("makhzon_branches") , href : "/services/fulfillment#our-branches" },
+                { title : t("important_questions") , href : "/#faqs" },
+                { title : t("success_partners") , href : "/#success-partners" },
             ]
         },
         {
             title : t("important_links"),
             list : [
-                { title : t("customer_reviews") , href : "/customer-reviews" },
+                { title : t("customer_reviews") , href : "/#reviews" },
                 { title : t("contact_us") , href : "/contact-us" },
-                { title : t("join_as_marketer") , href : "/join-as-marketer" },
-                { title : t("join_as_supplier") , href : "/join-as-supplier" },
+                { title : t("join_as_marketer") , href : "/services/drop-shipping#join-us" },
+                { title : t("join_as_supplier") , href : "/services/drop-shipping#join-us" },
             ]
         },
         
     ]
 
     return (
-        <footer className='  pb-[50px] relative min-h-[400px] bg-white text-white ' > 
+        <footer id='footer-services' className='  pb-[50px] relative min-h-[400px] bg-white text-white ' > 
             <Image className='  object-cover object-top absolute inset-0 w-full h-full ' src={"/imgs/bg-footer.png"} alt='' width={1400} height={500} />
 
             <div className="container  max-md:grid max-sm:grid-cols-1 max-md:grid-cols-2 max-md:justify-center flex flex-wrap items-start justify-between gap-[30px] relative pt-[150px] " >
                 
-                <div className="max-w-[300px] max-md:max-w-[200px] max-md:mx-auto w-full ">
-                    <Link href={"/"} > <Image className=' max-sm:mx-auto mb-[10px] w-[120px] h-fit ' src={"/imgs/logo.png"} alt='' width={120} height={35} /> </Link> 
+                <div className="max-w-[350px] max-md:max-w-[200px] max-md:mx-auto w-full ">
+                    {/* <Link href={"/"} > <Image className=' max-sm:mx-auto mb-[10px] w-[120px] h-fit ' src={"/imgs/logo.png"} alt='' width={120} height={35} /> </Link>  */}
+                    <Logo colorLogo='white' cn={"mb-[10px]"} />
                     <p className='t16 font-normal max-sm:text-center ' > {t("about_platform")} </p>
                 </div>
 
                 {
                     links?.map((e,i)=> (
-                        <div className=" max-w-[120px] max-md:max-w-[200px] max-md:mx-auto w-full " key={i}>
+                        <div className=" max-w-[200px] max-md:mx-auto w-full " key={i}>
                             <h2 className='t20 font-normal max-sm:text-center '> {e.title} </h2>
                             <ul className='list flex mt-[20px] flex-col gap-[10px]'>
                                 {e.list?.map((listItem, index) => (
                                     <li className=' max-sm:justify-center t16 font-normal hover:ltr:translate-x-[10px] hover:rtl:translate-x-[-10px] duration-500 flex items-center gap-[5px]' key={index}>
                                         <svg width="17" height="26" viewBox="0 0 17 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.25103 20.5937C8.14512 20.5937 8.03921 20.5529 7.95775 20.4712L4.7887 17.2957C4.71538 17.2222 4.6665 17.1161 4.6665 17.0018C4.6665 16.8957 4.70724 16.765 4.7887 16.6916L7.95775 13.516C8.12068 13.3527 8.38137 13.3527 8.5443 13.516C8.70724 13.6793 8.70724 13.9405 8.5443 14.1038L5.65225 16.9936L8.5443 19.8916C8.70724 20.0549 8.70724 20.3161 8.5443 20.4794C8.46284 20.5529 8.35693 20.5937 8.25103 20.5937Z" fill="white"/><path d="M12.251 20.5937C12.1451 20.5937 12.0392 20.5529 11.9577 20.4712L8.7887 17.2957C8.71538 17.2222 8.6665 17.1161 8.6665 17.0018C8.6665 16.8957 8.70724 16.765 8.7887 16.6916L11.9577 13.516C12.1207 13.3527 12.3814 13.3527 12.5443 13.516C12.7072 13.6793 12.7072 13.9405 12.5443 14.1038L9.65225 16.9936L12.5443 19.8916C12.7072 20.0549 12.7072 20.3161 12.5443 20.4794C12.4628 20.5529 12.3569 20.5937 12.251 20.5937Z" fill="white"/></svg>
-                                        <Link href={listItem.href} >  {listItem.title} </Link>
+                                        <Link className='text-nowrap ' href={listItem.href} >  {listItem.title} </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -81,11 +85,11 @@ export default function Footer2() {
 
                 <ul className='flex items-center gap-[10px] ' >
                     {
-                        social?.map((e,i)=> (
+                        socialMedia?.map((e,i)=> (
                             <li key={i}> 
-                                <Link className='w-[40px] mx-auto flex items-center justify-center h-[40px] border-[2px] border-white rounded-full  ' href={e.href} >
-                                    {e.icon}  
-                                </Link>
+                                <a target='_blank' className=' text-white hover:text-secondery hover:bg-white duration-300 w-[40px] mx-auto flex items-center justify-center h-[40px] border-[2px] border-white rounded-full  ' href={e.href} >
+                                    {e.icon} 
+                                </a>
                             </li>
                         ))
                     }

@@ -2,6 +2,7 @@
 import Button from '@/components/atoms/Button';
 import Checkbox from '@/components/atoms/Checkbox';
 import Input from '@/components/atoms/Input';
+import Logo from '@/components/atoms/Logo';
 import Radio from '@/components/atoms/Radio';
 import SelectBox from '@/components/atoms/SelectBox';
 import Translate from '@/components/atoms/Translate';
@@ -62,21 +63,19 @@ export default function page() {
     return (
         <div>
             <div className='max-md:!w-[100%]  max-md:mx-auto  max-md:!right-[unset] max-md:left-0 absolute h-[100vh]  duration-300 w-[50%] top-0 ltr:left-0  rtl:right-0 z-[1000]   '>
-				<div style={{direction : locale == "en" ? "rtl" : "ltr"}} className='max-md:!max-w-full  bg-opacity-[.95] backdrop-blur-2xl bg-white rtl:mr-auto ltr:ml-auto max-w-[700px] w-full relative max-lg:p-[20px]  p-[50px]  h-[100vh]  overflow-auto ' >
+				<div style={{direction : locale == "en" ? "rtl" : "ltr"}} className='max-md:!max-w-full  bg-opacity-[.95] backdrop-blur-2xl bg-white rtl:mr-auto ltr:ml-auto max-w-[1000px] w-full relative max-lg:p-[20px]  p-[50px]  h-[100vh]  overflow-auto ' >
                 
                     <div style={{direction : locale == "en" ?  "ltr" :"rtl"}} >
                     
                         <div className=" mt-[-20px] max-lg:!mt-0 flex justify-between items-center">
                             <Translate />
-                            <Link href={"/"} > <Image src={"/imgs/logo2.png"} alt="" width={120} height={40}  /> </Link>
+                            <Logo />
                         </div>
 
                         <div className='pt-[40px]  flex flex-col  justify-start h-full' >
 
-
-
-                        <Title cn={' !text-right ltr:!text-left text-[#09396f] text-4xl max-md:t16 font-medium'} title={t('welcome')} title2={t('m5zoon')} />
-                        <div className='  md:mt-[10px] text-[#637381] text-2xl max-md:!t20 max-md:text-center  font-normal '> {t('enter_account_details')} </div>
+                        <Title cn={'   rtl:lg:!text-right ltr:lg:!text-left max-lg:!text-center text-[#09396f] text-4xl max-md:t16 font-medium'} title={t('welcome')} title2={t('m5zoon')} />
+                        <div className=' mt-[-10px]  md:mt-[10px] text-[#637381] text-2xl max-md:!t20 max-md:text-center  font-normal '> {t('enter_account_details')} </div>
 
                         <div className='my-[70px] max-md:my-[40px]'>
                             <Radio setError={setError} watch={watch} setValue={setValue} KEY='type_account' cn='!grid grid-cols-3 max-md:grid-cols-3  max-[1150px]:grid-cols-2  ' data={TypeAccount} />

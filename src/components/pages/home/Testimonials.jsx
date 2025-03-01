@@ -47,7 +47,7 @@ export default function Testimonials({cn}) {
     ];
 
     return (
-        <div className={`container max-w-[1600px] py-[30px] my-[40px] review ${cn} `}>
+        <div className={`container max-w-[1600px] py-[30px] my-[40px] review ${cn} `} id='reviews' >
             <Title cn={'text-center'} title={t('customer_reviews')} title2={t('M5zoon')} />
 
             <Swiper {...config} dir={'rtl'}>

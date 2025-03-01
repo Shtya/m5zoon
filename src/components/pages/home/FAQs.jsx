@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function FAQPage({ title, desc }) {
+export default function FAQPage({ title, desc , dataFaqs }) {
     const t = useTranslations();
 
     const [activeIndex, setActiveIndex] = useState(null);
@@ -14,15 +14,15 @@ export default function FAQPage({ title, desc }) {
     };
 
     return (
-        <div className='relative bg-white py-[80px] overflow-x-hidden ' >
+        <div className='relative bg-white py-[80px] overflow-x-hidden ' id='faqs' >
             <div className='container  '>
             {title ? title : <Title cn={'text-center'} title={t('titlefaqs')} title2={t('important')} />}
             {desc}
             
 
-            <div className='w-full mt-[50px] grid md:grid-cols-[1fr,320px] items-start gap-[20px] '>
+            <div className='w-full mt-[50px] grid md:grid-cols-[1fr,320px] items-center gap-[20px] '>
                 <ul className=' flex flex-col gap-[20px]'>
-                    {t.raw('faqs').map((faq, index) => (
+                    {t.raw(dataFaqs || 'faqs').map((faq, index) => (
                         <li key={index} data-aos="zoom-out" className='flex flex-col  px-[10px]  '>
                             <div onClick={() => toggleAccordion(index)} className={`bg-[#fff] duration-300 transition-all  rounded-[5px] border ${activeIndex === index ? ' !bg-[#fbfcff] ' : ''} border-[#eeeeee] flex flex-row gap-[10px] justify-between items-center max-md:items-start font-semibold p-3 cursor-pointer`}>
                                 <span className=' text-[#1e1f4b] max-sm:t16 t20 font-normal'>{faq.question}</span>

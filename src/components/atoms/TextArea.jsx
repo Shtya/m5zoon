@@ -7,7 +7,7 @@ export default function TextArea({ delay , place , dataAos ,  error , cnInput , 
 
 
 	return (
-	<div data-aos={dataAos} data-aos-delay={delay} className={`${classname} flex flex-col  gap-[5px]  relative `} >
+	<div data-aos={dataAos} data-aos-delay={delay} className={`${classname} flex flex-col  gap-[5px]  relative`} >
 		{label && <label htmlFor={KEY} className={`h5 ${cnLabel}`} > {label} </label> }
 		
 		<div className={`rounded-[8px] border border-[#7d7d7d]/20 w-full overflow-hidden text-xl h-[90px]  ${cnInput} `} >

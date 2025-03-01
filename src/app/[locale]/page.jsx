@@ -4,7 +4,7 @@ import Landing from '@/components/pages/home/Landing';
 import Testimonials from '@/components/pages/home/Testimonials';
 import Services from '@/components/pages/home/Services';
 import ShowSection from '@/components/pages/home/ShowSection';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import OurPartners from '@/components/pages/home/OurPartners';
 import FAQPage from '@/components/pages/home/FAQs';
@@ -12,9 +12,10 @@ import OurLocation from '@/components/pages/home/OurLocation';
 
 const page = () => {
     const t = useTranslations()
+    const locale = useLocale()
 
     const dataSection1 = {
-        img  : "/imgs/static-img.png",
+        img  : `/imgs/static-img${locale== "en" ? "-en" : "" }.png`,
         shadowImg : "/icons/shadow-blue.svg",
         title  : t("store_needs") ,
         title2  : t("fulfillment_services") ,
@@ -26,7 +27,7 @@ const page = () => {
         ]
     }
     const dataSection2 = {
-        img  : "/imgs/get-money-img.png",
+        img  : `/imgs/get-money-img${locale== "en" ? "-en" : ""  }.png`,
         shadowImg : "/imgs/shadow-yellow.png",
         title  : t("trusted_suppliers_marketers") ,
         title2  : t("join_us_today") ,
@@ -43,11 +44,10 @@ const page = () => {
         <div className='flex flex-col bg-[#ffffff] ' >
             <Landing   />
             <Feature  />
-            <div className='md:hidden' > <Testimonials   /> </div>
             <ShowSection data={dataSection1}    />
             <ShowSection data={dataSection2} dir={"rtl"}   />
             <Services  />
-            <div className='hidden md:flex' > <Testimonials   /> </div>
+            <div > <Testimonials   /> </div>
             <OurPartners  />
             <FAQPage  />
             <OurLocation  />

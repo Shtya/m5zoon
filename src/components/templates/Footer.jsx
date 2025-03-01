@@ -1,10 +1,21 @@
 "use client"
+import { Link } from '@/navigation';
+import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import React from 'react';
+import Logo from '../atoms/Logo';
 
+export const socialMedia = [
+    {  href : "https://www.instagram.com/m5zon/" ,  icon: <Instagram />  },
+    {  href : "https://www.facebook.com/profile.php?id=100090550693438" ,  icon: <Facebook /> },
+    {  href : "https://www.linkedin.com/company/m5zoon/" ,  icon: <Linkedin />  },
+    {  href : "https://www.youtube.com/watch?v=3lobzc_XZso&list=PLNu4-tVV3XpQyot7LUG9beka2ry9Nd9sb" ,  icon: <Youtube />  },
+    // {  href : "https://www.tiktok.com/@m5zoon?_t=ZS-8tqzPseb3FC&_r=1" ,  icon: <Ti  },
+]
 export default function Footer() {
     const t = useTranslations('footer');
+
 
 
     const social = [
@@ -17,7 +28,7 @@ export default function Footer() {
 
     const contact = [
         { key:"email" , title : t("contact_uae") , desc : t("email") , icon : <svg  className='svg max-md:w-[35px] '  width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect className='group-hover:stroke-primary stoke-black' x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#103e73" strokeDasharray="2 2"/><rect className=' group-hover:fill-primary ' x="5" y="5" width="40" height="40" rx="20" fill="#103e73"/><path className='group-hover:stroke-white group-hover:fill-white stroke-white fill-white ' d="M35 18.75V31.25C35 31.9594 34.4594 32.5 33.75 32.5H32.5V21.1556L25 26.5431L17.5 21.1556V32.5H16.25C15.5406 32.5 15 31.9594 15 31.25V18.75C15 18.395 15.1338 18.0825 15.3581 17.8612C15.4749 17.7442 15.6141 17.6519 15.7673 17.5899C15.9205 17.5278 16.0847 17.4972 16.25 17.5H16.6669L25 23.5419L33.3331 17.5H33.75C34.105 17.5 34.4175 17.6337 34.6419 17.8612C34.8662 18.0825 35 18.395 35 18.75Z" fill="#103e73"/></svg> },
-        { key:"email" , title : t("contact_ksa") , desc : t("email") , icon : <svg  className='svg max-md:w-[35px] '  width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect className='group-hover:stroke-primary stoke-black' x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#103e73" strokeDasharray="2 2"/><rect className=' group-hover:fill-primary ' x="5" y="5" width="40" height="40" rx="20" fill="#103e73"/><path className='group-hover:stroke-white group-hover:fill-white stroke-white fill-white ' d="M35 18.75V31.25C35 31.9594 34.4594 32.5 33.75 32.5H32.5V21.1556L25 26.5431L17.5 21.1556V32.5H16.25C15.5406 32.5 15 31.9594 15 31.25V18.75C15 18.395 15.1338 18.0825 15.3581 17.8612C15.4749 17.7442 15.6141 17.6519 15.7673 17.5899C15.9205 17.5278 16.0847 17.4972 16.25 17.5H16.6669L25 23.5419L33.3331 17.5H33.75C34.105 17.5 34.4175 17.6337 34.6419 17.8612C34.8662 18.0825 35 18.395 35 18.75Z" fill="#103e73"/></svg> },
+        { key:"email" , title : t("contact_ksa") , desc : t("email") , icon : <svg  className='svg max-md:w-[35px] '  width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect className='!stroke-primary stoke-black' x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#103e73" strokeDasharray="2 2"/><rect className=' !fill-primary ' x="5" y="5" width="40" height="40" rx="20" fill="#103e73"/><path className='!stroke-white !fill-white stroke-white fill-white ' d="M35 18.75V31.25C35 31.9594 34.4594 32.5 33.75 32.5H32.5V21.1556L25 26.5431L17.5 21.1556V32.5H16.25C15.5406 32.5 15 31.9594 15 31.25V18.75C15 18.395 15.1338 18.0825 15.3581 17.8612C15.4749 17.7442 15.6141 17.6519 15.7673 17.5899C15.9205 17.5278 16.0847 17.4972 16.25 17.5H16.6669L25 23.5419L33.3331 17.5H33.75C34.105 17.5 34.4175 17.6337 34.6419 17.8612C34.8662 18.0825 35 18.395 35 18.75Z" fill="#103e73"/></svg> },
         { key:""      , title : t("headquarters") , desc : t("location") , icon :  <svg  className='svg max-md:w-[35px] '  width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect className='group-hover:stroke-primary stoke-black' x="0.5" y="0.5" width="49" height="49" rx="24.5" stroke="#103e73" strokeDasharray="2 2"/><rect className=' group-hover:fill-primary' x="5" y="5" width="40" height="40" rx="20" fill="#103e73"/><path className=' group-hover:stroke-white group-hover:fill-white stroke-white fill-white ' d="M24.9999 26.1916C26.4358 26.1916 27.5999 25.0276 27.5999 23.5916C27.5999 22.1557 26.4358 20.9916 24.9999 20.9916C23.564 20.9916 22.3999 22.1557 22.3999 23.5916C22.3999 25.0276 23.564 26.1916 24.9999 26.1916Z" stroke="#F9A51A" strokeWidth="1.5"/><path className='group-hover:stroke-white stroke-white ' d="M18.0167 22.075C19.6584 14.8584 30.3501 14.8667 31.9834 22.0834C32.9417 26.3167 30.3084 29.9 28.0001 32.1167C26.3251 33.7334 23.6751 33.7334 21.9917 32.1167C19.6918 29.9 17.0584 26.3084 18.0167 22.075Z" stroke="#F9A51A" strokeWidth="1.5"/></svg> },
     ]
 
@@ -29,22 +40,22 @@ export default function Footer() {
     }
 
     return (
-        <div className='relative ' > 
+        <div className='relative overflow-hidden ' > 
         <div className={`bg-fixed h-[500px] blur-[1px] md:w-[50%] md:ltr:translate-x-[220px] md:rtl:translate-x-[-220px] bg-cover bg-center bg-[url('/imgs/frame-left.png')] absolute top-0 ltr:right-0 rtl:left-0 max-md:scale-y-[-1] max-md:!rounded-none max-md:translate-y-[160px]  max-md:w-full rtl:rounded-tr-[60px] ltr:rounded-tl-[60px] `} ></div>
-            {/* <div className={`max-md:translate-y-[80px] bg-fixed bg-cover bg-center bg-[url('/imgs/frame-right.png')] max-md:w-full max-md:!rounded-none w-[544px] h-full absolute ltr:right-0 rtl:left-0  top-0 rtl:rounded-tr-[60px] ltr:rounded-tl-[60px] `}></div> */}
+
         <footer className=' container max-md:px-[50px] max-sm:px-[20px] relative min-h-[500px]  flex flex-col justify-center items-center  '>
 
-            <div className='  relative  p-[50px] min-h-[300px] w-full bg-[#fafbff]  max-md:!p-[30px] max-md:!mx-[0px] rtl:pl-[100px] ltr:pr-[100px] rtl:ml-[100px] ltr:rounded-[0_50px_50px_0] rtl:rounded-[50px_0_0_50px] max-md:!rounded-[0_0_50px_50px] '>
+            <div className=' shadow-sm relative  p-[50px] min-h-[300px] w-full bg-[#fafbff]  max-md:!p-[30px] max-md:!mx-[0px] rtl:pl-[100px] ltr:pr-[100px] rtl:ml-[100px] ltr:rounded-[0_50px_50px_0] rtl:rounded-[50px_0_0_50px] max-md:!rounded-[0_0_50px_50px] '>
                 
                 <div className='flex max-md:flex-col justify-between gap-[30px] ' >
                     <div className='flex flex-col gap-[10px] ' > 
-                        <Image className='mb-[10px] max-md:w-[80px] ' src={"/imgs/logo2.png"} alt='' width={120} height={40} />
+                        <Logo />
                         <p className=' text-balance text-[#a0a7c0] text-20 font-normal' > {t("description")} </p>
                     </div>
                     <div>
                         <h3 className='text-secondery t20 font-semibold mb-[20px] max-md:mb-[10px] ' > {t("title")} </h3>
                         <ul className=' social flex items-center gap-[10px] ' >
-                            {social.map((e,i)=> <li key={i} className=' group cursor-pointer hover:bg-secondery  hover:border-secondery duration-300 w-[40px] h-[40px] bg-white rounded-[5px] border border-[#eeeeee] flex justify-center items-center ' > <a>  {e} </a> </li> )}
+                            {socialMedia.map((e,i)=> <li key={i} className=' group cursor-pointer hover:bg-secondery group  hover:border-secondery duration-300 w-[40px] h-[40px] bg-white rounded-[5px] border border-[#eeeeee] flex justify-center items-center ' > <a className='text-secondery group-hover:text-white ' target='_blank' href={e.href} >  {e.icon} </a> </li> )}
                         </ul>
                     </div>
 

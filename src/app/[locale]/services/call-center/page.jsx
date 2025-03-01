@@ -58,7 +58,7 @@ export default function page() {
     };
 
     return (
-        <div>
+        <div className='overflow-auto'>
             <Hero data={HeroData} />
             <WhyChooseM5zoon data={WhyChooseM5zzonData} />
             <Branches />
@@ -91,7 +91,7 @@ export default function page() {
 
             <OurPartners title={<TitleArrow dataAos={'zoom-out'} cn={''} title={t_('partners_intro')} />} desc={<Title dataAos={'zoom-out'} delay={100} icon={<Mouce />} title={t_('partners_description')} title2={t_('partners_description2')} cn={' text-center mb-[60px] t25 !font-[400] mt-[10px] '} />} />
 
-            <FAQPage title={<TitleArrow dataAos={'zoom-out'} cn={''} title={t_('important_questions')} />} desc={<Title dataAos={'zoom-out'} delay={100} icon={<Mouce />} title={t_('questions_intro')} title2={t_('questions_intro2')} cn={' text-center mb-[60px] t25 !font-[400] mt-[10px] '} />} />
+            <FAQPage dataFaqs={"faqs_callcenter"} title={<TitleArrow dataAos={'zoom-out'} cn={''} title={t_('important_questions')} />} desc={<Title dataAos={'zoom-out'} delay={100} icon={<Mouce />} title={t_('questions_intro')} title2={t_('questions_intro2')} cn={' text-center mb-[60px] t25 !font-[400] mt-[10px] '} />} />
 
             <Footer2 />
         </div>

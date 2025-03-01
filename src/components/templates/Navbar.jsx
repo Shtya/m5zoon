@@ -9,6 +9,7 @@ import { gsap } from 'gsap';
 import X from '../svg/X';
 import ArrowRight from '../svg/Arrow-right';
 import Translate from '../atoms/Translate';
+import Logo from '../atoms/Logo';
 
 export default function Navbar() {
     const t = useTranslations();
@@ -45,7 +46,6 @@ export default function Navbar() {
             setIsVisible(true); // Show navbar on scroll up
         }
 
-        // Check if the user has scrolled past the hero section (e.g., 100px)
         setIsTransparent(currentScrollY <= 10);
 
         setLastScrollY(currentScrollY);
@@ -102,10 +102,8 @@ export default function Navbar() {
         <div className='z-[1000] relative  '>
             <nav className={`fixed top-0 left-[50%] translate-x-[-50%] w-full transition-all  duration-300 z-50  ${isTransparent ? 'bg-transparent' : `backdrop-blur-md bg-fixed bg-cover bg-center bg-secondery shadow-md`}`}>
                 <div className=' container h-[80px] max-lg:px-[40px] flex justify-between items-center py-3  '>
-                    <Link href='/' className='text-2xl font-bold'>
-                        <Image className={` ${!isTransparent ? ' ml-0 mr-0 ' : 'xl:ltr:ml-[100px] xl:rtl:mr-[100px]'}  duration-300 max-md:w-[85px]  w-[145px]  object-contain`} width={145} height={45} alt='' src={ isAllowed ?( !isVisible ? "/imgs/logo.png" :  '/imgs/logo.png') : "/imgs/logo2.png" } />
-                    </Link>
-
+                    
+                    <Logo colorLogo='white' cn={`${!isTransparent ? ' ml-0 mr-0 ' : 'xl:ltr:ml-[100px] xl:rtl:mr-[100px]'}  duration-300 max-md:w-[85px]  w-[145px]  object-contain`} />
                     <ul className='hidden min-[1200px]:flex gap-[50px] items-center'>
                         <div className='flex gap-[28px] items-center '>
                             {links.map(link => (
@@ -140,7 +138,7 @@ export default function Navbar() {
 
             <div className={`${isMenuOpen ? 'ltr:left-0 rtl:right-0' : 'ltr:left-[-400px] rtl:right-[-400px]'} fixed top-0 z-[1000] w-full max-w-[350px] h-full p-5 shadow-lg bg-cover bg-center bg-secondery/70 backdrop-blur-[10px] transition-all duration-300 `}>
                 <div className='flex py-[20px] items-center justify-between'>
-                    <Link href='/' className='text-2xl font-bold'> <Image className='xl:ltr:ml-[100px] xl:rtl:mr-[100px] max-md:w-[80px] w-[115px] object-contain' width={145} height={45} alt='Logo' src={'/imgs/logo.png'} /> </Link>
+                    <Logo colorLogo='white' cn={"xl:ltr:ml-[100px] xl:rtl:mr-[100px] max-md:w-[80px] w-[115px] object-contain"} />
                     <Close className='text-white scale-[1.2] cursor-pointer hover:scale-[1.3] duration-300' onClick={toggleMenu} />
                 </div>
                 <hr className='w-[90%] mx-auto border-t-white border-t-[1px] my-[20px] opacity-30' />

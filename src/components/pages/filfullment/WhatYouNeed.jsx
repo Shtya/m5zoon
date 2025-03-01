@@ -13,7 +13,7 @@ export default function WhatYouNeed({ data, t }) {
                 <Title dataAos={'fade-up'} delay={100} icon={<Mouce />} title={data?.title2} title2={data?.title3} cn={' text-center mb-[60px] t25 !font-[400] mt-[10px] '} />
 
                 <div className='flex items-start max-md:flex-wrap max-md:justify-center max-md:gap-x-[20px] max-md:gap-y-[30px]  justify-between  '>
-                    {/* data-aos="fade-up" data-aos-delay={i+1 + "00"}  */}
+
                     {data?.data?.map((e, i) => (
                         <div key={i}>
                             {e.key == 'border' ? (

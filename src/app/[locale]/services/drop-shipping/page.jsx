@@ -29,12 +29,6 @@ export default function page() {
         { title: t_('services2.profit_collection.title'), desc: t_('services2.profit_collection.description'), icon: <DropShipping_8 /> },
     ];
 
-    // "": "خدمات مخزون للموردين",
-    // "": "استفد كمورد من خدمات مخزون لتسهيل توريد منتجاتك وضمان وصولها",
-    // "": "للعملاء باحترافية.",
-
-
-
     const ServicesForSuppliers = [
         { title: t_('services.competitive_storage.title'), desc: t_('services.competitive_storage.description'), icon: '/fulfillment/serv1.png', bg: 'secondery', delay: '0' },
         { title: t_('services.customer_support.title'), desc: t_('services.customer_support.description'), icon: '/fulfillment/serv2.png', bg: 'white', delay: '0' },
@@ -47,8 +41,8 @@ export default function page() {
     ];
 
     const JoinUsData = [
-        { key: 'blue', title: t_('makhzon_for_suppliers'), desc: t_('suppliers_intro'), button: t_('join_as_supplier'), href: '/supplier', icon: '/fulfillment/supplier.png' },
-        { key: 'yellow', title: t_('makhzon_for_marketers'), desc: t_('marketers_intro'), button: t_('join_as_marketer'), href: '/marketer', icon: '/fulfillment/marketer.png' },
+        { key: 'blue', title: t_('makhzon_for_suppliers'), desc: t_('suppliers_intro'), button: t_('join_as_supplier'), href: '/sign-up', icon: '/fulfillment/supplier.png' },
+        { key: 'yellow', title: t_('makhzon_for_marketers'), desc: t_('marketers_intro'), button: t_('join_as_marketer'), href: '/sign-up', icon: '/fulfillment/marketer.png' },
     ];
 
 	const whatYouNeedData = {
@@ -56,13 +50,13 @@ export default function page() {
 		title2 : t_("start_intro"),
 		title3 : t_("start_intro2"),
 		data : [
-		{ title : t_("steps.profit_receiving.title") , desc : t_("steps.profit_receiving.description")   , icon : "/fulfillment/step/4.png"},
-		{  key : "border"  ,  icon : "/fulfillment/step/dashed.png" , },
-		{ title : t_("steps.order_addition.title") , desc : t_("steps.order_addition.description")       , icon : "/fulfillment/step/3.png"},
-		{  key : "border"  ,  icon : "/fulfillment/step/dashed.png" , },
-		{ title : t_("steps.product_selection.title") , desc : t_("steps.product_selection.description") , icon : "/fulfillment/step/2.png"},
-		{  key : "border"  ,  icon : "/fulfillment/step/dashed.png" , },
-		{ title : t_("steps.account_creation.title") , desc : t_("steps.account_creation.description")   , icon : "/fulfillment/step/1.png"},
+            { title : t_("steps.account_creation.title") , desc : t_("steps.account_creation.description")   , icon : "/fulfillment/step/1.png"},
+            {  key : "border"  ,  icon : "/fulfillment/step/dashed.png" , },
+            { title : t_("steps.product_selection.title") , desc : t_("steps.product_selection.description") , icon : "/fulfillment/step/2.png"},
+            {  key : "border"  ,  icon : "/fulfillment/step/dashed.png" , },
+            { title : t_("steps.order_addition.title") , desc : t_("steps.order_addition.description")       , icon : "/fulfillment/step/3.png"},
+            {  key : "border"  ,  icon : "/fulfillment/step/dashed.png" , },
+            { title : t_("steps.profit_receiving.title") , desc : t_("steps.profit_receiving.description")   , icon : "/fulfillment/step/4.png"},
 		]
 	}
 
@@ -94,7 +88,7 @@ export default function page() {
 
 
     return (
-        <div>
+        <div className='overflow-auto'>
             <Hero t={t_} data={HeroData} />
             <WhyChooseM5zoon data={WhyChooseM5zzonData} />
             <ServicesForExporter t={t_} data={ServicesForSailerData} />
